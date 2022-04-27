@@ -1,0 +1,59 @@
+
+* {
+    font-family : Georgia, 'Times New Roman', Times, serif ;
+}
+
+
+/* haut de la page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 200px;
+    margin-left: 50px;
+}
+
+
+/* landing page */
+
+
+div.landing_page {
+    display: flex;
+    background: url("../images/banderole.jpg");
+    background-size: cover;
+    height: 40vh;
+    
+;
+
+}
+
+h1.big_title {
+    color: black;
+    font-size: 80px;
+    font-weight: 100;
+    margin-left: 30%;
+    width: 80%;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 60%;
+    margin: 5%;
+}
+
+nav.nav li {
+    color: black;
+}
+
+/* body */
+
+body {
+    margin: 0 auto;
+}
