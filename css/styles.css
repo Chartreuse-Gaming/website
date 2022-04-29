@@ -17,6 +17,10 @@ header.header img {
 }
 
 
+a:link { 
+ text-decoration:none; 
+} 
+
 /* landing page */
 
 
