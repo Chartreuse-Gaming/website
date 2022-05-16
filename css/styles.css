@@ -27,8 +27,6 @@ header img {
     margin: 3px 5px 3px 2px;
 }
 
-
-
 /* menu de navigation */
 
 nav.onglet {
@@ -36,16 +34,21 @@ nav.onglet {
     justify-content: space-around;
     list-style: none;
     width: 70%;
-
 }
 
 nav.nav li {
     color: black;
 }
 
-a:link { 
-    text-decoration:none; 
-} 
+nav.onglet a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+nav.onglet a:hover {
+    background: #67BE60;
+}
 
 nav.reseau {
     width: 15%;
@@ -59,7 +62,7 @@ nav.reseau li {
 }
 
 nav.reseau li a img {
-    width: 35px;
+    width: 34px;
     margin: auto;
 
 }
@@ -83,7 +86,7 @@ div.landing_page h1{
     
 }
 
-/* deuxième partie du body */
+/* deuxième partie du body de la page acceuil */
 
 
 div.gigantesque_div {
@@ -117,13 +120,43 @@ div.fil {
 }
 
 
+/* Body de la page présentation */
+
+.resume {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+}
+
+.texte {
+    display: flex;
+    justify-content: center;
+}
+.texte p{
+    width: 50%;
+    border-style:solid;
+}
+
+/* Body de la page historique */
+
+
+
+
+/* Body de la page contact */
+
+
+
+
 /* Partie footer */
 
 footer {
     display: flex;
+    bottom: 0px;
+    position: absolute;
     justify-content: space-evenly;
     align-items: center;
     height: 8%;
+    width: 100%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }
@@ -136,12 +169,14 @@ nav.logo_gauche {
 }
 
 nav.logo_gauche img {
-    width: 25%;
+    width: 100px;
 
 }
 
 nav.ml {
+    display: flex;
     width: 30%;
+    justify-content: center;
 
 }
 
@@ -153,7 +188,7 @@ nav.logo_droit {
 }
 
 nav.logo_droit img {
-    width: 15%;
+    width: 100px;
 
 }
 
