@@ -1,4 +1,3 @@
-
 html {
     height: -webkit-fill-available;
 }
@@ -6,6 +5,9 @@ html {
 body {
     height: 100%;
     margin: 0%;
+    background-image: url(/images/Passe_partout_STORY_1080x1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -13,56 +15,61 @@ body {
     font-family : Georgia, 'Times New Roman', Times, serif ;
 }
 
-/* haut de la page */
+/* header */
 
 header {
     display: flex;
     align-items: center;
     height: 8%;
+    width: 100%;
     margin-bottom: 0.5%;
+
 }
 
-header img {
+.logoc {
     width: 15%;
     margin: 3px 5px 3px 2px;
+
 }
 
-/* menu de navigation */
+.logoc img {
+    width: 100%;
 
-nav.onglet {
+}
+
+.onglet {
     display: flex;
     justify-content: space-around;
     list-style: none;
     width: 70%;
 }
 
-nav.nav li {
-    color: black;
-}
-
-nav.onglet a {
+.navigation a {
     outline: none;
     text-decoration: none;
     color: black;
 }
 
-nav.onglet a:hover {
+.navigation a:hover {
     background: #67BE60;
 }
 
-nav.reseau {
+.reseau {
     width: 15%;
     display: flex;
     justify-content: space-evenly;
 }
 
-nav.reseau li {
+.logor {
     display: flex;
     list-style: none;
+    width: 20%;
+
 }
 
-nav.reseau li a img {
-    width: 34px;
+
+.logor img {
+    width: 100%;
     margin: auto;
 
 }
@@ -71,31 +78,31 @@ nav.reseau li a img {
 
 /* landing page */
 
-div.landing_page {
+.landing_page {
     display: flex;
-    background: url("../images/banderole.jpg");
     height: 20%;
     width: 100%;
     justify-content: center;
 }
 
-div.landing_page h1{
+.landing_page h1{
     display: flex;
     color: black;
-    font-size: 50px;
+    font-size: 75px;
+    align-items: center;
     
 }
 
 /* deuxième partie du body de la page acceuil */
 
 
-div.gigantesque_div {
+.gigantesque_div {
     display: flex;
     height: 80%;
     flex-direction: column;
 }
 
-div.enorme_div {
+.enorme_div {
     display: flex;
     margin-top: 10px;
     height: 80%;
@@ -104,18 +111,21 @@ div.enorme_div {
 
 }
 
-div.evenement {
+.evenement {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
     width: 50%;
 }
 
-div.grosse_div {
+.grosse_div {
     display: flex;
     width: 50%;
     justify-content: center;
 }
 
-div.fil {
+.fil {
     width: 80%;
 }
 
@@ -139,13 +149,119 @@ div.fil {
 
 /* Body de la page historique */
 
+.historique {
 
+    display: flex;
+    height: 80%;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.frise {
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    
+}
 
 
 /* Body de la page contact */
 
+.contact {
+    display: flex;
+    height: 80%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.pcarreh {
+    display: flex;
+    height: 30%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.rn {
+    display: flex;
+    width: 40%;
+    height: 70%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-radius: 30px;
+
+}
+
+.legal {
+    display: flex;
+    width: 40%;
+    height: 70%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-radius: 30px;
+
+}
+
+.pcarreb {
+    display: flex;
+    height: 30%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.joueurs {
+    display: flex;
+    width: 40%;
+    height: 70%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-radius: 30px;
+
+}
+
+.pc {
+    display: flex;
+    width: 40%;
+    height: 70%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-radius: 30px;
+
+}
+
+.rect {
+    display: flex;
+    height: 30%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 
 
+}
+
+.nous {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-radius: 30px;
+
+}
 
 /* Partie footer */
 
@@ -161,34 +277,34 @@ footer {
     margin-bottom: 0.5%;
 }
 
-nav.logo_gauche {
+.logo_gauche {
     height: 100%;
     width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-nav.logo_gauche img {
-    width: 100px;
+.logo_gauche img {
+    width: 45%;
 
 }
 
-nav.ml {
+.ml {
     display: flex;
     width: 30%;
     justify-content: center;
 
 }
 
-nav.logo_droit {
+.logo_droit {
     height: 100%;
     width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-nav.logo_droit img {
-    width: 100px;
+.logo_droit img {
+    width: 45%;
 
 }
 
