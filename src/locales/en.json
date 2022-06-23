@@ -1,3 +1,7 @@
 {
-  "message": "hello i18n !!"
+  "logo-association": "Logo of the Chartreuse Gaming association",
+  "home": "Home",
+  "tournaments": "Tournaments",
+  "association": "Association",
+  "contact": "Contact"
 }
