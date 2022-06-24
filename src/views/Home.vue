@@ -7,7 +7,7 @@
         <router-link to="/">
           <div>
             <img
-              src="@/assets/img/P1080631.jpg"
+              src="@/assets/img/CEC_5.jpg"
               alt="Chartreuse Esport Contest 5"
             />
             <span>
@@ -20,67 +20,64 @@
         <router-link to="/">
           <div>
             <img
-              src="@/assets/img/P1080631.jpg"
-              alt="Chartreuse Esport Contest 5"
+              src="@/assets/img/CGW_Crous.jpg"
+              alt="Campus Games Week : Crous Edition"
             />
             <span>
               <i></i>
               <i></i>
             </span>
           </div>
-          <p>Chartreuse Esport Contest 5</p>
+          <p>Campus Games Week : Crous Edition</p>
         </router-link>
         <router-link to="/">
           <div>
             <img
-              src="@/assets/img/P1080631.jpg"
-              alt="Chartreuse Esport Contest 5"
+              src="@/assets/img/CGW_Grenoble.jpg"
+              alt="Campus Games Week : Grenoble Edition"
             />
             <span>
               <i></i>
               <i></i>
             </span>
           </div>
-          <p>Chartreuse Esport Contest 5</p>
+          <p>Campus Games Week : Grenoble Edition</p>
         </router-link>
         <router-link to="/">
           <div>
             <img
-              src="@/assets/img/P1080631.jpg"
-              alt="Chartreuse Esport Contest 5"
+              src="@/assets/img/CEC_4.jpg"
+              alt="Chartreuse Esport Contest 4 Online"
             />
             <span>
               <i></i>
               <i></i>
             </span>
           </div>
-          <p>Chartreuse Esport Contest 5</p>
+          <p>Chartreuse Esport Contest 4 Online</p>
+        </router-link>
+        <router-link to="/">
+          <div>
+            <img src="@/assets/img/SJV.jpg" alt="Salon du Jeu Vidéo" />
+            <span>
+              <i></i>
+              <i></i>
+            </span>
+          </div>
+          <p>Salon du Jeu Vidéo</p>
         </router-link>
         <router-link to="/">
           <div>
             <img
-              src="@/assets/img/P1080631.jpg"
-              alt="Chartreuse Esport Contest 5"
+              src="@/assets/img/CEC_3.jpg"
+              alt="Chartreuse Esport Contest 3"
             />
             <span>
               <i></i>
               <i></i>
             </span>
           </div>
-          <p>Chartreuse Esport Contest 5</p>
-        </router-link>
-        <router-link to="/">
-          <div>
-            <img
-              src="@/assets/img/P1080631.jpg"
-              alt="Chartreuse Esport Contest 5"
-            />
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </div>
-          <p>Chartreuse Esport Contest 5</p>
+          <p>Chartreuse Esport Contest 3</p>
         </router-link>
       </section>
       <router-link to="/" class="btn">Charger plus</router-link>
