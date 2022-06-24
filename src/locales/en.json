@@ -1,12 +1,18 @@
 {
-  "logo-association": "Logo of the Chartreuse Gaming association",
   "home": "Home",
-  "tournaments": "Tournaments",
-  "association": "Association",
+  "tournaments": {
+    "self": "Tournaments",
+    "previous": "Our previous tournaments"
+  },
+  "association": {
+    "self": "Association | The association",
+    "logo": "Logo of the association",
+    "t-shirt": "T-shirt of the association",
+    "members": "The members of the association"
+  },
   "contact": "Contact",
   "copyright": "All rights reserved",
   "site-map": "Site Map",
   "legal-info": "Legal information",
-  "intranet": "Intranet",
-  "previous-tournaments": "Our previous tournaments"
+  "intranet": "Intranet"
 }

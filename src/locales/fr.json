@@ -1,12 +1,18 @@
 {
-  "logo-association": "Logo de l'association Chartreuse Gaming",
   "home": "Accueil",
-  "tournaments": "Tournois",
-  "association": "Association",
+  "tournaments": {
+    "self": "Tournois",
+    "previous": "Nos précédents tournois"
+  },
+  "association": {
+    "self": "Association | L'association",
+    "logo": "Logo de l'association",
+    "t-shirt": "T-shirt de l'association",
+    "members": "Les membres de l'association"
+  },
   "contact": "Contact",
   "copyright": "Tous droits réservés",
   "site-map": "Plan du site",
   "legal-info": "Mentions légales",
-  "intranet": "Intranet",
-  "previous-tournaments": "Nos précédents tournois"
+  "intranet": "Intranet"
 }

@@ -6,7 +6,7 @@
         <router-link to="/" id="logo">
           <img
             src="@/assets/svg/logo.svg"
-            :alt="$t('logo-association') + '.'"
+            :alt="$t('association.logo') + '.'"
           />
         </router-link>
 
@@ -20,7 +20,9 @@
             <font-awesome-icon icon="fa-solid fa-sort-down" />
             <!-- TODO: Tournament dropdown -->
           </router-link>
-          <router-link to="/#association">{{ $t("association") }}</router-link>
+          <router-link to="/#association">{{
+            $t("association.self", 1)
+          }}</router-link>
           <router-link to="/#contact">{{ $t("contact") }}</router-link>
         </nav>
 

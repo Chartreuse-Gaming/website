@@ -2,7 +2,7 @@
   <main>
     <h1 class="hidden">Chartreuse Gaming</h1>
     <article id="old-tournaments" class="content">
-      <h2>{{ $t("previous-tournaments") }}</h2>
+      <h2>{{ $t("tournaments.previous") }}</h2>
       <section>
         <router-link to="/">
           <div>
