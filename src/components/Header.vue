@@ -16,7 +16,7 @@
             $t("home")
           }}</router-link>
           <router-link to="/">
-            {{ $t("tournaments") }}
+            {{ $t("tournaments.self") }}
             <font-awesome-icon icon="fa-solid fa-sort-down" />
             <!-- TODO: Tournament dropdown -->
           </router-link>
