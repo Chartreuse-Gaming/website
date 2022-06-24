@@ -33,7 +33,8 @@ $footer-height: 70px;
 $font-size: 0.84em;
 
 footer {
-  width: 100vw;
+  position: relative;
+  width: 100%;
   height: $footer-height;
   background-color: var(--bg-color);
   box-shadow: 0 -6px 10px -4px rgba(0, 0, 0, 0.7);

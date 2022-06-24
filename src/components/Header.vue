@@ -74,13 +74,14 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: $header-height;
 
   article {
     height: inherit;
     margin: 0 auto;
-    max-width: 1600px;
+    padding: 0 12px;
+    max-width: 1650px;
     display: flex;
     align-items: center;
     justify-content: space-between;
