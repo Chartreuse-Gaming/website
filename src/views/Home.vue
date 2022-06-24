@@ -127,13 +127,13 @@ main {
         margin-bottom: 24px;
 
         & * {
-          width: 100%;
-          height: 100%;
           aspect-ratio: 16/9;
+          border-radius: 8px;
         }
 
         img {
-          border-radius: 8px;
+          width: 100%;
+          height: 100%;
           display: block;
           position: relative;
           z-index: 3;
@@ -142,19 +142,20 @@ main {
         }
 
         span i {
+          width: calc(100% - 2px);
+          height: calc(100% - 2px);
           transform: rotate(0);
           transition: transform 400ms;
           position: absolute;
-          top: 0;
-          left: 0;
+          top: 1px;
+          left: 1px;
           display: block;
-          border-radius: 10px;
 
           &:first-of-type {
             z-index: 2;
             margin: 5px;
-            width: calc(100% - 10px);
-            height: calc(100% - 10px);
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
             background-color: var(--bg-color);
             border-radius: 6px;
           }
