@@ -38,8 +38,10 @@
         <a href="https://discord.gg/invite/ENY2nV6">
           <font-awesome-icon icon="fa-brands fa-discord" />
         </a>
-        <a href="https://www.twitch.tv/chartreusegaming">
+        <a id="live" href="https://www.twitch.tv/chartreusegaming">
           <font-awesome-icon icon="fa-brands fa-twitch" />
+          <i></i>
+          <i></i>
         </a>
         <a href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg">
           <font-awesome-icon icon="fa-brands fa-youtube" />
@@ -181,7 +183,37 @@ section:last-of-type > a {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+#live {
+  position: relative;
+
+  i {
+    //display: none;
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #f00000;
+  }
+
+  i:last-of-type {
+    animation: pulse-scale 2.6s infinite;
+  }
+
+  @keyframes pulse-scale {
+    0% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2.4);
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   section:first-of-type {
     width: 100%;
     justify-content: space-between;
