@@ -80,7 +80,7 @@
           <p>Chartreuse Esport Contest 3</p>
         </router-link>
       </section>
-      <router-link to="/" class="btn">Charger plus</router-link>
+      <router-link to="/" class="btn">{{ $t("load-more") }}</router-link>
     </article>
 
     <article id="association">
