@@ -117,11 +117,19 @@ footer {
   }
 }
 
-@media only screen and (max-width: 380px) {
-  footer div nav {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-top: 16px;
+@media only screen and (max-width: 400px) {
+  footer div {
+    text-align: center;
+
+    section {
+      flex-flow: column nowrap;
+    }
+
+    nav {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-top: 16px;
+    }
   }
 }
 </style>
