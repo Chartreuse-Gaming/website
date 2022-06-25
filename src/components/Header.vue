@@ -73,6 +73,7 @@ export default {
 $header-height: 90px;
 
 header {
+  z-index: 99;
   position: absolute;
   top: 0;
   left: 0;
