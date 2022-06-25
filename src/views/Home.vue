@@ -2,9 +2,33 @@
   <main>
     <h1 class="hidden">Chartreuse Gaming</h1>
     <article id="carousel">
-      <Splide :options="options" aria-label="My Favorite Images">
+      <Splide :options="options" :aria-label="$t('tournaments.self')">
         <SplideSlide>
-          <img src="@/assets/img/carousel/CEC_5.jpg" alt="Sample 1" />
+          <section>
+            <p>22 - 23 Octobre 2021</p>
+            <p class="CEC5">
+              Chartreuse<br />
+              Esport<br />
+              Contest <span>5</span>
+            </p>
+            <router-link to="/" class="btn">
+              En savoir plus
+              <font-awesome-icon icon="fa-solid fa-right-long" />
+            </router-link>
+            <i></i>
+          </section>
+          <i></i>
+          <div>
+            <img
+              class="slide-logo"
+              src="@/assets/img/carousel/CEC_5_logo.png"
+              alt="Logo Chartreuse Esport Contest 5"
+            />
+          </div>
+          <img
+            src="@/assets/img/carousel/CEC_5.jpg"
+            alt="Chartreuse Esport Contest 5"
+          />
         </SplideSlide>
       </Splide>
     </article>
@@ -134,13 +158,14 @@ export default {
         rewind: true,
         rewindByDrag: true,
         autoplay: true,
-        perPage: 1,
-        perMove: 1,
         keyboard: true,
-        height: "700px",
-        fixedHeight: this.height,
         cover: true,
         arrows: false,
+        heightRatio: 0.4,
+        speed: 350,
+        rewindSpeed: this.speed,
+        easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+        interval: 7200,
       },
     };
   },
@@ -150,7 +175,100 @@ export default {
 <style scoped lang="scss">
 @import "node_modules/compass-mixins/lib/compass/css3";
 
+#carousel {
+  position: relative;
+
+  &,
+  .splide,
+  .splide__slide {
+    min-height: 400px;
+    max-height: 700px;
+  }
+
+  .slide-logo {
+    z-index: 0;
+    height: 80%;
+    display: block !important;
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    transform: rotate(12deg);
+  }
+
+  .splide__slide > i {
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 1px);
+    @include box-shadow(
+      inset 0 175px 180px 0px rgb(38, 38, 38),
+      inset 0 -175px 90px -30px rgb(38, 38, 38)
+    );
+  }
+
+  section {
+    z-index: 2;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+
+    & > p:first-of-type {
+      color: var(--subtext-color);
+      font-size: 1.4em;
+      text-shadow: 0 0 8px rgb(0, 0, 0);
+    }
+
+    & > p:last-of-type {
+      position: relative;
+      font-size: 3.6em;
+      text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+      text-transform: uppercase;
+      font-family: var(--title-font);
+      font-weight: bold;
+    }
+
+    a {
+      width: max-content;
+      margin: 20px 0 0;
+      padding: 8px 30px;
+
+      svg {
+        margin-left: 10px;
+      }
+    }
+
+    i {
+      z-index: -1;
+      width: calc(100% + 300px);
+      height: calc(100% + 300px);
+      top: -150px;
+      left: -150px;
+      position: absolute;
+      background: rgb(38, 38, 38);
+      background: radial-gradient(
+        circle,
+        rgba(38, 38, 38, 1) 0%,
+        rgba(252, 70, 107, 0) 60%
+      );
+    }
+
+    .CEC5 span {
+      position: absolute;
+      font-size: 2.8em;
+      line-height: 0;
+      right: 10px;
+      transform: rotate(8deg);
+    }
+  }
+}
+
 #old-tournaments {
+  padding-top: 16px;
+
   h2 {
     font-size: 1.6em;
     margin-bottom: 16px;
@@ -266,6 +384,7 @@ export default {
       margin-top: 50px;
       font-size: 1.2em;
       text-align: justify;
+      color: var(--subtext-color);
     }
 
     img {

@@ -14,7 +14,11 @@ import {
   faFacebookF,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faSortDown, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSortDown,
+  faBars,
+  faRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faSortDown,
@@ -25,7 +29,8 @@ library.add(
   faTwitter,
   faInstagram,
   faFacebookF,
-  faLinkedin
+  faLinkedin,
+  faRightLong
 );
 
 createApp(App)

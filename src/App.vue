@@ -22,7 +22,7 @@ export default {
 :root {
   --bg-color: #262626;
   --text-color: #ffffff;
-  --subtext-color: #e1e1e1;
+  --subtext-color: #e6e6e6;
   --footer-text-color: #b9b9b9;
   --green-touch: #23d940;
   --green-touch-alt: #1db036;
@@ -93,5 +93,20 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+#carousel .splide__pagination {
+  bottom: 40px !important;
+  gap: 6px;
+
+  .splide__pagination__page {
+    background: var(--text-color) !important;
+    opacity: 1;
+    padding: 5px !important;
+
+    &.is-active {
+      background: var(--green-touch) !important;
+    }
+  }
 }
 </style>
