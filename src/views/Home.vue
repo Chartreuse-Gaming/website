@@ -1,6 +1,14 @@
 <template>
   <main>
     <h1 class="hidden">Chartreuse Gaming</h1>
+    <article id="carousel">
+      <Splide :options="options" aria-label="My Favorite Images">
+        <SplideSlide>
+          <img src="@/assets/img/carousel/CEC_5.jpg" alt="Sample 1" />
+        </SplideSlide>
+      </Splide>
+    </article>
+
     <article id="old-tournaments" class="content">
       <h2>{{ $t("tournaments.previous") }}</h2>
       <section>
@@ -115,17 +123,32 @@
 </template>
 
 <script>
+import "@splidejs/vue-splide/css";
+
 export default {
   name: "HomeView",
+  data() {
+    return {
+      options: {
+        type: "loop",
+        rewind: true,
+        rewindByDrag: true,
+        autoplay: true,
+        perPage: 1,
+        perMove: 1,
+        keyboard: true,
+        height: "700px",
+        fixedHeight: this.height,
+        cover: true,
+        arrows: false,
+      },
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "node_modules/compass-mixins/lib/compass/css3";
-
-main {
-  margin-top: 90px;
-}
 
 #old-tournaments {
   h2 {
