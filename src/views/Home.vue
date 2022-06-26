@@ -143,6 +143,80 @@
         </div>
       </section>
     </article>
+
+    <article id="history" class="content">
+      <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
+      <section>
+        <div class="entries">
+          <div class="entry">
+            <div class="title">2011</div>
+            <div class="body">
+              <p>
+                Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum
+                suscipit eveniet amet dignissimos. Doloremque et distinctio quod
+                molestiae ut.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">2012</div>
+            <div class="body">
+              <p>
+                Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title big">2013</div>
+            <div class="body">
+              <p>
+                Rerum sit libero possimus amet excepturi. Exercitationem enim
+                dolores sunt praesentium dolorum praesentium.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">2014</div>
+            <div class="body">
+              <p>
+                Voluptatibus veniam ea reprehenderit atque. Reiciendis non
+                laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae
+                velit. Omnis libero nostrum aperiam nemo dolor ea eos eius. Esse
+                a non itaque quidem.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">2015</div>
+            <div class="body">
+              <p>
+                VAdipisci totam omnis cum et suscipit excepturi et excepturi.
+                Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.
+              </p>
+              <p>
+                Delectus facere officia consequuntur molestias deserunt illo.
+                Placeat laudantium beatae natus excepturi ab nihil voluptates.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title big">2016</div>
+            <div class="body">
+              <p>
+                Impedit dolorem commodi explicabo fugit aut alias voluptatem.
+                Magnam earum rerum quae dicta quibusdam aliquam ut.
+              </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="title">2017</div>
+            <div class="body">
+              <p>Qui facere eos aut suscipit doloremque quos...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
   </main>
 </template>
 
@@ -393,6 +467,99 @@ export default {
       aspect-ratio: 16/9;
       border-radius: 8px;
       box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    }
+  }
+}
+
+#history {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+
+  & > img {
+    width: 36%;
+    z-index: 1;
+    position: absolute;
+    left: 3vw;
+    bottom: -15vw;
+    opacity: 0.06;
+    transform: rotate(-20deg);
+  }
+
+  section {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      width: 4px;
+      background-color: #fff;
+    }
+
+    .entries {
+      //position: relative;
+
+      .entry {
+        width: calc(50% - 50px);
+        float: left;
+        padding: 26px 0;
+        clear: both;
+        text-align: right;
+
+        &:not(:first-child) {
+          margin-top: -56px;
+        }
+
+        .title {
+          font-size: 32px;
+          margin-bottom: 12px;
+          position: relative;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 4px solid #ffffff;
+            background-color: #1d1d1d;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -60px;
+            z-index: 1000;
+          }
+
+          &.big:before {
+            width: 24px;
+            height: 24px;
+            transform: translate(8px, -50%);
+          }
+        }
+
+        .body {
+          color: var(--subtext-color);
+
+          p {
+            line-height: 1.4em;
+          }
+        }
+
+        &:nth-child(2n) {
+          text-align: left;
+          float: right;
+
+          .title {
+            &:before {
+              left: -56px;
+            }
+
+            &.big:before {
+              transform: translate(-8px, -50%);
+            }
+          }
+        }
+      }
     }
   }
 }
