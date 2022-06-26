@@ -364,8 +364,9 @@ export default {
     );
     z-index: -1;
     position: absolute;
+    top: -1px;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 2px);
   }
 
   h2 {
