@@ -241,6 +241,44 @@
         </article>
       </section>
     </article>
+
+    <article id="contact" class="content">
+      <h2>{{ $t("contact.us") }}</h2>
+      <section>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-location-dot" />
+          <p>
+            000 Lorem ipsum dolor,<br />
+            38000 Grenoble
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-phone" />
+          <p>+331 23 45 67 89</p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-envelope" />
+          <p>ChartreuseGGaming@gmail.com</p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-share-nodes" />
+          <span>
+            <a href="https://discord.gg/invite/ENY2nV6">
+              <font-awesome-icon icon="fa-brands fa-discord" />
+            </a>
+            <a href="https://twitter.com/chartreusegame">
+              <font-awesome-icon icon="fa-brands fa-twitter" />
+            </a>
+            <a href="https://www.facebook.com/chartreusegaming/">
+              <font-awesome-icon icon="fa-brands fa-facebook-f" />
+            </a>
+            <a href="https://www.instagram.com/chartreusegaming/">
+              <font-awesome-icon icon="fa-brands fa-instagram" />
+            </a>
+          </span>
+        </div>
+      </section>
+    </article>
   </main>
 </template>
 
@@ -642,12 +680,79 @@ export default {
 
           &.big {
             &:before {
-              left: -56px;
+              transform: translate(-6px, -50%);
             }
 
-            &.big:before {
-              transform: translate(-8px, -50%);
+            i:before {
+              width: 20px;
+              height: 20px;
+              top: calc(50% - 10px);
+              left: -58px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  padding: 20px;
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    div {
+      flex: 1 0 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: stretch;
+      gap: 16px;
+      text-align: center;
+      padding: 16px;
+
+      & > * {
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      & > svg {
+        color: var(--bg-color);
+        stroke: var(--green-touch);
+        stroke-width: 26px;
+        stroke-linejoin: round;
+      }
+
+      span a {
+        padding: 10px;
+        color: white;
+
+        & > svg {
+          transition: all 150ms;
+          height: 24px;
+          transform: scale(1);
+        }
+
+        &:hover {
+          svg {
+            transform: scale(1.1);
+            color: var(--subtext-color);
           }
         }
       }

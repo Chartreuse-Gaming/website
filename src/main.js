@@ -18,6 +18,11 @@ import {
   faSortDown,
   faBars,
   faRightLong,
+  faCaretUp,
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+  faShareNodes,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -30,7 +35,12 @@ library.add(
   faInstagram,
   faFacebookF,
   faLinkedin,
-  faRightLong
+  faRightLong,
+  faCaretUp,
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+  faShareNodes
 );
 
 createApp(App)
