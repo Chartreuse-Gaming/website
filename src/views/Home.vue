@@ -146,37 +146,54 @@
     <article id="history" class="content">
       <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
       <section>
-        <div class="entries">
-          <div class="entry">
-            <div class="title">2011</div>
-            <div class="body">
+        <font-awesome-icon icon="fa-solid fa-caret-up" />
+        <article>
+          <section>
+            <header>
+              2022
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum
                 suscipit eveniet amet dignissimos. Doloremque et distinctio quod
                 molestiae ut.
               </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title">2012</div>
-            <div class="body">
+          </section>
+          <section>
+            <header>
+              2021
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.
               </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title big">2013</div>
-            <div class="body">
+          </section>
+          <section>
+            <header class="big">
+              2020
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 Rerum sit libero possimus amet excepturi. Exercitationem enim
                 dolores sunt praesentium dolorum praesentium.
               </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title">2014</div>
-            <div class="body">
+          </section>
+          <section>
+            <header>
+              2019
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 Voluptatibus veniam ea reprehenderit atque. Reiciendis non
                 laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae
@@ -184,36 +201,44 @@
                 a non itaque quidem.
               </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title">2015</div>
-            <div class="body">
+          </section>
+          <section>
+            <header>
+              2018
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 VAdipisci totam omnis cum et suscipit excepturi et excepturi.
                 Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.
               </p>
-              <p>
-                Delectus facere officia consequuntur molestias deserunt illo.
-                Placeat laudantium beatae natus excepturi ab nihil voluptates.
-              </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title big">2016</div>
-            <div class="body">
+          </section>
+          <section>
+            <header class="big">
+              2017
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>
                 Impedit dolorem commodi explicabo fugit aut alias voluptatem.
                 Magnam earum rerum quae dicta quibusdam aliquam ut.
               </p>
             </div>
-          </div>
-          <div class="entry">
-            <div class="title">2017</div>
-            <div class="body">
+          </section>
+          <section>
+            <header>
+              2016
+              <i></i>
+            </header>
+            <div>
+              <h3>Titre de section</h3>
               <p>Qui facere eos aut suscipit doloremque quos...</p>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
       </section>
     </article>
   </main>
@@ -477,82 +502,145 @@ export default {
 #history {
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
+  padding: 40px 18px;
 
   & > img {
-    width: 36%;
+    width: 34%;
     z-index: 1;
     position: absolute;
     left: 3vw;
-    bottom: -15vw;
-    opacity: 0.06;
+    bottom: -11vw;
+    opacity: 0.04;
     transform: rotate(-20deg);
+
+    @media only screen and (min-width: 1200px) {
+      & {
+        bottom: -150px;
+      }
+    }
   }
 
   section {
     &:before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 50%;
+      top: 40px;
+      left: calc(50% - 1px);
       bottom: 0;
-      width: 4px;
+      width: 6px;
       background-color: #fff;
     }
 
-    .entries {
-      //position: relative;
+    & > svg {
+      font-size: 2.4em;
+      position: absolute;
+      top: 18px;
+      left: calc(50% - 10px);
+      transform: scaleY(1.4);
+    }
 
-      .entry {
-        width: calc(50% - 50px);
-        float: left;
-        padding: 26px 0;
-        clear: both;
-        text-align: right;
+    article section {
+      width: calc(50% - 50px);
+      float: left;
+      padding: 26px 0;
+      clear: both;
+      text-align: right;
 
-        &:not(:first-child) {
-          margin-top: -56px;
-        }
+      &:not(:first-child) {
+        margin-top: -60px;
+      }
 
-        .title {
-          font-size: 32px;
-          margin-bottom: 12px;
-          position: relative;
+      header {
+        font-size: 32px;
+        margin-bottom: 12px;
+        position: relative;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        font-family: var(--title-font);
+        font-weight: bold;
+        color: var(--green-touch);
+        gap: 14px;
+
+        i {
+          flex-grow: 1;
+          border-top: 4px dotted #656565;
 
           &:before {
+            z-index: 1;
             content: "";
             position: absolute;
+            border-radius: 50%;
+            background-color: var(--green-touch);
             width: 8px;
             height: 8px;
-            border: 4px solid #ffffff;
-            background-color: #1d1d1d;
-            border-radius: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -60px;
-            z-index: 1000;
+            right: -56px;
+            top: calc(50% - 4px);
           }
+        }
 
-          &.big:before {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border: 4px solid #ffffff;
+          background-color: var(--bg-color);
+          border-radius: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -62px;
+          z-index: 1;
+        }
+
+        &.big {
+          &:before {
             width: 24px;
             height: 24px;
-            transform: translate(8px, -50%);
+            transform: translate(6px, -50%);
+          }
+
+          i:before {
+            width: 20px;
+            height: 20px;
+            top: calc(50% - 10px);
+            right: -62px;
           }
         }
+      }
 
-        .body {
+      div {
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: 1.5em;
+          font-family: var(--title-font);
+        }
+
+        p {
+          line-height: 1.4em;
           color: var(--subtext-color);
-
-          p {
-            line-height: 1.4em;
-          }
         }
+      }
 
-        &:nth-child(2n) {
-          text-align: left;
-          float: right;
+      &:nth-child(2n) {
+        text-align: left;
+        float: right;
 
-          .title {
+        header {
+          flex-flow: row nowrap;
+
+          i:before {
+            right: 0;
+            left: -52px;
+            top: calc(50% - 4px);
+          }
+
+          &:before {
+            left: -58px;
+          }
+
+          &.big {
             &:before {
               left: -56px;
             }
