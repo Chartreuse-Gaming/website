@@ -60,6 +60,10 @@ body {
   color: var(--text-color);
   font-family: var(--text-font);
   overflow: overlay;
+
+  main:first-of-type {
+    margin-top: -90px;
+  }
 }
 
 .content {

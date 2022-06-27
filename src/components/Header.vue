@@ -66,19 +66,36 @@
 <script>
 export default {
   name: "HeaderComponent",
+  mounted() {
+    const header = document.getElementsByTagName("header")[0];
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 100) {
+        header.classList.add("scroll");
+      } else {
+        header.classList.remove("scroll");
+      }
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
+@import "node_modules/compass-mixins/lib/compass/css3";
 $header-height: 90px;
+
+.scroll {
+  @include box-shadow(inset 0 100px 90px -100px var(--bg-color));
+  backdrop-filter: blur(8px);
+  background-color: rgba(38, 38, 38, 0.6);
+}
 
 header {
   z-index: 99;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   height: $header-height;
+  transition: all 600ms;
 
   article {
     height: inherit;
