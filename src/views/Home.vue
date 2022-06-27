@@ -4,27 +4,26 @@
     <article id="carousel">
       <Splide :options="options" :aria-label="$t('tournaments.self')">
         <SplideSlide>
-          <section>
-            <p>22 - 23 Octobre 2021</p>
-            <p class="CEC5">
-              Chartreuse<br />
-              Esport<br />
-              Contest <span>5</span>
-            </p>
-            <router-link to="/" class="btn">
-              En savoir plus
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </router-link>
-            <i></i>
-          </section>
           <i></i>
-          <div>
+          <article>
+            <section>
+              <p>22 - 23 Octobre 2021</p>
+              <p class="CEC5">
+                Chartreuse<br />
+                Esport<br />
+                Contest <span>5</span>
+              </p>
+              <router-link to="/" class="btn">
+                En savoir plus
+                <font-awesome-icon icon="fa-solid fa-right-long" />
+              </router-link>
+              <i></i>
+            </section>
             <img
-              class="slide-logo"
               src="@/assets/img/carousel/CEC_5_logo.png"
               alt="Logo Chartreuse Esport Contest 5"
             />
-          </div>
+          </article>
           <img
             src="@/assets/img/carousel/CEC_5.jpg"
             alt="Chartreuse Esport Contest 5"
@@ -250,23 +249,11 @@ export default {
 @import "node_modules/compass-mixins/lib/compass/css3";
 
 #carousel {
-  position: relative;
-
   &,
   .splide,
   .splide__slide {
-    min-height: 400px;
+    min-height: 450px;
     max-height: 700px;
-  }
-
-  .slide-logo {
-    z-index: 0;
-    height: 80%;
-    display: block !important;
-    position: absolute;
-    right: 6%;
-    bottom: 0;
-    transform: rotate(12deg);
   }
 
   .splide__slide > i {
@@ -281,61 +268,77 @@ export default {
     );
   }
 
-  section {
-    z-index: 2;
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 4px;
+  article {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 100%;
 
-    & > p:first-of-type {
-      color: var(--subtext-color);
-      font-size: 1.4em;
-      text-shadow: 0 0 8px rgb(0, 0, 0);
-    }
+    section {
+      z-index: 2;
+      position: absolute;
+      bottom: 22%;
+      left: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 4px;
 
-    & > p:last-of-type {
-      position: relative;
-      font-size: 3.6em;
-      text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-      text-transform: uppercase;
-      font-family: var(--title-font);
-      font-weight: bold;
-    }
+      & > p:first-of-type {
+        color: var(--subtext-color);
+        font-size: 1.4em;
+        text-shadow: 0 0 8px rgb(0, 0, 0);
+      }
 
-    a {
-      width: max-content;
-      margin: 20px 0 0;
-      padding: 8px 30px;
+      & > p:last-of-type {
+        position: relative;
+        font-size: 3.6em;
+        text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+        text-transform: uppercase;
+        font-family: var(--title-font);
+        font-weight: bold;
+      }
 
-      svg {
-        margin-left: 10px;
+      a {
+        width: max-content;
+        margin: 20px 0 0;
+        padding: 8px 30px;
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+
+      i {
+        z-index: -1;
+        width: calc(100% + 300px);
+        height: calc(100% + 300px);
+        top: -150px;
+        left: -150px;
+        position: absolute;
+        background: rgb(38, 38, 38);
+        background: radial-gradient(
+          circle,
+          rgba(38, 38, 38, 1) 0%,
+          rgba(252, 70, 107, 0) 60%
+        );
+      }
+
+      .CEC5 span {
+        position: absolute;
+        font-size: 2.8em;
+        line-height: 0;
+        right: 10px;
+        transform: rotate(8deg);
       }
     }
 
-    i {
-      z-index: -1;
-      width: calc(100% + 300px);
-      height: calc(100% + 300px);
-      top: -150px;
-      left: -150px;
+    img {
+      z-index: 0;
+      height: 80%;
       position: absolute;
-      background: rgb(38, 38, 38);
-      background: radial-gradient(
-        circle,
-        rgba(38, 38, 38, 1) 0%,
-        rgba(252, 70, 107, 0) 60%
-      );
-    }
-
-    .CEC5 span {
-      position: absolute;
-      font-size: 2.8em;
-      line-height: 0;
-      right: 10px;
-      transform: rotate(8deg);
+      right: 0;
+      bottom: 0;
+      transform: rotate(12deg);
     }
   }
 }
