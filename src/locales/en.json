@@ -10,7 +10,10 @@
     "t-shirt": "T-shirt of the association",
     "members": "The members of the association"
   },
-  "contact": "Contact",
+  "contact": {
+    "self": "Contact",
+    "us": "Contact us"
+  },
   "copyright": "All rights reserved",
   "site-map": "Site Map",
   "legal-info": "Legal information",

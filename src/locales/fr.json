@@ -10,7 +10,10 @@
     "t-shirt": "T-shirt de l'association",
     "members": "Les membres de l'association"
   },
-  "contact": "Contact",
+  "contact": {
+    "self": "Contact",
+    "us": "Nous contacter"
+  },
   "copyright": "Tous droits réservés",
   "site-map": "Plan du site",
   "legal-info": "Mentions légales",

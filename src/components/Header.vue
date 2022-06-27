@@ -23,7 +23,7 @@
           <router-link to="/#association">{{
             $t("association.self", 1)
           }}</router-link>
-          <router-link to="/#contact">{{ $t("contact") }}</router-link>
+          <router-link to="/#contact">{{ $t("contact.self") }}</router-link>
         </nav>
 
         <!-- Navigation Mobile -->
