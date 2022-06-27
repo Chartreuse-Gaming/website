@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>
+    <div class="content">
       <section>
         <p>
           &copy; {{ current_year }}
@@ -42,10 +42,8 @@ footer {
   align-items: center;
 
   div {
-    margin: 0 auto;
-    max-width: 1400px;
+    padding: 0;
     height: inherit;
-    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
