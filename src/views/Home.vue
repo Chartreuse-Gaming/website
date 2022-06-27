@@ -326,8 +326,8 @@ export default {
     width: 100%;
     height: calc(100% + 1px);
     @include box-shadow(
-      inset 0 175px 180px 0px rgb(38, 38, 38),
-      inset 0 -175px 90px -30px rgb(38, 38, 38)
+      inset 0 175px 180px 0 var(--bg-color),
+      inset 0 -175px 90px -30px var(--bg-color)
     );
   }
 
@@ -499,8 +499,8 @@ export default {
 
   & > i {
     @include box-shadow(
-      inset 0 100px 50px -30px rgb(38, 38, 38),
-      inset 0 -100px 50px -30px rgb(38, 38, 38)
+      inset 0 100px 50px -30px var(--bg-color),
+      inset 0 -100px 50px -30px var(--bg-color)
     );
     z-index: -1;
     position: absolute;
