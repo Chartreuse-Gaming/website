@@ -117,29 +117,141 @@
       <!--<router-link to="/" class="btn">{{ $t("load-more") }}</router-link>-->
     </article>
 
-    <article id="association">
-      <img
-        src="@/assets/img/Tshirt.jpg"
-        :alt="$t('association.t-shirt') + '.'"
-      />
-      <i></i>
-      <section class="content">
-        <h2>{{ $t("association.self", 2) }}</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <img
-            src="@/assets/img/Members.jpg"
-            :alt="$t('association.members') + '.'"
-          />
-        </div>
+    <article
+      id="association"
+      v-observe-visibility="{
+        callback: visibilityAssociation,
+        intersection: {
+          rootMargin: '-300px',
+        },
+      }"
+    >
+      <section id="description">
+        <img
+          src="@/assets/img/Tshirt.jpg"
+          :alt="$t('association.t-shirt') + '.'"
+        />
+        <i></i>
+        <article class="content">
+          <h2>
+            {{ $t("association.self", 2) }}
+          </h2>
+          <section>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <img
+              src="@/assets/img/Members.jpg"
+              :alt="$t('association.members') + '.'"
+            />
+          </section>
+        </article>
+      </section>
+
+      <section id="history" class="content">
+        <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
+        <article>
+          <font-awesome-icon icon="fa-solid fa-caret-up" />
+          <section>
+            <article>
+              <header>
+                2022
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  Neque sunt voluptatibus repellat pariatur ut enim. Eveniet
+                  rerum suscipit eveniet amet dignissimos. Doloremque et
+                  distinctio quod molestiae ut.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header>
+                2021
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  Quo nobis cumque dolor iure voluptatem voluptatem alias
+                  soluta.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header class="big">
+                2020
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  Rerum sit libero possimus amet excepturi. Exercitationem enim
+                  dolores sunt praesentium dolorum praesentium.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header>
+                2019
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  Voluptatibus veniam ea reprehenderit atque. Reiciendis non
+                  laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae
+                  velit. Omnis libero nostrum aperiam nemo dolor ea eos eius.
+                  Esse a non itaque quidem.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header>
+                2018
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  VAdipisci totam omnis cum et suscipit excepturi et excepturi.
+                  Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header class="big">
+                2017
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>
+                  Impedit dolorem commodi explicabo fugit aut alias voluptatem.
+                  Magnam earum rerum quae dicta quibusdam aliquam ut.
+                </p>
+              </section>
+            </article>
+            <article>
+              <header>
+                2016
+                <i></i>
+              </header>
+              <section>
+                <h3>Titre de section</h3>
+                <p>Qui facere eos aut suscipit doloremque quos...</p>
+              </section>
+            </article>
+          </section>
+        </article>
       </section>
     </article>
 
@@ -535,7 +647,7 @@ export default {
   }
 }
 
-#association {
+#description {
   position: relative;
 
   & > img {
@@ -567,7 +679,7 @@ export default {
     text-transform: uppercase;
   }
 
-  section div {
+  article section {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -615,7 +727,7 @@ export default {
     }
   }
 
-  section {
+  article {
     &:before {
       content: "";
       position: absolute;
@@ -634,7 +746,7 @@ export default {
       transform: scaleY(1.4);
     }
 
-    article section {
+    section article {
       width: calc(50% - 50px);
       float: left;
       padding: 26px 0;
@@ -704,7 +816,7 @@ export default {
         }
       }
 
-      div {
+      section {
         h3 {
           text-transform: uppercase;
           margin-bottom: 10px;
@@ -836,12 +948,12 @@ export default {
     text-align: center;
   }
 
-  #association {
+  #description article {
     h2 {
       position: relative !important;
     }
 
-    p {
+    section p {
       margin-top: 12px !important;
     }
   }
@@ -852,7 +964,7 @@ export default {
       bottom: -120px;
     }
 
-    section {
+    article {
       &:before {
         left: 27px;
       }
@@ -861,7 +973,7 @@ export default {
         left: 18px;
       }
 
-      article section {
+      section article {
         width: calc(100% - 46px) !important;
         float: right !important;
         text-align: left !important;
