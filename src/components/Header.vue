@@ -85,11 +85,6 @@ export default {
       }
     };
   },
-  watch: {
-    navbar: function (value) {
-      console.log(value);
-    },
-  },
 };
 </script>
 
