@@ -70,7 +70,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1400px;
-  padding: 50px 18px;
+  padding: 40px 18px;
 }
 
 .btn {

@@ -597,7 +597,6 @@ export default {
 #history {
   position: relative;
   overflow: hidden;
-  padding: 40px 18px;
 
   & > img {
     width: 34%;
