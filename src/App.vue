@@ -93,6 +93,11 @@ body {
   &:hover {
     transform: scale(1.05);
   }
+
+  @media only screen and (max-width: 450px) {
+    width: 100% !important;
+    padding: 10px 12px !important;
+  }
 }
 
 .hidden {

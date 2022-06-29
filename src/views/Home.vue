@@ -345,6 +345,7 @@ export default {
       display: flex;
       flex-flow: column nowrap;
       gap: 4px;
+      padding-left: 16px;
 
       & > p:first-of-type {
         color: var(--subtext-color);
@@ -393,6 +394,48 @@ export default {
         right: 10px;
         transform: rotate(8deg);
       }
+
+      @media only screen and (max-width: 1300px) {
+        bottom: 16%;
+
+        & > p:first-of-type {
+          color: var(--subtext-color);
+          font-size: 1.2em;
+          text-shadow: 0 0 8px rgb(0, 0, 0);
+        }
+
+        & > p:last-of-type {
+          position: relative;
+          font-size: 3em;
+          text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+          text-transform: uppercase;
+          font-family: var(--title-font);
+          font-weight: bold;
+        }
+      }
+
+      @media only screen and (max-width: 450px) {
+        width: 100%;
+        height: calc(100% - 170px);
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+
+        & > p:first-of-type {
+          color: var(--subtext-color);
+          font-size: 1.1em;
+          text-shadow: 0 0 8px rgb(0, 0, 0);
+        }
+
+        & > p:last-of-type {
+          position: relative;
+          font-size: 2.4em;
+          text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+          text-transform: uppercase;
+          font-family: var(--title-font);
+          font-weight: bold;
+        }
+      }
     }
 
     img {
@@ -425,7 +468,7 @@ export default {
     margin-bottom: 16px;
 
     a {
-      flex-basis: calc(100% / 3 - 20px);
+      flex: 1 1 calc(100% / 3 - 20px);
       text-decoration: none;
       color: var(--text-color);
       font-size: 1.2em;
@@ -480,6 +523,14 @@ export default {
       &:hover span i {
         transform: rotate(-5deg);
       }
+
+      @media only screen and (max-width: 920px) {
+        flex-basis: calc(100% / 2 - 20px);
+      }
+
+      @media only screen and (max-width: 540px) {
+        flex-basis: 100%;
+      }
     }
   }
 }
@@ -492,7 +543,7 @@ export default {
     z-index: -2;
     position: absolute;
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center bottom;
   }
@@ -533,6 +584,12 @@ export default {
       aspect-ratio: 16/9;
       border-radius: 8px;
       box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+
+      @media only screen and (max-width: 900px) {
+        & {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -544,10 +601,11 @@ export default {
 
   & > img {
     width: 34%;
+    min-width: 400px;
     z-index: 1;
     position: absolute;
     left: 3vw;
-    bottom: -11vw;
+    bottom: -150px;
     opacity: 0.04;
     transform: rotate(-20deg);
 
@@ -755,7 +813,94 @@ export default {
             color: var(--subtext-color);
           }
         }
+
+        @media only screen and (max-width: 350px) {
+          padding: 5vw;
+        }
       }
+    }
+  }
+
+  @media only screen and (max-width: 920px) {
+    section {
+      flex-wrap: wrap;
+
+      div {
+        flex: 1 0 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+
+  #association {
+    h2 {
+      position: relative !important;
+    }
+
+    p {
+      margin-top: 12px !important;
+    }
+  }
+
+  #history {
+    & > img {
+      min-width: 300px;
+      bottom: -120px;
+    }
+
+    section {
+      &:before {
+        left: 27px;
+      }
+
+      & > svg {
+        left: 18px;
+      }
+
+      article section {
+        width: calc(100% - 46px) !important;
+        float: right !important;
+        text-align: left !important;
+
+        &:not(:first-child) {
+          margin-top: -20px !important;
+        }
+
+        header {
+          flex-flow: row nowrap !important;
+
+          i:before {
+            left: -38px !important;
+          }
+
+          &:before {
+            left: -44px !important;
+          }
+
+          &.big {
+            &:before {
+              transform: translate(-6px, -50%);
+            }
+
+            i:before {
+              left: -44px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contact section div {
+    flex: 1 0 100%;
+
+    span a {
+      padding: 20px;
     }
   }
 }
