@@ -274,14 +274,14 @@
             38000 Grenoble
           </p>
         </div>
-        <div>
+        <a href="tel:+33123456789">
           <font-awesome-icon icon="fa-solid fa-phone" />
           <p>+331 23 45 67 89</p>
-        </div>
-        <div>
+        </a>
+        <a href="mailto:ChartreuseGGaming@gmail.com">
           <font-awesome-icon icon="fa-solid fa-envelope" />
           <p>ChartreuseGGaming@gmail.com</p>
-        </div>
+        </a>
         <div>
           <font-awesome-icon icon="fa-solid fa-share-nodes" />
           <span>
@@ -809,7 +809,7 @@ export default {
     flex-wrap: wrap;
     align-items: flex-start;
 
-    div {
+    & > * {
       flex: 1 0 0;
       display: flex;
       flex-flow: column nowrap;
@@ -818,6 +818,8 @@ export default {
       gap: 16px;
       text-align: center;
       padding: 16px;
+      color: white;
+      text-decoration: none;
 
       & > * {
         height: 50px;
