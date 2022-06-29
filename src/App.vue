@@ -1,6 +1,6 @@
 <template>
-  <Header />
-  <router-view />
+  <Header :navbar="element" />
+  <router-view @navbar="elements" />
   <Footer />
 </template>
 
@@ -12,6 +12,22 @@ export default {
   components: {
     Header,
     Footer,
+  },
+  data() {
+    return {
+      element: "home",
+    };
+  },
+  methods: {
+    elements(payload) {
+      if (payload.elements.contact) {
+        this.element = "contact";
+      } else if (payload.elements.association) {
+        this.element = "association";
+      } else {
+        this.element = "home";
+      }
+    },
   },
 };
 </script>

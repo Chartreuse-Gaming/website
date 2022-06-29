@@ -255,106 +255,16 @@
       </section>
     </article>
 
-    <article id="history" class="content">
-      <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
-      <section>
-        <font-awesome-icon icon="fa-solid fa-caret-up" />
-        <article>
-          <section>
-            <header>
-              2022
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum
-                suscipit eveniet amet dignissimos. Doloremque et distinctio quod
-                molestiae ut.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header>
-              2021
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header class="big">
-              2020
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                Rerum sit libero possimus amet excepturi. Exercitationem enim
-                dolores sunt praesentium dolorum praesentium.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header>
-              2019
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                Voluptatibus veniam ea reprehenderit atque. Reiciendis non
-                laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae
-                velit. Omnis libero nostrum aperiam nemo dolor ea eos eius. Esse
-                a non itaque quidem.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header>
-              2018
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                VAdipisci totam omnis cum et suscipit excepturi et excepturi.
-                Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header class="big">
-              2017
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>
-                Impedit dolorem commodi explicabo fugit aut alias voluptatem.
-                Magnam earum rerum quae dicta quibusdam aliquam ut.
-              </p>
-            </div>
-          </section>
-          <section>
-            <header>
-              2016
-              <i></i>
-            </header>
-            <div>
-              <h3>Titre de section</h3>
-              <p>Qui facere eos aut suscipit doloremque quos...</p>
-            </div>
-          </section>
-        </article>
-      </section>
-    </article>
-
-    <article id="contact" class="content">
+    <article
+      id="contact"
+      class="content"
+      v-observe-visibility="{
+        callback: visibilityContact,
+        intersection: {
+          rootMargin: '-150px',
+        },
+      }"
+    >
       <h2>{{ $t("contact.us") }}</h2>
       <section>
         <div>
@@ -401,6 +311,10 @@ export default {
   name: "HomeView",
   data() {
     return {
+      visibility: {
+        association: false,
+        contact: false,
+      },
       options: {
         type: "loop",
         rewind: true,
@@ -416,6 +330,16 @@ export default {
         interval: 7200,
       },
     };
+  },
+  methods: {
+    visibilityAssociation(isVisible) {
+      this.visibility.association = isVisible;
+      this.$emit("navbar", { elements: this.visibility });
+    },
+    visibilityContact(isVisible) {
+      this.visibility.contact = isVisible;
+      this.$emit("navbar", { elements: this.visibility });
+    },
   },
 };
 </script>

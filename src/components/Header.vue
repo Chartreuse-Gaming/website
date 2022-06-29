@@ -12,18 +12,26 @@
 
         <!-- Navigation PC -->
         <nav id="nav-pc">
-          <router-link to="/" :class="$route.path === '/' ? 'current' : ''">{{
-            $t("home")
-          }}</router-link>
+          <router-link
+            to="/"
+            :class="$route.path === '/' && navbar === 'home' ? 'current' : ''"
+            >{{ $t("home") }}</router-link
+          >
           <router-link to="/">
             {{ $t("tournaments.self") }}
             <font-awesome-icon icon="fa-solid fa-sort-down" />
             <!-- TODO: Tournament dropdown -->
           </router-link>
-          <router-link to="/#association">{{
-            $t("association.self", 1)
-          }}</router-link>
-          <router-link to="/#contact">{{ $t("contact.self") }}</router-link>
+          <router-link
+            to="/#association"
+            :class="navbar === 'association' ? 'current' : ''"
+            >{{ $t("association.self", 1) }}</router-link
+          >
+          <router-link
+            to="/#contact"
+            :class="navbar === 'contact' ? 'current' : ''"
+            >{{ $t("contact.self") }}</router-link
+          >
         </nav>
 
         <!-- Navigation Mobile -->
@@ -66,6 +74,7 @@
 <script>
 export default {
   name: "HeaderComponent",
+  props: ["navbar"],
   mounted() {
     const header = document.getElementsByTagName("header")[0];
     window.onscroll = function () {
@@ -75,6 +84,11 @@ export default {
         header.classList.remove("scroll");
       }
     };
+  },
+  watch: {
+    navbar: function (value) {
+      console.log(value);
+    },
   },
 };
 </script>
