@@ -4,6 +4,7 @@ import router from "./router";
 import i18n from "./i18n";
 import VueSplide from "@splidejs/vue-splide";
 import VueObserveVisibility from "vue-observe-visibility";
+import titleMixin from "./titleMixin";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
@@ -50,4 +51,5 @@ createApp(App)
   .use(i18n)
   .use(router)
   .use(VueObserveVisibility)
+  .mixin(titleMixin)
   .mount("#app");

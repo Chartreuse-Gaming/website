@@ -33,6 +33,9 @@ import Contact from "@/components/home/contact";
 
 export default {
   name: "HomeView",
+  title() {
+    return this.$t("home");
+  },
   components: {
     Carousel,
     OldTournament,
