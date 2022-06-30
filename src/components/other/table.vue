@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="content">
     <header>
       <div>
         <h2>{{ $t("ranking") }}</h2>
@@ -114,7 +114,12 @@ export default {
 @import "node_modules/compass-mixins/lib/compass/css3";
 
 article {
+  padding: 0;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+
   header {
+    z-index: 1;
     position: relative;
     height: 128px;
 
@@ -156,7 +161,7 @@ article {
   }
 
   section {
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
 
     ul {

@@ -60,26 +60,15 @@
         </p>
       </article>
 
-      <Table
-        class="content"
-        img="Rocket_League"
-        alt="Rocket League"
-        :data="data.rl"
-      />
+      <Table img="Rocket_League" alt="Rocket League" :data="data.rl" />
 
       <Table
-        class="content"
         img="CSGO"
         alt="Counter Strike: Global Offensive"
         :data="data.cs"
       />
 
-      <Table
-        class="content"
-        img="League_of_Legends"
-        alt="League of Legends"
-        :data="data.lol"
-      />
+      <Table img="League_of_Legends" alt="League of Legends" :data="data.lol" />
     </div>
   </main>
 </template>
