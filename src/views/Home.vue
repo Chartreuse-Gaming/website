@@ -423,12 +423,16 @@ export default {
         );
       }
 
-      .CEC5 span {
-        position: absolute;
-        font-size: 2.8em;
-        line-height: 0;
-        right: 10px;
-        transform: rotate(8deg);
+      .CEC5 {
+        text-align: left !important;
+
+        span {
+          position: absolute;
+          font-size: 2.8em;
+          line-height: 0;
+          right: 10px;
+          transform: rotate(8deg);
+        }
       }
 
       @media only screen and (max-width: 1300px) {
@@ -455,6 +459,7 @@ export default {
         height: calc(100% - 170px);
         align-items: center;
         justify-content: center;
+        text-align: center;
         padding: 0 16px;
 
         & > p:first-of-type {
