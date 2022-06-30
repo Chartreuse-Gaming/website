@@ -7,14 +7,14 @@
           <i></i>
           <article>
             <section>
-              <p>22 - 23 Octobre 2021</p>
+              <p>{{ $t("date.CEC5") }}</p>
               <p class="CEC5">
                 Chartreuse<br />
                 Esport<br />
                 Contest <span>5</span>
               </p>
               <router-link to="/" class="btn">
-                En savoir plus
+                {{ $t("read-more") }}
                 <font-awesome-icon icon="fa-solid fa-right-long" />
               </router-link>
               <i></i>
