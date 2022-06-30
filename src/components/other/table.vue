@@ -144,7 +144,7 @@ article {
     }
 
     & > img {
-      border-radius: 8px;
+      border-radius: 8px 8px 0 0;
       z-index: -2;
       position: absolute;
       top: 0;
@@ -156,11 +156,15 @@ article {
   }
 
   section {
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+
     ul {
       overflow-x: hidden;
       overflow-y: overlay;
       max-height: 350px;
       list-style: none;
+      border-radius: 0 0 8px 8px;
 
       li {
         padding: 14px 30px 14px 14px;
