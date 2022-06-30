@@ -908,11 +908,31 @@ export default {
 
   @media only screen and (max-width: 920px) {
     section {
-      flex-wrap: wrap;
+      justify-content: space-between;
 
-      div {
-        flex: 1 0 50%;
+      & > * {
+        max-width: 340px;
+        flex-direction: row;
+        flex: 1 0 calc(50% - 20px);
+
+        &:last-child span {
+          width: 100%;
+          justify-content: center;
+        }
+
+        p {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    section > * {
+      flex-direction: column;
     }
   }
 }
@@ -920,6 +940,10 @@ export default {
 @media only screen and (max-width: 600px) {
   h2 {
     text-align: center;
+  }
+
+  #carousel article section i {
+    opacity: 0.7;
   }
 
   #description article {
@@ -981,8 +1005,13 @@ export default {
     }
   }
 
-  #contact section div {
-    flex: 1 0 100%;
+  #contact section {
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      flex: 1 0 100%;
+    }
 
     span a {
       padding: 20px;
