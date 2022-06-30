@@ -2,7 +2,7 @@
   <article id="association">
     <section id="description">
       <img
-        src="@/assets/img/Tshirt.webp"
+        src="@/assets/img/association/Tshirt.webp"
         :alt="$t('association.t-shirt') + '.'"
       />
       <i></i>
@@ -21,7 +21,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <img
-            src="@/assets/img/Members.webp"
+            src="@/assets/img/association/Members.webp"
             :alt="$t('association.members') + '.'"
           />
         </section>
