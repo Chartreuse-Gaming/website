@@ -80,6 +80,14 @@ body {
   main:first-of-type {
     margin-top: -90px;
   }
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
 }
 
 .content {
