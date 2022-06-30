@@ -53,13 +53,6 @@ article {
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
 
-  h2 {
-    font-size: 1.6em;
-    margin-bottom: 12px;
-    font-family: var(--title-font);
-    text-transform: uppercase;
-  }
-
   section {
     display: flex;
     flex-wrap: wrap;

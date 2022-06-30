@@ -88,6 +88,21 @@ body {
     -o-user-drag: none;
     user-drag: none;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 16px;
+  }
 }
 
 .content {

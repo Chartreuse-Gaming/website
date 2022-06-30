@@ -164,10 +164,7 @@ export default {
   }
 
   h2 {
-    font-size: 1.6em;
     position: absolute;
-    font-family: var(--title-font);
-    text-transform: uppercase;
   }
 
   article section {

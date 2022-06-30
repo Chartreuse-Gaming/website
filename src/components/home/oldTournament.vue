@@ -95,13 +95,6 @@ export default {
 article {
   padding-top: 16px;
 
-  h2 {
-    font-size: 1.6em;
-    margin-bottom: 16px;
-    font-family: var(--title-font);
-    text-transform: uppercase;
-  }
-
   section {
     display: flex;
     flex-wrap: wrap;
