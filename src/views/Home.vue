@@ -29,6 +29,49 @@
             alt="Chartreuse Esport Contest 5"
           />
         </SplideSlide>
+        <SplideSlide>
+          <i></i>
+          <article>
+            <section>
+              <p>{{ $t("date.CEC5") }}</p>
+              <p class="CEC5">
+                Chartreuse<br />
+                Esport<br />
+                Contest <span>3</span>
+              </p>
+              <router-link to="/" class="btn">
+                {{ $t("read-more") }}
+                <font-awesome-icon icon="fa-solid fa-right-long" />
+              </router-link>
+              <i></i>
+            </section>
+          </article>
+          <img
+            src="@/assets/img/carousel/CEC_5.jpg"
+            alt="Chartreuse Esport Contest 5"
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <i></i>
+          <article>
+            <section>
+              <p>{{ $t("date.CEC5") }}</p>
+              <p>
+                CGW :<br />
+                Crous Édition
+              </p>
+              <router-link to="/" class="btn">
+                {{ $t("read-more") }}
+                <font-awesome-icon icon="fa-solid fa-right-long" />
+              </router-link>
+              <i></i>
+            </section>
+          </article>
+          <img
+            src="@/assets/img/carousel/CEC_5.jpg"
+            alt="Chartreuse Esport Contest 5"
+          />
+        </SplideSlide>
       </Splide>
     </article>
 
