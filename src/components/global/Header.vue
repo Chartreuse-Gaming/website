@@ -14,7 +14,9 @@
         <nav id="nav-pc">
           <router-link
             to="/"
-            :class="$route.path === '/' && navbar === 'home' ? 'current' : ''"
+            :class="
+              $route.path === '/' && current_link === 'home' ? 'current' : ''
+            "
             >{{ $t("home") }}</router-link
           >
           <router-link to="/">
@@ -24,12 +26,12 @@
           </router-link>
           <router-link
             to="/#association"
-            :class="navbar === 'association' ? 'current' : ''"
+            :class="current_link === 'association' ? 'current' : ''"
             >{{ $t("association.self", 1) }}</router-link
           >
           <router-link
             to="/#contact"
-            :class="navbar === 'contact' ? 'current' : ''"
+            :class="current_link === 'contact' ? 'current' : ''"
             >{{ $t("contact.self") }}</router-link
           >
         </nav>
@@ -74,7 +76,7 @@
 <script>
 export default {
   name: "HeaderComponent",
-  props: ["navbar"],
+  props: ["current_link"],
   mounted() {
     const header = document.getElementsByTagName("header")[0];
     window.onscroll = function () {
@@ -89,7 +91,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "node_modules/compass-mixins/lib/compass/css3";
+@import "../../../node_modules/compass-mixins/lib/compass/css3";
 $header-height: 90px;
 
 .scroll {

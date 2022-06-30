@@ -1,12 +1,12 @@
 <template>
-  <Header :navbar="element" />
+  <Header :current_link="element" />
   <router-view @navbar="elements" />
   <Footer />
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
 
 export default {
   components: {
@@ -120,7 +120,7 @@ body {
   display: none !important;
 }
 
-#carousel .splide__pagination {
+.splide .splide__pagination {
   bottom: 40px !important;
   gap: 6px;
 
@@ -132,6 +132,12 @@ body {
     &.is-active {
       background: var(--green-touch) !important;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
   }
 }
 </style>
