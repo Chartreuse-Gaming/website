@@ -18,12 +18,12 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC_5_logo.png"
+            src="@/assets/img/carousel/CEC_5_logo.webp"
             alt="Logo Chartreuse Esport Contest 5"
           />
         </article>
         <img
-          src="@/assets/img/carousel/CEC_5.jpg"
+          src="@/assets/img/carousel/CEC_5.webp"
           alt="Chartreuse Esport Contest 5"
         />
       </SplideSlide>
@@ -45,7 +45,7 @@
           </section>
         </article>
         <img
-          src="@/assets/img/carousel/CEC_5.jpg"
+          src="@/assets/img/carousel/CEC_5.webp"
           alt="Chartreuse Esport Contest 5"
         />
       </SplideSlide>
@@ -66,7 +66,7 @@
           </section>
         </article>
         <img
-          src="@/assets/img/carousel/CEC_5.jpg"
+          src="@/assets/img/carousel/CEC_5.webp"
           alt="Chartreuse Esport Contest 5"
         />
       </SplideSlide>

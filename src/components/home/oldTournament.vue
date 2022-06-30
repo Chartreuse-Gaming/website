@@ -5,7 +5,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_5.jpg"
+            src="@/assets/img/tournaments/CEC_5.webp"
             alt="Chartreuse Esport Contest 5"
           />
           <span>
@@ -18,7 +18,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/CGW_Crous.jpg"
+            src="@/assets/img/tournaments/CGW_Crous.webp"
             alt="Campus Games Week : Crous Edition"
           />
           <span>
@@ -31,7 +31,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/CGW_Grenoble.jpg"
+            src="@/assets/img/tournaments/CGW_Grenoble.webp"
             alt="Campus Games Week : Grenoble Edition"
           />
           <span>
@@ -44,7 +44,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_4.jpg"
+            src="@/assets/img/tournaments/CEC_4.webp"
             alt="Chartreuse Esport Contest 4 Online"
           />
           <span>
@@ -57,7 +57,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/SJV.jpg"
+            src="@/assets/img/tournaments/SJV.webp"
             alt="Salon du Jeu Vidéo"
           />
           <span>
@@ -70,7 +70,7 @@
       <router-link to="/">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_3.jpg"
+            src="@/assets/img/tournaments/CEC_3.webp"
             alt="Chartreuse Esport Contest 3"
           />
           <span>
