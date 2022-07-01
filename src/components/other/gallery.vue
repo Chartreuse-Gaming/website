@@ -20,6 +20,7 @@
       :directory="directory"
       :timeout-duration="1200"
       :close-on-backdrop-click="true"
+      @on-lightbox-close="onLightboxClose"
     />
   </article>
 </template>
@@ -33,9 +34,18 @@ export default {
   components: {
     Lightbox,
   },
+  data() {
+    return {
+      body: document.getElementsByTagName("body")[0],
+    };
+  },
   methods: {
     showLightbox: function (imageName) {
+      this.body.style.overflow = "hidden";
       this.$refs.lightbox.show(imageName);
+    },
+    onLightboxClose() {
+      this.body.style.overflow = "overlay";
     },
   },
 };
