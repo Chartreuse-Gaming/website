@@ -103,26 +103,21 @@ export default {
           },
           {
             id: 2,
+            name: "Adamya",
+            players: ["Snama23", "AYTE", "Kaoup"],
+          },
+          {
+            id: 3,
+            name: "-Smoken Esport-",
+            players: ["NeferoClear", "6Six6", "NoX TV_RL"],
+          },
+          {
+            id: 4,
             name: "GratianoPolis Squad",
             players: ["Ancelin", "Naïto", "Seillama"],
           },
           {
-            id: 3,
-            name: "Chartreuse Gaming",
-            players: ["Myself Fake", "Neko", "Olirus"],
-          },
-          {
-            id: 4,
-            name: "Adamya",
-            players: ["Snama", "AYTE", "Kaoup"],
-          },
-          {
             id: 5,
-            name: "Smoken Esport",
-            players: ["NeferoClear", "6six6", "Nox tv rl"],
-          },
-          {
-            id: 6,
             name: "Monique Ranou United",
             players: [
               "Boeuf bourguignon",
@@ -139,6 +134,21 @@ export default {
           },
           {
             id: 2,
+            name: "JPGam1ng_",
+            players: ["ArKa0s", "Sauli", "BaronVanWaffeln", "wArth", "tEKOS-"],
+          },
+          {
+            id: 3,
+            name: "23H.Max",
+            players: ["NES", "FoxSnb", "Asuny", "AD", "REMS1337"],
+          },
+          {
+            id: 4,
+            name: "30 y/o Talent",
+            players: ["_k1v", "oRo`", "JavierZ04", "votreDaron", "PowA"],
+          },
+          {
+            id: 5,
             name: "BTR",
             players: [
               "GaaTho",
@@ -149,66 +159,22 @@ export default {
               "sheepfoof",
             ],
           },
-          {
-            id: 3,
-            name: "30 y/o Talent",
-            players: ["_k1v", "oRo`", "JavierZ04", "votreDaron", "PowA"],
-          },
-          {
-            id: 4,
-            name: "GHB Crew/AS",
-            players: [
-              "TTarKKen",
-              "GCK Desert Raven",
-              "Hit And Dunk",
-              "Tissma",
-              "NΛwacK",
-            ],
-          },
-          {
-            id: 5,
-            name: "23H.Max",
-            players: ["NES", "FoxSnb", "Asuny", "AD", "REMS1337"],
-          },
-          {
-            id: 6,
-            name: "JPGam1ng_",
-            players: ["ArKa0s", "Sauli", "BaronVanWaffeln", "wArth", "tEKOS-"],
-          },
         ],
         lol: [
           {
             id: 1,
             name: "QTBG",
-            players: [
-              "UnDé",
-              "QTBG Popotam",
-              "QTBG Choub",
-              "Qtbg toinankam",
-              "eBoy",
-            ],
+            players: ["UnDé", "Popotam", "Choub", "Toinankam", "eBoy"],
           },
           {
             id: 2,
-            name: "Flash In For Scuttle",
-            players: [
-              "A Well of Pain",
-              "Gyndared",
-              "Averose",
-              "VVinner",
-              "FromZeroTwoHiro",
-            ],
+            name: "Flash in for scuttle",
+            players: ["Kaw", "Gyndared", "Averose", "VVinner", "RÛVËN"],
           },
           {
             id: 3,
             name: "Ekinox",
-            players: [
-              "Ekx sukyos",
-              "EKX Xenot",
-              "EKX Veka",
-              "Koba La Ducs",
-              "Bardukin",
-            ],
+            players: ["Sukyos", "Xenot", "Veka", "Koba la Ducs", "Bardukin"],
           },
           {
             id: 4,
@@ -216,9 +182,9 @@ export default {
             players: [
               "TTarKKen",
               "GCK Desert Raven",
-              "Hit And Dunk",
+              "Sacus",
               "Tissma",
-              "NΛwacK",
+              "NAWACK",
             ],
           },
           {
@@ -226,20 +192,20 @@ export default {
             name: "On S'lave Pas",
             players: [
               "ArtikTonik",
-              "ptit coquin",
-              "redcraft385",
+              "odalrick",
+              "Redcraft385",
               "Winstaff",
-              "DarkSamsuke",
+              "Darksamsuke",
             ],
           },
           {
             id: 5,
             name: "VGY CORP",
             players: [
-              "Taonat",
-              "Fouattapata",
-              "MARKSMAN ΟNLY",
-              "Δ lee sin",
+              "Xwortex Gamers",
+              "Ratila",
+              "MARKSMAN ÎŸNLY",
+              "ShirÃ¸",
               "Hitch",
             ],
           },
@@ -248,21 +214,22 @@ export default {
             name: "Les Bûches",
             players: [
               "Shownt",
-              "Yzbog",
+              "YzBog",
               "Loonzerra",
-              "KUINNPEMBE",
-              "GOULEXYEYZE",
+              "Oxyde-Neotik",
+              "GouleXYZ",
             ],
           },
           {
             id: 7,
             name: "Hardstuck (Step) Bros",
             players: [
-              "Clooooud",
+              "Cloud",
               "Guybze",
               "ArreZA",
-              "AR Starfly",
+              "AR_Starfly",
               "Lbiactuois",
+              "KyBaZ",
             ],
           },
         ],
