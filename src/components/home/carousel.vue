@@ -6,7 +6,7 @@
         <article>
           <section>
             <p>{{ $t("date.CEC5") }}</p>
-            <p class="CEC5">
+            <p class="CEC">
               Chartreuse<br />
               Esport<br />
               Contest <span>5</span>
@@ -32,7 +32,7 @@
         <article>
           <section>
             <p>{{ $t("date.CEC4") }}</p>
-            <p class="CEC4">
+            <p id="CEC4" class="CEC">
               Chartreuse<br />
               Esport<br />
               Contest <span>4</span>
@@ -59,7 +59,7 @@
         <article>
           <section>
             <p>{{ $t("date.CEC3") }}</p>
-            <p class="CEC5">
+            <p class="CEC">
               Chartreuse<br />
               Esport<br />
               Contest <span>3</span>
@@ -193,7 +193,7 @@ article {
         }
       }
 
-      .CEC5 {
+      .CEC {
         text-align: left !important;
 
         span {
@@ -202,6 +202,42 @@ article {
           line-height: 0;
           right: 10px;
           transform: rotate(8deg);
+        }
+      }
+
+      #CEC4 {
+        span:first-of-type {
+          right: 0;
+        }
+
+        span:last-of-type {
+          font-size: 0.6em;
+          top: 0;
+          right: -50px;
+
+          &:before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            border-radius: 8px;
+            background-color: var(--bg-color);
+            border: 2px solid var(--green-touch);
+            height: 46px;
+            top: -25px;
+            left: -11px;
+            width: 160px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+
+            @media only screen and (max-width: 1300px) {
+              height: 40px;
+              top: -22px;
+              width: 136px;
+            }
+          }
+
+          @media only screen and (max-width: 450px) {
+            display: none;
+          }
         }
       }
 
