@@ -65,7 +65,7 @@
       <Table
         img="CSGO"
         alt="Counter Strike: Global Offensive"
-        :data="ranking.rl"
+        :data="ranking.cs"
       />
 
       <Table
@@ -98,46 +98,84 @@ export default {
         rl: [
           {
             id: 1,
-            name: "Équipe 1",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "Les Videurs",
+            players: ["DGZ", "FrotteMan", "Syn"],
           },
           {
             id: 2,
-            name: "Équipe 2",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "GratianoPolis Squad",
+            players: ["Ancelin", "Naïto", "Seillama"],
           },
           {
             id: 3,
-            name: "Équipe 3",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "Chartreuse Gaming",
+            players: ["Myself Fake", "Neko", "Olirus"],
           },
           {
             id: 4,
-            name: "Équipe 4",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "Adamya",
+            players: ["Snama", "AYTE", "Kaoup"],
           },
           {
             id: 5,
-            name: "Équipe 5",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "Smoken Esport",
+            players: ["NeferoClear", "6six6", "Nox tv rl"],
           },
           {
             id: 6,
-            name: "Équipe 6",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
-          },
-          {
-            id: 7,
-            name: "Équipe 7",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
-          },
-          {
-            id: 8,
-            name: "Équipe 8",
-            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+            name: "Monique Ranou United",
+            players: [
+              "Boeuf bourguignon",
+              "Calzone au four",
+              "Bavette d'aloyau",
+            ],
           },
         ],
-        // cs: "",
+        cs: [
+          {
+            id: 1,
+            name: "HuB eSport Club",
+            players: ["Etrau'D", "Sobad", "MICHOUPITCHU", "STN", "SHOGU"],
+          },
+          {
+            id: 2,
+            name: "BTR",
+            players: [
+              "GaaTho",
+              "lewe",
+              "ZAIRBOV",
+              "Huskyne",
+              "Shanks",
+              "sheepfoof",
+            ],
+          },
+          {
+            id: 3,
+            name: "30 y/o Talent",
+            players: ["_k1v", "oRo`", "JavierZ04", "votreDaron", "PowA"],
+          },
+          {
+            id: 4,
+            name: "GHB Crew/AS",
+            players: [
+              "TTarKKen",
+              "GCK Desert Raven",
+              "Hit And Dunk",
+              "Tissma",
+              "NΛwacK",
+            ],
+          },
+          {
+            id: 5,
+            name: "23H.Max",
+            players: ["NES", "FoxSnb", "Asuny", "AD", "REMS1337"],
+          },
+          {
+            id: 6,
+            name: "JPGam1ng_",
+            players: ["ArKa0s", "Sauli", "BaronVanWaffeln", "wArth", "tEKOS-"],
+          },
+        ],
         lol: [
           {
             id: 1,
