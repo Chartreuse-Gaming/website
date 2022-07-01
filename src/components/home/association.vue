@@ -1,5 +1,5 @@
 <template>
-  <article id="association">
+  <article>
     <section id="description">
       <img
         src="@/assets/img/association/Tshirt.webp"

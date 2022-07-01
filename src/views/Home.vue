@@ -6,6 +6,7 @@
     <OldTournament />
 
     <Association
+      id="association"
       v-observe-visibility="{
         callback: visibilityAssociation,
         intersection: {
@@ -15,6 +16,7 @@
     />
 
     <Contact
+      id="contact"
       v-observe-visibility="{
         callback: visibilityContact,
         intersection: {
