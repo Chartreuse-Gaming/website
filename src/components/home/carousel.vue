@@ -18,13 +18,40 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC_5_logo.webp"
+            src="@/assets/img/carousel/CEC_logo.webp"
             alt="Logo Chartreuse Esport Contest 5"
           />
         </article>
         <img
           src="@/assets/img/carousel/CEC_5.webp"
           alt="Chartreuse Esport Contest 5"
+        />
+      </SplideSlide>
+      <SplideSlide>
+        <i></i>
+        <article>
+          <section>
+            <p>{{ $t("date.CEC4") }}</p>
+            <p class="CEC4">
+              Chartreuse<br />
+              Esport<br />
+              Contest <span>4</span>
+              <span>Online</span>
+            </p>
+            <router-link :to="{ name: 'CEC4' }" class="btn">
+              {{ $t("read-more") }}
+              <font-awesome-icon icon="fa-solid fa-right-long" />
+            </router-link>
+            <i></i>
+          </section>
+          <img
+            src="@/assets/img/carousel/CEC_logo.webp"
+            alt="Chartreuse Esport Contest"
+          />
+        </article>
+        <img
+          src="@/assets/img/carousel/CEC_4.webp"
+          alt="Chartreuse Esport Contest 4 Online"
         />
       </SplideSlide>
     </Splide>
