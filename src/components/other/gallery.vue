@@ -27,6 +27,7 @@
 
 <script>
 import Lightbox from "vue-my-photos";
+import disableScroll from "disable-scroll";
 
 export default {
   name: "CEC5View",
@@ -41,10 +42,12 @@ export default {
   },
   methods: {
     showLightbox: function (imageName) {
+      disableScroll.on();
       this.body.style.overflow = "hidden";
       this.$refs.lightbox.show(imageName);
     },
     onLightboxClose() {
+      disableScroll.off();
       this.body.style.overflow = "overlay";
     },
   },
