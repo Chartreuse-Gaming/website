@@ -2,7 +2,7 @@
   <article class="content">
     <h2>{{ $t("tournaments.previous") }}</h2>
     <section>
-      <router-link to="/">
+      <router-link :to="{ name: 'CEC5' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_5.webp"

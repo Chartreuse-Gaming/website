@@ -11,7 +11,7 @@
               Esport<br />
               Contest <span>5</span>
             </p>
-            <router-link to="/" class="btn">
+            <router-link :to="{ name: 'CEC5' }" class="btn">
               {{ $t("read-more") }}
               <font-awesome-icon icon="fa-solid fa-right-long" />
             </router-link>
@@ -21,49 +21,6 @@
             src="@/assets/img/carousel/CEC_5_logo.webp"
             alt="Logo Chartreuse Esport Contest 5"
           />
-        </article>
-        <img
-          src="@/assets/img/carousel/CEC_5.webp"
-          alt="Chartreuse Esport Contest 5"
-        />
-      </SplideSlide>
-      <SplideSlide>
-        <i></i>
-        <article>
-          <section>
-            <p>{{ $t("date.CEC5") }}</p>
-            <p class="CEC5">
-              Chartreuse<br />
-              Esport<br />
-              Contest <span>3</span>
-            </p>
-            <router-link to="/" class="btn">
-              {{ $t("read-more") }}
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </router-link>
-            <i></i>
-          </section>
-        </article>
-        <img
-          src="@/assets/img/carousel/CEC_5.webp"
-          alt="Chartreuse Esport Contest 5"
-        />
-      </SplideSlide>
-      <SplideSlide>
-        <i></i>
-        <article>
-          <section>
-            <p>{{ $t("date.CEC5") }}</p>
-            <p>
-              CGW :<br />
-              Crous Édition
-            </p>
-            <router-link to="/" class="btn">
-              {{ $t("read-more") }}
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </router-link>
-            <i></i>
-          </section>
         </article>
         <img
           src="@/assets/img/carousel/CEC_5.webp"

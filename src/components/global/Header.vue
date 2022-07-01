@@ -13,13 +13,16 @@
         <!-- Navigation PC -->
         <nav id="nav-pc">
           <router-link
-            to="/"
+            :to="{ name: 'home' }"
             :class="
               $route.path === '/' && current_link === 'home' ? 'current' : ''
             "
             >{{ $t("home") }}</router-link
           >
-          <router-link to="/">
+          <router-link
+            to="/"
+            :class="$route.path.startsWith('/tournament/') ? 'current' : ''"
+          >
             {{ $t("tournaments.self") }}
             <font-awesome-icon icon="fa-solid fa-sort-down" />
             <!-- TODO: Tournament dropdown -->

@@ -12,7 +12,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/CEC5",
+    path: "/tournament/CEC5",
     name: "CEC5",
     component: () => import(/* webpackChunkName: "CEC5" */ "../views/CEC5.vue"),
   },
