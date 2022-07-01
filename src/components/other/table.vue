@@ -114,7 +114,7 @@ export default {
 @import "node_modules/compass-mixins/lib/compass/css3";
 
 article {
-  padding: 0;
+  padding: 0 18px;
   margin: 0 auto 40px;
   border-radius: 8px;
 
