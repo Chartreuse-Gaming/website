@@ -160,6 +160,7 @@ export default {
 main > div {
   position: relative;
   top: -140px;
+  margin-bottom: -120px;
 }
 
 #sponsors {
