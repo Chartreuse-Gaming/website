@@ -114,8 +114,7 @@ export default {
 @import "node_modules/compass-mixins/lib/compass/css3";
 
 article {
-  padding: 0 18px;
-  margin: 0 auto 40px;
+  padding: 24px 18px;
   border-radius: 8px;
 
   header {
@@ -126,25 +125,30 @@ article {
     div {
       height: 100%;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 10px;
 
       h2 {
         margin: 0 18px;
       }
 
       img {
+        padding: 0 10px;
         height: 70px;
         filter: drop-shadow(0 0 0.75rem var(--bg-color));
+      }
+
+      @media only screen and (max-width: 600px) {
+        justify-content: center;
       }
     }
 
     i {
       z-index: -1;
       position: absolute;
-      top: 0;
+      top: -1px;
       width: 100%;
-      height: calc(100% + 1px);
+      height: calc(100% + 2px);
       @include box-shadow(inset 400px 0 230px -80px var(--bg-color));
     }
 
@@ -174,14 +178,17 @@ article {
       li {
         padding: 14px 30px 14px 14px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         font-size: 1.2em;
+        gap: 20px 0;
 
         & > * {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
-          justify-content: space-between;
+          justify-content: flex-start;
 
           &:first-of-type {
             gap: 16px;
@@ -197,7 +204,8 @@ article {
           }
 
           &:last-of-type {
-            gap: 50px;
+            margin-left: 76px;
+            gap: 8px 50px;
           }
         }
 
@@ -211,6 +219,23 @@ article {
 
         &:nth-child(even) {
           background-color: rgb(50, 50, 50);
+        }
+
+        @media only screen and (max-width: 600px) {
+          flex-flow: column nowrap;
+          align-items: flex-start;
+
+          & > *:last-of-type {
+            flex-flow: column nowrap;
+          }
+
+          &:first-of-type {
+            padding: 18px 30px 18px 14px;
+
+            & > *:last-of-type {
+              font-size: 0.85em;
+            }
+          }
         }
       }
     }

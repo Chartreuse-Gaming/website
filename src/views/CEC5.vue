@@ -179,6 +179,11 @@ main > div {
     max-width: 150px;
     max-height: 110px;
     padding: 8px;
+
+    @media only screen and (max-width: 600px) {
+      max-width: 120px;
+      max-height: 90px;
+    }
   }
 }
 
