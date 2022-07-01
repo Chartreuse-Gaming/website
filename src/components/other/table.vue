@@ -151,6 +151,7 @@ article {
 
           & > *:last-of-type {
             flex-flow: column nowrap;
+            align-items: flex-start;
           }
 
           &:first-of-type {

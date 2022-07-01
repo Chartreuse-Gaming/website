@@ -71,7 +71,7 @@
       <Table
         img="League_of_Legends"
         alt="League of Legends"
-        :data="ranking.rl"
+        :data="ranking.lol"
       />
 
       <Gallery :directory="gallery.directory" :images="gallery.images" />
@@ -138,7 +138,96 @@ export default {
           },
         ],
         // cs: "",
-        // lol: "",
+        lol: [
+          {
+            id: 1,
+            name: "QTBG",
+            players: [
+              "UnDé",
+              "QTBG Popotam",
+              "QTBG Choub",
+              "Qtbg toinankam",
+              "eBoy",
+            ],
+          },
+          {
+            id: 2,
+            name: "Flash In For Scuttle",
+            players: [
+              "A Well of Pain",
+              "Gyndared",
+              "Averose",
+              "VVinner",
+              "FromZeroTwoHiro",
+            ],
+          },
+          {
+            id: 3,
+            name: "Ekinox",
+            players: [
+              "Ekx sukyos",
+              "EKX Xenot",
+              "EKX Veka",
+              "Koba La Ducs",
+              "Bardukin",
+            ],
+          },
+          {
+            id: 4,
+            name: "GHB Crew/AS",
+            players: [
+              "TTarKKen",
+              "GCK Desert Raven",
+              "Hit And Dunk",
+              "Tissma",
+              "NΛwacK",
+            ],
+          },
+          {
+            id: 5,
+            name: "On S'lave Pas",
+            players: [
+              "ArtikTonik",
+              "ptit coquin",
+              "redcraft385",
+              "Winstaff",
+              "DarkSamsuke",
+            ],
+          },
+          {
+            id: 5,
+            name: "VGY CORP",
+            players: [
+              "Taonat",
+              "Fouattapata",
+              "MARKSMAN ΟNLY",
+              "Δ lee sin",
+              "Hitch",
+            ],
+          },
+          {
+            id: 7,
+            name: "Les Bûches",
+            players: [
+              "Shownt",
+              "Yzbog",
+              "Loonzerra",
+              "KUINNPEMBE",
+              "GOULEXYEYZE",
+            ],
+          },
+          {
+            id: 7,
+            name: "Hardstuck (Step) Bros",
+            players: [
+              "Clooooud",
+              "Guybze",
+              "ArreZA",
+              "AR Starfly",
+              "Lbiactuois",
+            ],
+          },
+        ],
       },
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
