@@ -79,8 +79,8 @@ import Table from "@/components/other/table";
 import Gallery from "@/components/other/gallery";
 
 export default {
-  name: "CEC5View",
-  title: "Chartreuse Esport Contest 5",
+  name: "CEC4View",
+  title: "Chartreuse Esport Contest 4 Online",
   components: {
     Banner,
     Table,
