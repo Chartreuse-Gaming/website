@@ -8,12 +8,6 @@
 
     <div>
       <article id="sponsors" class="content">
-        <img src="@/assets/img/sponsors/FullLife.webp" alt="FullLife" />
-        <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
-        />
-        <img src="@/assets/img/sponsors/Noctua.webp" alt="Noctua" />
         <img
           src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
           alt="Coeur de Chartreuse"
@@ -21,6 +15,18 @@
         <img
           src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
           alt="Saint Laurent du Pont"
+        />
+        <img
+          src="@/assets/img/sponsors/Rocket_Baguette.webp"
+          alt="Rocket Baguette"
+        />
+        <img
+          src="@/assets/img/sponsors/Inova_Construction.webp"
+          alt="Inova Construction"
+        />
+        <img
+          src="@/assets/img/sponsors/Inov_Concept.webp"
+          alt="Inov' Concept"
         />
       </article>
 
