@@ -21,6 +21,11 @@ const routes = [
     name: "CEC4",
     component: () => import(/* webpackChunkName: "CEC4" */ "../views/CEC4.vue"),
   },
+  {
+    path: "/tournament/CEC3",
+    name: "CEC3",
+    component: () => import(/* webpackChunkName: "CEC3" */ "../views/CEC3.vue"),
+  },
 ];
 
 const router = createRouter({

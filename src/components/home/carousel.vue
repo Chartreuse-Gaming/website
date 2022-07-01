@@ -54,6 +54,32 @@
           alt="Chartreuse Esport Contest 4 Online"
         />
       </SplideSlide>
+      <SplideSlide>
+        <i></i>
+        <article>
+          <section>
+            <p>{{ $t("date.CEC3") }}</p>
+            <p class="CEC5">
+              Chartreuse<br />
+              Esport<br />
+              Contest <span>3</span>
+            </p>
+            <router-link :to="{ name: 'CEC3' }" class="btn">
+              {{ $t("read-more") }}
+              <font-awesome-icon icon="fa-solid fa-right-long" />
+            </router-link>
+            <i></i>
+          </section>
+          <img
+            src="@/assets/img/carousel/CEC_logo.webp"
+            alt="Chartreuse Esport Contest"
+          />
+        </article>
+        <img
+          src="@/assets/img/carousel/CEC_3.webp"
+          alt="Chartreuse Esport Contest 3"
+        />
+      </SplideSlide>
     </Splide>
   </article>
 </template>

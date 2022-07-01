@@ -41,7 +41,7 @@
         </div>
         <p>Campus Games Week : Grenoble Edition</p>
       </router-link>
-      <router-link to="/">
+      <router-link :to="{ name: 'CEC4' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_4.webp"
@@ -67,7 +67,7 @@
         </div>
         <p>Salon du Jeu Vidéo</p>
       </router-link>
-      <router-link to="/">
+      <router-link :to="{ name: 'CEC3' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"
