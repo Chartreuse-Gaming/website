@@ -10,92 +10,16 @@
     </header>
     <section>
       <ul>
-        <li>
+        <li v-for="team in data" :key="team.id">
           <div>
-            <p>🥇</p>
-            <p>Équipe</p>
+            <p v-if="team.id === 1">🥇</p>
+            <p v-else-if="team.id === 2">🥈</p>
+            <p v-else-if="team.id === 3">🥉</p>
+            <p v-else>{{ team.id }}</p>
+            <p>{{ team.name }}</p>
           </div>
           <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>🥈</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>🥉</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>4</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>5</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>6</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>7</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>8</p>
-            <p>Équipe</p>
-          </div>
-          <div>
-            <p>Joueur</p>
-            <p>Joueur</p>
-            <p>Joueur</p>
+            <p v-for="player in team.players" :key="player">{{ player }}</p>
           </div>
         </li>
       </ul>

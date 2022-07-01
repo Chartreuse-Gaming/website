@@ -65,13 +65,13 @@
       <Table
         img="CSGO"
         alt="Counter Strike: Global Offensive"
-        :data="ranking.cs"
+        :data="ranking.rl"
       />
 
       <Table
         img="League_of_Legends"
         alt="League of Legends"
-        :data="ranking.lol"
+        :data="ranking.rl"
       />
 
       <Gallery :directory="gallery.directory" :images="gallery.images" />
@@ -95,9 +95,50 @@ export default {
   data() {
     return {
       ranking: {
-        rl: "",
-        cs: "",
-        lol: "",
+        rl: [
+          {
+            id: 1,
+            name: "Équipe 1",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 2,
+            name: "Équipe 2",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 3,
+            name: "Équipe 3",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 4,
+            name: "Équipe 4",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 5,
+            name: "Équipe 5",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 6,
+            name: "Équipe 6",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 7,
+            name: "Équipe 7",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+          {
+            id: 8,
+            name: "Équipe 8",
+            players: ["Joueur 1", "Joueur 2", "Joueur 3"],
+          },
+        ],
+        // cs: "",
+        // lol: "",
       },
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
