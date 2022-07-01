@@ -127,10 +127,10 @@ article {
       height: 100%;
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 10px;
 
       h2 {
-        margin: 0;
+        margin: 0 18px;
       }
 
       img {
