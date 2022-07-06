@@ -42,7 +42,7 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#feedback">Feedback</a></li>
-    <li><a href="#licence">Licence</a></li>
+    <li><a href="#license">License</a></li>
     <li><a href="#author">Author</a></li>
   </ol>
 </details>
