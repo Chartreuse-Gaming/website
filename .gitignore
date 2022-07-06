@@ -2,9 +2,12 @@
 node_modules
 /dist
 
-# local env files
+# Local env files
 .env.local
 .env.*.local
+
+# Deploy script
+deploy.sh
 
 # Log files
 npm-debug.log*
