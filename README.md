@@ -11,6 +11,7 @@
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792191715-272539423c73e2859a54fa41?label=Status)&nbsp;
 ![Website uptime](https://img.shields.io/uptimerobot/ratio/m792191715-272539423c73e2859a54fa41?label=Uptime)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/website?label=Version)&nbsp;
+![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/website?label=License)&nbsp;
 ![Website build size](https://img.shields.io/badge/Build%20size-4.8%20MB-green)
 
   <p align="center">
@@ -42,7 +43,6 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#feedback">Feedback</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#author">Author</a></li>
   </ol>
 </details>
@@ -150,12 +150,6 @@ A new `dist` folder will appear containing the entire compiled website.
 ## Feedback
 
 If you have any feedback, please reach out to us at [ChartreuseGGaming@gmail.com](mailto:ChartreuseGGaming@gmail.com).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## License
-
-[GPL](https://choosealicense.com/licenses/gpl-3.0/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
