@@ -7,10 +7,10 @@
 </a>
 
 <h3 align="center">Website</h3>
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792191715-272539423c73e2859a54fa41?label=Status)&nbsp;
-![Website uptime](https://img.shields.io/uptimerobot/ratio/m792191715-272539423c73e2859a54fa41?label=Uptime)&nbsp;
-![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/website?label=Version)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-4.8%20MB-green)&nbsp;
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792191715-272539423c73e2859a54fa41?label=Status)
+![Website uptime](https://img.shields.io/uptimerobot/ratio/m792191715-272539423c73e2859a54fa41?label=Uptime)
+![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/website?label=Version)
+![Website build size](https://img.shields.io/badge/Build%20size-4.8%20MB-green)
 
   <p align="center">
     Website of the Chartreuse Gaming association.
