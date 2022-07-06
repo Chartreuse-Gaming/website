@@ -2,7 +2,7 @@
 <br />
 
 <div align="center">
-<a href="https://github.com/Inge-Info/MSPR_API">
+<a href="https://github.com/Chartreuse-Gaming/website">
     <img src="src/assets/svg/logo.svg" alt="Logo" width="80" height="80">
 </a>
 
@@ -16,7 +16,7 @@
   <p align="center">
     Website of the Chartreuse Gaming association.
     <br />
-    <a href="https://chartreuse-gaming.fr/"><strong>chartreuse-gaming.fr »</strong></a>
+    <a href="https://chartreusegaming.fr/"><strong>chartreusegaming.fr »</strong></a>
   </p>
 </div>
 <br />
@@ -149,7 +149,7 @@ A new `dist` folder will appear containing the entire compiled website.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at [contact@chartreuse-gaming.fr](mailto:contact@chartreuse-gaming.fr).
+If you have any feedback, please reach out to us at [ChartreuseGGaming@gmail.com](mailto:ChartreuseGGaming@gmail.com).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
