@@ -77,6 +77,7 @@
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
 import Gallery from "@/components/other/gallery";
+import rl from "@/assets/json/CEC4/rocket_league.json";
 
 export default {
   name: "CEC4View",
@@ -88,148 +89,7 @@ export default {
   },
   data() {
     return {
-      ranking: [
-        {
-          id: 1,
-          name: "CALIENTE",
-          players: ["saizen", "pryyme"],
-        },
-        {
-          id: 2,
-          name: "Camenfrites",
-          players: ["Grimflam", "Reijin"],
-        },
-        {
-          id: 3,
-          name: "CiNOZE",
-          players: ["DGZ", "FrotteMan"],
-        },
-        {
-          id: 4,
-          name: "Les Mini-Retraités",
-          players: ["Rizdax", "Zodark"],
-        },
-        {
-          id: 5,
-          name: "Valderium",
-          players: ["Hydrese", "Deïta"],
-        },
-        {
-          id: 5,
-          name: "VF",
-          players: ["Måmøk", "Mah Ke Sim"],
-        },
-        {
-          id: 5,
-          name: "K2k_gang",
-          players: ["Nefariouz83", "VCT_GaminG"],
-        },
-        {
-          id: 5,
-          name: "Heternaze",
-          players: ["Neova", "Arouf Gros tas"],
-        },
-        {
-          id: 9,
-          name: "Heternaze",
-          players: ["Major", "TU ES MORT NON"],
-        },
-        {
-          id: 9,
-          name: "Old Boys",
-          players: ["Flow_Flo74", "Veloxity"],
-        },
-        {
-          id: 9,
-          name: "Ergüel Performance Gaming Club",
-          players: ["H5-N1", "xMeta Legend Online"],
-        },
-        {
-          id: 9,
-          name: "NewRange",
-          players: ["NewRange Stock/-\\ge.", "1v1 God"],
-        },
-        {
-          id: 9,
-          name: "Rocket Park",
-          players: ["SciHype", "Aubaboul"],
-        },
-        {
-          id: 9,
-          name: "SKAALS SOCIETY",
-          players: ["Pazzaaar", "Gatchou"],
-        },
-        {
-          id: 9,
-          name: "ESCR1",
-          players: ["Ponponce", "Grumphi"],
-        },
-        {
-          id: 9,
-          name: "Vanadium",
-          players: ["Miro_", "VinsElBins"],
-        },
-        {
-          id: 17,
-          name: "Bayern les verres cul sec",
-          players: ["DraZz0u", "Anisse ."],
-        },
-        {
-          id: 17,
-          name: "French Army",
-          players: ["SkySoft38", "Darkrodoux"],
-        },
-        {
-          id: 17,
-          name: "Ultimatum top 1 fortnite chartreuse gaming 2020",
-          players: ["ACG MasSS", "ACG ĶŲŘĀMĀ"],
-        },
-        {
-          id: 17,
-          name: "667",
-          players: ["TXpr0Wwzz", "Alan.clemot2"],
-        },
-        {
-          id: 17,
-          name: "Les Maitres Kebabiers",
-          players: ["bobyfunk", "Chapericube"],
-        },
-        {
-          id: 17,
-          name: "Engel Esport",
-          players: ["KaiiZiX", "Egl Flixxx"],
-        },
-        {
-          id: 17,
-          name: "La Houille",
-          players: ["La Mangue", "Samy"],
-        },
-        {
-          id: 17,
-          name: "Grumeaux",
-          players: ["NaZuRo-_23", "PendaMafieux"],
-        },
-        {
-          id: 17,
-          name: "Oui",
-          players: ["JunkieCat", "Athab"],
-        },
-        {
-          id: 17,
-          name: "PouletEnFeu",
-          players: ["Xelium_Poulet", "X_phoenix42_X"],
-        },
-        {
-          id: 17,
-          name: "MN'S",
-          players: ["the_noob.73", "geekounette27"],
-        },
-        {
-          id: 17,
-          name: "Drag0nFly",
-          players: ["Igrander", "ShikiGremory"],
-        },
-      ],
+      ranking: rl,
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
         images: [

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Les Videurs",
+    "players": [
+      "DGZ",
+      "FrotteMan",
+      "Syn"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Adamya",
+    "players": [
+      "Snama23",
+      "AYTE",
+      "Kaoup"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "-Smoken Esport-",
+    "players": [
+      "NeferoClear",
+      "6Six6",
+      "NoX TV_RL"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "GratianoPolis Squad",
+    "players": [
+      "Ancelin",
+      "Naïto",
+      "Seillama"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Monique Ranou United",
+    "players": [
+      "Boeuf bourguignon",
+      "Calzone au four",
+      "Bavette d'aloyau"
+    ]
+  }
+]

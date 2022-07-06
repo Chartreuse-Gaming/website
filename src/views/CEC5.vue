@@ -83,6 +83,9 @@
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
 import Gallery from "@/components/other/gallery";
+import rl from "@/assets/json/CEC5/rocket_league.json";
+import cs from "@/assets/json/CEC5/counter_strike.json";
+import lol from "@/assets/json/CEC5/league_of_legends.json";
 
 export default {
   name: "CEC5View",
@@ -95,144 +98,9 @@ export default {
   data() {
     return {
       ranking: {
-        rl: [
-          {
-            id: 1,
-            name: "Les Videurs",
-            players: ["DGZ", "FrotteMan", "Syn"],
-          },
-          {
-            id: 2,
-            name: "Adamya",
-            players: ["Snama23", "AYTE", "Kaoup"],
-          },
-          {
-            id: 3,
-            name: "-Smoken Esport-",
-            players: ["NeferoClear", "6Six6", "NoX TV_RL"],
-          },
-          {
-            id: 4,
-            name: "GratianoPolis Squad",
-            players: ["Ancelin", "Naïto", "Seillama"],
-          },
-          {
-            id: 5,
-            name: "Monique Ranou United",
-            players: [
-              "Boeuf bourguignon",
-              "Calzone au four",
-              "Bavette d'aloyau",
-            ],
-          },
-        ],
-        cs: [
-          {
-            id: 1,
-            name: "HuB eSport Club",
-            players: ["Etrau'D", "Sobad", "MICHOUPITCHU", "STN", "SHOGU"],
-          },
-          {
-            id: 2,
-            name: "JPGam1ng_",
-            players: ["ArKa0s", "Sauli", "BaronVanWaffeln", "wArth", "tEKOS-"],
-          },
-          {
-            id: 3,
-            name: "23H.Max",
-            players: ["NES", "FoxSnb", "Asuny", "AD", "REMS1337"],
-          },
-          {
-            id: 4,
-            name: "30 y/o Talent",
-            players: ["_k1v", "oRo`", "JavierZ04", "votreDaron", "PowA"],
-          },
-          {
-            id: 5,
-            name: "BTR",
-            players: [
-              "GaaTho",
-              "lewe",
-              "ZAIRBOV",
-              "Huskyne",
-              "Shanks",
-              "sheepfoof",
-            ],
-          },
-        ],
-        lol: [
-          {
-            id: 1,
-            name: "QTBG",
-            players: ["UnDé", "Popotam", "Choub", "Toinankam", "eBoy"],
-          },
-          {
-            id: 2,
-            name: "Flash in for scuttle",
-            players: ["Kaw", "Gyndared", "Averose", "VVinner", "RÛVËN"],
-          },
-          {
-            id: 3,
-            name: "Ekinox",
-            players: ["Sukyos", "Xenot", "Veka", "Koba la Ducs", "Bardukin"],
-          },
-          {
-            id: 4,
-            name: "GHB Crew/AS",
-            players: [
-              "TTarKKen",
-              "GCK Desert Raven",
-              "Sacus",
-              "Tissma",
-              "NAWACK",
-            ],
-          },
-          {
-            id: 5,
-            name: "On S'lave Pas",
-            players: [
-              "ArtikTonik",
-              "odalrick",
-              "Redcraft385",
-              "Winstaff",
-              "Darksamsuke",
-            ],
-          },
-          {
-            id: 5,
-            name: "VGY CORP",
-            players: [
-              "Xwortex Gamers",
-              "Ratila",
-              "MARKSMAN ÎŸNLY",
-              "ShirÃ¸",
-              "Hitch",
-            ],
-          },
-          {
-            id: 7,
-            name: "Les Bûches",
-            players: [
-              "Shownt",
-              "YzBog",
-              "Loonzerra",
-              "Oxyde-Neotik",
-              "GouleXYZ",
-            ],
-          },
-          {
-            id: 7,
-            name: "Hardstuck (Step) Bros",
-            players: [
-              "Cloud",
-              "Guybze",
-              "ArreZA",
-              "AR_Starfly",
-              "Lbiactuois",
-              "KyBaZ",
-            ],
-          },
-        ],
+        rl: rl,
+        cs: cs,
+        lol: lol,
       },
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",

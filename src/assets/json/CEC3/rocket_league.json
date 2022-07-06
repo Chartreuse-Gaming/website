@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "SPM",
+    "players": [
+      "Reijin",
+      "Voltage"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Astro Red",
+    "players": [
+      "Linkluc",
+      "Ogawa"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Les Videurs",
+    "players": [
+      "Les Videurs",
+      "FrotteMan"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "ESP Esports",
+    "players": [
+      "Rizdax",
+      "Zodark"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "VST",
+    "players": [
+      "Sillent-FuRiious",
+      "YoshiDels"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Volt",
+    "players": [
+      "MasterS",
+      "MCK fr"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Déso Max",
+    "players": [
+      "Neko",
+      "Olirus"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Oziris Esport",
+    "players": [
+      "Aqua",
+      "Qeziaa"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "FuRy",
+    "players": [
+      "AtomiX312",
+      "xDreameur"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Easy Cashprize",
+    "players": [
+      "Heidjou",
+      "Myself Fake"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Ekinox",
+    "players": [
+      "Kisaro",
+      "Vrakst"
+    ]
+  }
+]
