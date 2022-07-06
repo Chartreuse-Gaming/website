@@ -76,14 +76,14 @@ future events organized by it.
 
 ### Color Reference
 
-| Color                    | Hex                                                              | Description              |
-|--------------------------|------------------------------------------------------------------|--------------------------|
-| Text color               | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff | Titles and subtitles     |
-| Subtext Color            | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 | Texts and description    |
-| Footer text Color        | ![#b9b9b9](https://via.placeholder.com/10/b9b9b9?text=+) #b9b9b9 | Footer texts             |
-| Green Color              | ![#23d940](https://via.placeholder.com/10/23d940?text=+) #23d940 | Texts, decorations, etc. |
-| Green Color (for button) | ![#1db036](https://via.placeholder.com/10/1db036?text=+) #1db036 | Background for buttons   |
-| Background Color         | ![#262626](https://via.placeholder.com/10/262626?text=+) #262626 | Global background        |
+| Color                    | Hex                                                                           | Description              |
+|--------------------------|-------------------------------------------------------------------------------|--------------------------|
+| Text color               | ![#FFFFFFFF](https://via.placeholder.com/8/FFFFFFFF/FFFFFFFF.png) `#FFFFFFFF` | Titles and subtitles     |
+| Subtext Color            | ![#E6E6E6FF](https://via.placeholder.com/8/E6E6E6FF/E6E6E6FF.png) `#E6E6E6FF` | Texts and description    |
+| Footer text Color        | ![#B9B9B9FF](https://via.placeholder.com/8/B9B9B9FF/B9B9B9FF.png) `#B9B9B9FF` | Footer texts             |
+| Green Color              | ![#23D940FF](https://via.placeholder.com/8/23D940FF/23D940FF.png) `#23D940FF` | Texts, decorations, etc. |
+| Green Color (for button) | ![#1DB036FF](https://via.placeholder.com/8/1DB036FF/1DB036FF.png) `#1DB036FF` | Background for buttons   |
+| Background Color         | ![#262626FF](https://via.placeholder.com/8/262626FF/262626FF.png) `#262626FF` | Global background        |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
