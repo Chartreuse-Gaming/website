@@ -2,14 +2,14 @@
   <article>
     <h1>{{ title }}</h1>
     <i></i>
-    <img :src="require(`@/${img_src}`)" :alt="img_alt" />
+    <img :src="require(`@/${src}`)" :alt="title" />
   </article>
 </template>
 
 <script>
 export default {
   name: "bannerComponent",
-  props: ["title", "img_src", "img_alt"],
+  props: ["title", "src"],
 };
 </script>
 

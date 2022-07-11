@@ -11,15 +11,12 @@
           {{ $t("association.self", 2) }}
         </h2>
         <section>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div>
+            <p>{{ $t("association.presentation.1") }}</p>
+            <p>{{ $t("association.presentation.2") }}</p>
+            <p>{{ $t("association.presentation.3") }}</p>
+            <p>{{ $t("association.presentation.4") }}</p>
+          </div>
           <img
             src="@/assets/img/association/Members.webp"
             :alt="$t('association.members') + '.'"
@@ -35,41 +32,22 @@
         <section>
           <article>
             <header>
-              2022
-              <i></i>
-            </header>
-            <section>
-              <h3>Titre de section</h3>
-              <p>
-                Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum
-                suscipit eveniet amet dignissimos. Doloremque et distinctio quod
-                molestiae ut.
-              </p>
-            </section>
-          </article>
-          <article>
-            <header>
               2021
               <i></i>
             </header>
             <section>
-              <h3>Titre de section</h3>
-              <p>
-                Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.
-              </p>
+              <h3>{{ $t("CEC5.self") }}</h3>
+              <p>{{ $t("CEC5.histogram") }}</p>
             </section>
           </article>
           <article>
-            <header class="big">
+            <header>
               2020
               <i></i>
             </header>
             <section>
-              <h3>Titre de section</h3>
-              <p>
-                Rerum sit libero possimus amet excepturi. Exercitationem enim
-                dolores sunt praesentium dolorum praesentium.
-              </p>
+              <h3>{{ $t("CEC4.self") }}</h3>
+              <p>{{ $t("CEC4.histogram") }}</p>
             </section>
           </article>
           <article>
@@ -78,13 +56,18 @@
               <i></i>
             </header>
             <section>
-              <h3>Titre de section</h3>
-              <p>
-                Voluptatibus veniam ea reprehenderit atque. Reiciendis non
-                laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae
-                velit. Omnis libero nostrum aperiam nemo dolor ea eos eius. Esse
-                a non itaque quidem.
-              </p>
+              <h3>{{ $t("CEC3.self") }}</h3>
+              <p>{{ $t("CEC3.histogram") }}</p>
+            </section>
+          </article>
+          <article>
+            <header>
+              2019
+              <i></i>
+            </header>
+            <section>
+              <h3>{{ $t("CGW.self") }}</h3>
+              <p>{{ $t("CGW.histogram") }}</p>
             </section>
           </article>
           <article>
@@ -93,34 +76,18 @@
               <i></i>
             </header>
             <section>
-              <h3>Titre de section</h3>
-              <p>
-                VAdipisci totam omnis cum et suscipit excepturi et excepturi.
-                Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.
-              </p>
-            </section>
-          </article>
-          <article>
-            <header class="big">
-              2017
-              <i></i>
-            </header>
-            <section>
-              <h3>Titre de section</h3>
-              <p>
-                Impedit dolorem commodi explicabo fugit aut alias voluptatem.
-                Magnam earum rerum quae dicta quibusdam aliquam ut.
-              </p>
+              <h3>{{ $t("CEC2.self") }}</h3>
+              <p>{{ $t("CEC2.histogram") }}</p>
             </section>
           </article>
           <article>
             <header>
-              2016
+              2017
               <i></i>
             </header>
             <section>
-              <h3>Titre de section</h3>
-              <p>Qui facere eos aut suscipit doloremque quos...</p>
+              <h3>{{ $t("CEC1.self") }}</h3>
+              <p>{{ $t("CEC1.histogram") }}</p>
             </section>
           </article>
         </section>
@@ -173,10 +140,14 @@ export default {
     gap: 40px;
 
     p {
-      margin-top: 50px;
+      margin-top: 12px;
       font-size: 1.2em;
       text-align: justify;
       color: var(--subtext-color);
+
+      &:first-child {
+        margin-top: 50px;
+      }
     }
 
     img {
@@ -185,7 +156,7 @@ export default {
       border-radius: 8px;
       box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1100px) {
         & {
           display: none;
         }

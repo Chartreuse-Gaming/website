@@ -5,7 +5,7 @@
         <i></i>
         <article>
           <section>
-            <p>{{ $t("date.CEC5") }}</p>
+            <p>{{ $t("CEC5.date") }}</p>
             <p class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -19,19 +19,16 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            alt="Logo Chartreuse Esport Contest 5"
+            :alt="$t('CEC5.self') + 'logo'"
           />
         </article>
-        <img
-          src="@/assets/img/carousel/CEC_5.webp"
-          alt="Chartreuse Esport Contest 5"
-        />
+        <img src="@/assets/img/carousel/CEC_5.webp" :alt="$t('CEC5.self')" />
       </SplideSlide>
       <SplideSlide>
         <i></i>
         <article>
           <section>
-            <p>{{ $t("date.CEC4") }}</p>
+            <p>{{ $t("CEC4.date") }}</p>
             <p id="CEC4" class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -46,19 +43,16 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            alt="Chartreuse Esport Contest"
+            :alt="$t('CEC4.self') + 'logo'"
           />
         </article>
-        <img
-          src="@/assets/img/carousel/CEC_4.webp"
-          alt="Chartreuse Esport Contest 4 Online"
-        />
+        <img src="@/assets/img/carousel/CEC_4.webp" :alt="$t('CEC4.self')" />
       </SplideSlide>
       <SplideSlide>
         <i></i>
         <article>
           <section>
-            <p>{{ $t("date.CEC3") }}</p>
+            <p>{{ $t("CEC3.date") }}</p>
             <p class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -72,13 +66,10 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            alt="Chartreuse Esport Contest"
+            :alt="$t('CEC3.self') + 'logo'"
           />
         </article>
-        <img
-          src="@/assets/img/carousel/CEC_3.webp"
-          alt="Chartreuse Esport Contest 3"
-        />
+        <img src="@/assets/img/carousel/CEC_3.webp" :alt="$t('CEC5.self')" />
       </SplideSlide>
     </Splide>
   </article>

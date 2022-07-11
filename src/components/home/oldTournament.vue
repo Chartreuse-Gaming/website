@@ -6,79 +6,79 @@
         <div>
           <img
             src="@/assets/img/tournaments/CEC_5.webp"
-            alt="Chartreuse Esport Contest 5"
+            :alt="$t('CEC5.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>Chartreuse Esport Contest 5</p>
-      </router-link>
-      <router-link to="/">
-        <div>
-          <img
-            src="@/assets/img/tournaments/CGW_Crous.webp"
-            alt="Campus Games Week : Crous Edition"
-          />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
-        </div>
-        <p>Campus Games Week : Crous Edition</p>
-      </router-link>
-      <router-link to="/">
-        <div>
-          <img
-            src="@/assets/img/tournaments/CGW_Grenoble.webp"
-            alt="Campus Games Week : Grenoble Edition"
-          />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
-        </div>
-        <p>Campus Games Week : Grenoble Edition</p>
+        <p>{{ $t("CEC5.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC4' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_4.webp"
-            alt="Chartreuse Esport Contest 4 Online"
+            :alt="$t('CEC4.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>Chartreuse Esport Contest 4 Online</p>
-      </router-link>
-      <router-link to="/">
-        <div>
-          <img
-            src="@/assets/img/tournaments/SJV.webp"
-            alt="Salon du Jeu Vidéo"
-          />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
-        </div>
-        <p>Salon du Jeu Vidéo</p>
+        <p>{{ $t("CEC4.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC3' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"
-            alt="Chartreuse Esport Contest 3"
+            :alt="$t('CEC3.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>Chartreuse Esport Contest 3</p>
+        <p>{{ $t("CEC3.self") }}</p>
+      </router-link>
+      <router-link to="/">
+        <div>
+          <img
+            src="@/assets/img/tournaments/CEC_3.webp"
+            :alt="$t('CGW.self')"
+          />
+          <span>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+        <p>{{ $t("CGW.self") }}</p>
+      </router-link>
+      <router-link to="/">
+        <div>
+          <img
+            src="@/assets/img/tournaments/CEC_3.webp"
+            :alt="$t('CEC2.self')"
+          />
+          <span>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+        <p>{{ $t("CEC2.self") }}</p>
+      </router-link>
+      <router-link to="/">
+        <div>
+          <img
+            src="@/assets/img/tournaments/CEC_3.webp"
+            :alt="$t('CEC1.self')"
+          />
+          <span>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+        <p>{{ $t("CEC1.self") }}</p>
       </router-link>
     </section>
     <!--<router-link to="/" class="btn">{{ $t("load-more") }}</router-link>-->
@@ -99,12 +99,11 @@ article {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-evenly;
     gap: 30px;
     margin-bottom: 16px;
 
     a {
-      flex: 1 1 calc(100% / 3 - 20px);
+      flex: 0 1 calc(100% / 3 - 20px);
       text-decoration: none;
       color: var(--text-color);
       font-size: 1.2em;

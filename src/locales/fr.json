@@ -8,7 +8,13 @@
     "self": "Association | L'association",
     "logo": "Logo de l'association",
     "t-shirt": "T-shirt de l'association",
-    "members": "Les membres de l'association"
+    "members": "Les membres de l'association",
+    "presentation": {
+      "1": "Un 29 décembre 2015, un noyau de six amis se réunit et fonde Chartreuse Gaming, en tant qu’association loi 1901. Unanimes, ils souhaitent saisir l’opportunité de prendre part à l’essor de l’eSport en s’inscrivant comme des acteurs locaux incontournables du milieu rural et de la région Rhône-Alpes. Ainsi, ils prennent pour leitmotiv l’organisation d’événements physiques et d’événements en ligne.",
+      "2": "C’est seulement le 28 octobre 2017, que la première édition de son événement phare voit le jour : le Chartreuse Esport Contest (CEC#1). Après des signes encourageants, l’association souhaite annualiser l’événement et le faire croître jusqu’à obtenir un rayonnement national.",
+      "3": "Avec pas moins d’une trentaine de bénévoles et après une période troublée par la crise sanitaire, l’association prend le pari d’un événement physique tandis que les autres organisations préfèrent dématérialiser leur événement. C’est alors que Chartreuse Gaming signe son événement le plus ambitieux avec 98 joueurs répartis sur League Of Legends, Counter Strike : Global Offensive et Rocket League, et une dotation globale de 3500€.",
+      "4": "Cette dernière édition conforte les bénévoles dans leur souhait de s’imposer sur la scène régionale puis sur la scène tricolore. Afin d’y parvenir, l’association décide de déménager dans la métropole grenobloise, à Saint-Martin-d’Hères."
+    }
   },
   "contact": {
     "self": "Contact",
@@ -20,12 +26,44 @@
   "intranet": "Intranet",
   "load-more": "Charger plus",
   "read-more": "En savoir plus",
-  "date": {
-    "CEC5": "22 - 23 Octobre 2021",
-    "CEC4": "25 Octobre 2020",
-    "CEC3": "26 - 27 Octobre 2019"
-  },
   "presentation": "Présentation",
   "ranking": "Classement",
-  "gallery": "Galerie"
+  "gallery": "Galerie",
+  "cashprize": "Prix",
+  "CEC5": {
+    "self": "Chartreuse Esport Contest 5",
+    "date": "22 - 23 Octobre 2021",
+    "histogram": "Le 24 octobre 2021 à la salle du Révol de Saint Laurent du Pont.",
+    "presentation": "Après une année charnière et une situation en demi-teinte, l’association prit le pari de renouveler son édition sous le format de LAN en proposant pour la première fois trois des jeux les plus joués sur la scène compétitive : Counter Strike : Global Offensive, League Of Legends et Rocket League. 98 joueurs répondirent présents sur les trois jeux pour se partager un cashprize taille XXL, de 3500€ !"
+  },
+  "CEC4": {
+    "self": "Chartreuse Esport Contest 4 Online",
+    "date": "25 Octobre 2020",
+    "histogram": "Le 25 octobre 2020 sur le Discord de l’association.",
+    "presentation": "En raison de la crise sanitaire, des mesures réglementaires et légales, l’association n’eut d’autre choix que de dématérialiser sa quatrième édition en privilégiant Rocket League au profit de Counter Strike : Global Offensive et de League Of Legends. Cette édition fut intégralement diffusée par Rocket League et compta 32 slots pour un cashprize de 450€."
+  },
+  "CEC3": {
+    "self": "Chartreuse Esport Contest 3",
+    "date": "26 - 27 Octobre 2019",
+    "histogram": "Les 26 et 27 octobre 2019 à la salle du Révol de Saint Laurent du Pont.",
+    "presentation": "Dans sa lancée, l’association décida de diversifier son événement en proposant du League Of Legends et du Rocket League lors de la troisième édition des 26 et 27 octobre 2019. League Of Legends connut un événement de taille avec 16 féroces équipes, présentes pour se partager un cashprize de 1000€ tandis que Rocket League connut des débuts encourageants avec 11 équipes, venues des quatre coins de l’hexagone pour un cashprize de 400€."
+  },
+  "CGW": {
+    "self": "Chartreuse Esport Winter 2019",
+    "date": "",
+    "histogram": "Le 26 janvier 2019 sur le Discord de l’association.",
+    "presentation": ""
+  },
+  "CEC2": {
+    "self": "Chartreuse Esport Contest 2",
+    "date": "",
+    "histogram": "Le 20 octobre 2018 à la salle des fêtes de Saint Joseph de Rivière.",
+    "presentation": ""
+  },
+  "CEC1": {
+    "self": "Chartreuse Esport Contest 1",
+    "date": "",
+    "histogram": "Le 28 octobre 2017 à la maison des associations à Saint Laurent du Pont.",
+    "presentation": ""
+  }
 }
