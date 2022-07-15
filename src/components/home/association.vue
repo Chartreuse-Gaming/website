@@ -25,19 +25,45 @@
       </article>
     </section>
 
-    <section id="history" class="content">
+    <section id="timeline" class="content">
       <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
       <article>
         <font-awesome-icon icon="fa-solid fa-caret-up" />
         <section>
+          <article>
+            <header class="big">
+              2022
+              <i></i>
+            </header>
+            <section>
+              <div>
+                <h3>{{ $t("association.timeline.2022.2.title") }}</h3>
+                <p>{{ $t("association.timeline.2022.2.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2022.1.title") }}</h3>
+                <p>{{ $t("association.timeline.2022.1.description") }}</p>
+              </div>
+            </section>
+          </article>
           <article>
             <header>
               2021
               <i></i>
             </header>
             <section>
-              <h3>{{ $t("CEC5.self") }}</h3>
-              <p>{{ $t("CEC5.histogram") }}</p>
+              <div>
+                <h3>{{ $t("association.timeline.2021.3.title") }}</h3>
+                <p>{{ $t("association.timeline.2021.3.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2021.2.title") }}</h3>
+                <p>{{ $t("association.timeline.2021.2.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2021.1.title") }}</h3>
+                <p>{{ $t("association.timeline.2021.1.description") }}</p>
+              </div>
             </section>
           </article>
           <article>
@@ -46,8 +72,14 @@
               <i></i>
             </header>
             <section>
-              <h3>{{ $t("CEC4.self") }}</h3>
-              <p>{{ $t("CEC4.histogram") }}</p>
+              <div>
+                <h3>{{ $t("association.timeline.2020.2.title") }}</h3>
+                <p>{{ $t("association.timeline.2020.2.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2020.1.title") }}</h3>
+                <p>{{ $t("association.timeline.2020.1.description") }}</p>
+              </div>
             </section>
           </article>
           <article>
@@ -56,18 +88,18 @@
               <i></i>
             </header>
             <section>
-              <h3>{{ $t("CEC3.self") }}</h3>
-              <p>{{ $t("CEC3.histogram") }}</p>
-            </section>
-          </article>
-          <article>
-            <header>
-              2019
-              <i></i>
-            </header>
-            <section>
-              <h3>{{ $t("CGW.self") }}</h3>
-              <p>{{ $t("CGW.histogram") }}</p>
+              <div>
+                <h3>{{ $t("association.timeline.2019.3.title") }}</h3>
+                <p>{{ $t("association.timeline.2019.3.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2019.2.title") }}</h3>
+                <p>{{ $t("association.timeline.2019.2.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2019.1.title") }}</h3>
+                <p>{{ $t("association.timeline.2019.1.description") }}</p>
+              </div>
             </section>
           </article>
           <article>
@@ -76,8 +108,14 @@
               <i></i>
             </header>
             <section>
-              <h3>{{ $t("CEC2.self") }}</h3>
-              <p>{{ $t("CEC2.histogram") }}</p>
+              <div>
+                <h3>{{ $t("association.timeline.2018.2.title") }}</h3>
+                <p>{{ $t("association.timeline.2018.2.description") }}</p>
+              </div>
+              <div>
+                <h3>{{ $t("association.timeline.2018.1.title") }}</h3>
+                <p>{{ $t("association.timeline.2018.1.description") }}</p>
+              </div>
             </section>
           </article>
           <article>
@@ -86,8 +124,18 @@
               <i></i>
             </header>
             <section>
-              <h3>{{ $t("CEC1.self") }}</h3>
-              <p>{{ $t("CEC1.histogram") }}</p>
+              <h3>{{ $t("association.timeline.2017.1.title") }}</h3>
+              <p>{{ $t("association.timeline.2017.1.description") }}</p>
+            </section>
+          </article>
+          <article>
+            <header class="big">
+              2015
+              <i></i>
+            </header>
+            <section>
+              <h3>{{ $t("association.timeline.2015.1.title") }}</h3>
+              <p>{{ $t("association.timeline.2015.1.description") }}</p>
             </section>
           </article>
         </section>
@@ -141,7 +189,7 @@ export default {
 
     p {
       margin-top: 12px;
-      font-size: 1.2em;
+      font-size: 1.1em;
       text-align: justify;
       color: var(--subtext-color);
 
@@ -165,7 +213,7 @@ export default {
   }
 }
 
-#history {
+#timeline {
   position: relative;
   overflow: hidden;
 
@@ -213,7 +261,11 @@ export default {
       text-align: right;
 
       &:not(:first-child) {
-        margin-top: -60px;
+        margin-top: -100px;
+      }
+
+      &:last-child {
+        margin-top: -10px;
       }
 
       header {
@@ -276,6 +328,10 @@ export default {
       }
 
       section {
+        div:not(:first-of-type) {
+          margin-top: 30px;
+        }
+
         h3 {
           text-transform: uppercase;
           margin-bottom: 10px;
@@ -335,7 +391,7 @@ export default {
     }
   }
 
-  #history {
+  #timeline {
     & > img {
       min-width: 300px;
       bottom: -120px;
