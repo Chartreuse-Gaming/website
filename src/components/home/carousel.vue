@@ -116,8 +116,9 @@ article {
     z-index: 1;
     pointer-events: none;
     position: absolute;
+    top: -1px;
     width: 100%;
-    height: calc(100% + 1px);
+    height: calc(100% + 2px);
     @include box-shadow(
       inset 0 175px 180px 0 var(--bg-color),
       inset 0 -175px 90px -30px var(--bg-color)
