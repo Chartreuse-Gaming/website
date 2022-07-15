@@ -315,7 +315,8 @@ section:last-of-type > a {
   position: relative;
 
   i {
-    //display: none;
+    // TODO: Twitch API integration
+    display: none;
     position: absolute;
     top: 30px;
     right: 14px;
