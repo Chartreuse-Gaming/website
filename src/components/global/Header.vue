@@ -12,63 +12,85 @@
 
         <!-- Navigation -->
         <nav>
-          <font-awesome-icon id="mobile" icon="fa-solid fa-bars" />
-          <router-link
-            :to="{ name: 'home' }"
-            :class="
-              $route.path === '/' && current_link === 'home' ? 'current' : ''
-            "
-            >{{ $t("home") }}</router-link
-          >
-          <a
-            id="dropdown"
-            href=""
-            :class="$route.path.startsWith('/tournament/') ? 'current' : ''"
-            @mouseenter="dropdown = true"
-            @mouseleave="dropdown = false"
-            @click.prevent=""
-          >
-            {{ $t("tournaments.self") }}
-            <font-awesome-icon icon="fa-solid fa-sort-down" />
-            <transition name="fade">
-              <div v-if="dropdown">
-                <router-link
-                  :to="{ name: 'CEC5' }"
-                  :class="
-                    $route.path.startsWith('/tournament/CEC5') ? 'current' : ''
-                  "
-                >
-                  {{ $t("CEC5.self") }}
-                </router-link>
-                <router-link
-                  :to="{ name: 'CEC4' }"
-                  :class="
-                    $route.path.startsWith('/tournament/CEC4') ? 'current' : ''
-                  "
-                >
-                  {{ $t("CEC4.self") }}
-                </router-link>
-                <router-link
-                  :to="{ name: 'CEC3' }"
-                  :class="
-                    $route.path.startsWith('/tournament/CEC3') ? 'current' : ''
-                  "
-                >
-                  {{ $t("CEC3.self") }}
-                </router-link>
-              </div>
-            </transition>
-          </a>
-          <router-link
-            to="/#association"
-            :class="current_link === 'association' ? 'current' : ''"
-            >{{ $t("association.self", 1) }}</router-link
-          >
-          <router-link
-            to="/#contact"
-            :class="current_link === 'contact' ? 'current' : ''"
-            >{{ $t("contact.self") }}</router-link
-          >
+          <font-awesome-icon
+            id="mobile"
+            icon="fa-solid fa-bars"
+            @click.prevent="nav = !nav"
+          />
+          <div :class="nav === true ? 'appear' : ''">
+            <div>
+              <router-link
+                :to="{ name: 'home' }"
+                :class="
+                  $route.path === '/' && current_link === 'home'
+                    ? 'current'
+                    : ''
+                "
+                @click="nav = false"
+                >{{ $t("home") }}</router-link
+              >
+              <a
+                id="dropdown"
+                href=""
+                :class="$route.path.startsWith('/tournament/') ? 'current' : ''"
+                @mouseleave="dropdown = false"
+                @click.prevent="dropdown = !dropdown"
+              >
+                {{ $t("tournaments.self") }}
+                <font-awesome-icon icon="fa-solid fa-sort-down" />
+                <transition name="fade">
+                  <div v-if="dropdown">
+                    <router-link
+                      :to="{ name: 'CEC5' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CEC5')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CEC5.self") }}
+                    </router-link>
+                    <router-link
+                      :to="{ name: 'CEC4' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CEC4')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CEC4.self") }}
+                    </router-link>
+                    <router-link
+                      :to="{ name: 'CEC3' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CEC3')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CEC3.self") }}
+                    </router-link>
+                  </div>
+                </transition>
+              </a>
+              <router-link
+                to="/#association"
+                :class="current_link === 'association' ? 'current' : ''"
+                @click="nav = false"
+                >{{ $t("association.self", 1) }}</router-link
+              >
+              <router-link
+                to="/#contact"
+                :class="current_link === 'contact' ? 'current' : ''"
+                @click="nav = false"
+                >{{ $t("contact.self") }}</router-link
+              >
+              <span @click.prevent="nav = false"></span>
+            </div>
+          </div>
         </nav>
       </section>
 
@@ -109,6 +131,7 @@ export default {
   data() {
     return {
       dropdown: false,
+      nav: false,
     };
   },
   mounted() {
@@ -141,6 +164,13 @@ $header-height: 90px;
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.appear {
+  opacity: 1 !important;
+  pointer-events: unset !important;
+  user-select: unset !important;
+  user-focus: unset !important;
 }
 
 header {
@@ -183,13 +213,8 @@ section:first-of-type nav {
   #mobile {
     height: $header-height;
     display: none;
-    align-items: center;
-    padding: 20px;
-
-    & > svg {
-      padding-bottom: 4px;
-      font-size: 1.5em;
-    }
+    padding: 0 20px;
+    width: 30px;
   }
 
   #dropdown {
@@ -328,8 +353,73 @@ section:last-of-type > a {
 }
 
 @media only screen and (max-width: 650px) {
+  section:first-of-type > nav > div {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    user-focus: none;
+    background-color: rgba(38, 38, 38, 0.9);
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    & > div {
+      position: absolute;
+      height: calc(100% - $header-height);
+      width: 100%;
+      top: $header-height;
+      left: 0;
+      font-size: 1.5em;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      overflow-y: overlay;
+
+      span {
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        height: 80px;
+      }
+
+      #dropdown {
+        width: 100%;
+        justify-content: center;
+
+        div {
+          height: max-content;
+          flex-flow: column nowrap;
+          align-items: center;
+          top: 70px;
+          left: 0;
+          border-radius: 0;
+          width: 100vw;
+
+          a {
+            text-align: center;
+            padding: 20px 12px;
+
+            &:first-of-type {
+              padding-top: 40px;
+            }
+
+            &:last-of-type {
+              padding-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #mobile {
-    display: flex;
+    display: block !important;
   }
 }
 </style>
