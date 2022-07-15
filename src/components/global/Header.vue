@@ -73,6 +73,39 @@
                     >
                       {{ $t("CEC3.self") }}
                     </router-link>
+                    <router-link
+                      :to="{ name: 'CGW_2019' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CGW-2019')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CGW_2019.self") }}
+                    </router-link>
+                    <router-link
+                      :to="{ name: 'CEC2' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CEC2')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CEC2.self") }}
+                    </router-link>
+                    <router-link
+                      :to="{ name: 'CEC1' }"
+                      :class="
+                        $route.path.startsWith('/tournament/CEC1')
+                          ? 'current'
+                          : ''
+                      "
+                      @click="nav = false"
+                    >
+                      {{ $t("CEC1.self") }}
+                    </router-link>
                   </div>
                 </transition>
               </a>
@@ -225,7 +258,7 @@ section:first-of-type nav {
       display: flex;
       flex-flow: column nowrap;
       position: absolute;
-      bottom: -104px;
+      bottom: -204px;
       left: 4px;
       background-color: var(--bg-color);
       border-radius: 8px;
