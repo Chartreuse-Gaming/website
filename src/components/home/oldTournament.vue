@@ -41,20 +41,20 @@
         </div>
         <p>{{ $t("CEC3.self") }}</p>
       </router-link>
-      <router-link to="/">
+      <router-link :to="{ name: 'CGW_2019' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"
-            :alt="$t('CGW.self')"
+            :alt="$t('CGW_2019.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CGW.self") }}</p>
+        <p>{{ $t("CGW_2019.self") }}</p>
       </router-link>
-      <router-link to="/">
+      <router-link :to="{ name: 'CEC2' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"
@@ -67,7 +67,7 @@
         </div>
         <p>{{ $t("CEC2.self") }}</p>
       </router-link>
-      <router-link to="/">
+      <router-link :to="{ name: 'CEC1' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"

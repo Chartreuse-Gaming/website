@@ -26,6 +26,22 @@ const routes = [
     name: "CEC3",
     component: () => import(/* webpackChunkName: "CEC3" */ "../views/CEC3.vue"),
   },
+  {
+    path: "/tournament/CEC2",
+    name: "CEC2",
+    component: () => import(/* webpackChunkName: "CEC2" */ "../views/CEC2.vue"),
+  },
+  {
+    path: "/tournament/CEC1",
+    name: "CEC1",
+    component: () => import(/* webpackChunkName: "CEC1" */ "../views/CEC1.vue"),
+  },
+  {
+    path: "/tournament/CGW-2019",
+    name: "CGW_2019",
+    component: () =>
+      import(/* webpackChunkName: "CGW_2019" */ "../views/CGW_2019.vue"),
+  },
 ];
 
 const router = createRouter({
