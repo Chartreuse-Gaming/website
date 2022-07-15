@@ -10,8 +10,9 @@
           />
         </router-link>
 
-        <!-- Navigation PC -->
-        <nav id="nav-pc">
+        <!-- Navigation -->
+        <nav>
+          <font-awesome-icon id="mobile" icon="fa-solid fa-bars" />
           <router-link
             :to="{ name: 'home' }"
             :class="
@@ -19,14 +20,45 @@
             "
             >{{ $t("home") }}</router-link
           >
-          <router-link
-            to="/"
+          <a
+            id="dropdown"
+            href=""
             :class="$route.path.startsWith('/tournament/') ? 'current' : ''"
+            @mouseenter="dropdown = true"
+            @mouseleave="dropdown = false"
+            @click.prevent=""
           >
             {{ $t("tournaments.self") }}
             <font-awesome-icon icon="fa-solid fa-sort-down" />
-            <!-- TODO: Tournament dropdown -->
-          </router-link>
+            <transition name="fade">
+              <div v-if="dropdown">
+                <router-link
+                  :to="{ name: 'CEC5' }"
+                  :class="
+                    $route.path.startsWith('/tournament/CEC5') ? 'current' : ''
+                  "
+                >
+                  {{ $t("CEC5.self") }}
+                </router-link>
+                <router-link
+                  :to="{ name: 'CEC4' }"
+                  :class="
+                    $route.path.startsWith('/tournament/CEC4') ? 'current' : ''
+                  "
+                >
+                  {{ $t("CEC4.self") }}
+                </router-link>
+                <router-link
+                  :to="{ name: 'CEC3' }"
+                  :class="
+                    $route.path.startsWith('/tournament/CEC3') ? 'current' : ''
+                  "
+                >
+                  {{ $t("CEC3.self") }}
+                </router-link>
+              </div>
+            </transition>
+          </a>
           <router-link
             to="/#association"
             :class="current_link === 'association' ? 'current' : ''"
@@ -37,12 +69,6 @@
             :class="current_link === 'contact' ? 'current' : ''"
             >{{ $t("contact.self") }}</router-link
           >
-        </nav>
-
-        <!-- Navigation Mobile -->
-        <nav id="nav-mobile">
-          <font-awesome-icon icon="fa-solid fa-bars" />
-          <!-- TODO: Mobile menu -->
         </nav>
       </section>
 
@@ -80,6 +106,11 @@
 export default {
   name: "HeaderComponent",
   props: ["current_link"],
+  data() {
+    return {
+      dropdown: false,
+    };
+  },
   mounted() {
     const header = document.getElementsByTagName("header")[0];
     window.onscroll = function () {
@@ -101,6 +132,15 @@ $header-height: 90px;
   @include box-shadow(inset 0 100px 90px -100px var(--bg-color));
   backdrop-filter: blur(8px);
   background-color: rgba(38, 38, 38, 0.6);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 header {
@@ -139,21 +179,64 @@ header {
   }
 }
 
-section:first-of-type #nav-pc > * {
-  transition: color 150ms;
-  padding: 20px;
+section:first-of-type nav {
+  #mobile {
+    height: $header-height;
+    display: none;
+    align-items: center;
+    padding: 20px;
 
-  svg {
-    margin-left: 8px;
-    padding-bottom: 6px;
+    & > svg {
+      padding-bottom: 4px;
+      font-size: 1.5em;
+    }
   }
 
-  &:hover {
-    color: var(--green-touch);
+  #dropdown {
+    position: relative;
+
+    div {
+      width: max-content;
+      display: flex;
+      flex-flow: column nowrap;
+      position: absolute;
+      bottom: -104px;
+      left: 4px;
+      background-color: var(--bg-color);
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+      a {
+        height: auto;
+        padding: 8px 16px;
+
+        &:first-of-type {
+          padding-top: 16px;
+        }
+
+        &:last-of-type {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  a {
+    transition: color 150ms;
+    padding: 20px;
 
     svg {
-      transition: color 150ms;
+      margin-left: 8px;
+      padding-bottom: 6px;
+    }
+
+    &:hover {
       color: var(--green-touch);
+
+      svg {
+        transition: color 150ms;
+        color: var(--green-touch);
+      }
     }
   }
 }
@@ -203,18 +286,6 @@ section:last-of-type > a {
   }
 }
 
-#nav-mobile {
-  height: $header-height;
-  display: none;
-  align-items: center;
-  padding: 20px;
-
-  & > svg {
-    padding-bottom: 4px;
-    font-size: 1.5em;
-  }
-}
-
 #live {
   position: relative;
 
@@ -257,11 +328,7 @@ section:last-of-type > a {
 }
 
 @media only screen and (max-width: 650px) {
-  #nav-pc {
-    display: none;
-  }
-
-  #nav-mobile {
+  #mobile {
     display: flex;
   }
 }
