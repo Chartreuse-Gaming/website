@@ -69,7 +69,29 @@
             :alt="$t('CEC3.self') + 'logo'"
           />
         </article>
-        <img src="@/assets/img/carousel/CEC_3.webp" :alt="$t('CEC5.self')" />
+        <img src="@/assets/img/carousel/CEC_3.webp" :alt="$t('CEC3.self')" />
+      </SplideSlide>
+      <SplideSlide>
+        <i></i>
+        <article>
+          <section>
+            <p>{{ $t("CGW_2019.date") }}</p>
+            <p>
+              Chartreuse<br />
+              Gaming<br />
+              Winter 2019
+            </p>
+            <router-link :to="{ name: 'CGW_2019' }" class="btn">
+              {{ $t("read-more") }}
+              <font-awesome-icon icon="fa-solid fa-right-long" />
+            </router-link>
+            <i></i>
+          </section>
+        </article>
+        <img
+          src="@/assets/img/carousel/CGW_2019.webp"
+          :alt="$t('CGW_2019.self')"
+        />
       </SplideSlide>
     </Splide>
   </article>
