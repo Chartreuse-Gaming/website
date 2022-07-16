@@ -1,6 +1,12 @@
 <template>
-  <article>
-    <Splide :options="options" :aria-label="$t('tournaments.self')">
+  <article id="carousel">
+    <Splide
+      :options="options"
+      :aria-label="$t('tournaments.self')"
+      @splide:autoplay:play="updateDOM"
+      @splide:autoplay:pause="updateDOM"
+      @splide:active="updateDOM"
+    >
       <SplideSlide>
         <i></i>
         <article>
@@ -104,6 +110,7 @@ export default {
   name: "carouselComponent",
   data() {
     return {
+      DOM: {},
       options: {
         type: "loop",
         rewind: true,
@@ -119,6 +126,14 @@ export default {
         interval: 7500,
       },
     };
+  },
+  methods: {
+    updateDOM() {
+      this.DOM = document.getElementById("carousel").innerHTML;
+    },
+  },
+  beforeUnmount() {
+    document.getElementById("carousel").innerHTML = this.DOM;
   },
 };
 </script>
