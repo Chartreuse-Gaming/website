@@ -1,26 +1,19 @@
 <template>
   <main>
-    <Banner :title="$t('CEC2.self')" src="assets/img/carousel/CEC_3.webp" />
+    <Banner :title="$t('CEC2.self')" src="assets/img/carousel/CEC_2.webp" />
 
     <div>
       <article id="sponsors" class="content">
         <img
-          src="@/assets/img/sponsors/Boulangerie_Patisserie_Modelon.webp"
-          alt="Boulangerie Pâtisserie Modelon"
-        />
-        <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
-        />
-        <img src="@/assets/img/sponsors/Ecoprestige.webp" alt="Ecoprestige" />
-        <img
-          src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
-          alt="Saint Laurent du Pont"
-        />
-        <img
           src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
           alt="Coeur de Chartreuse"
         />
+        <img src="@/assets/img/sponsors/LDLC.webp" alt="LDLC Chambéry" />
+        <img
+          src="@/assets/img/sponsors/gc_informatique.webp"
+          alt="GC Informatique"
+        />
+        <img src="@/assets/img/sponsors/Inov_Concept.webp" alt="Inov Concept" />
       </article>
 
       <article id="presentation" class="content">

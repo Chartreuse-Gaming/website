@@ -44,7 +44,7 @@
       <router-link :to="{ name: 'CGW_2019' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_3.webp"
+            src="@/assets/img/tournaments/CGW_2019.webp"
             :alt="$t('CGW_2019.self')"
           />
           <span>
@@ -57,7 +57,7 @@
       <router-link :to="{ name: 'CEC2' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_3.webp"
+            src="@/assets/img/tournaments/CEC_2.webp"
             :alt="$t('CEC2.self')"
           />
           <span>
@@ -70,7 +70,7 @@
       <router-link :to="{ name: 'CEC1' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_3.webp"
+            src="@/assets/img/tournaments/CEC_1.webp"
             :alt="$t('CEC1.self')"
           />
           <span>

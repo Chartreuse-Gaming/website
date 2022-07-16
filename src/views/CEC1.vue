@@ -1,28 +1,8 @@
 <template>
   <main>
-    <Banner :title="$t('CEC1.self')" src="assets/img/carousel/CEC_3.webp" />
+    <Banner :title="$t('CEC1.self')" src="assets/img/carousel/CEC_1.webp" />
 
     <div>
-      <article id="sponsors" class="content">
-        <img
-          src="@/assets/img/sponsors/Boulangerie_Patisserie_Modelon.webp"
-          alt="Boulangerie Pâtisserie Modelon"
-        />
-        <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
-        />
-        <img src="@/assets/img/sponsors/Ecoprestige.webp" alt="Ecoprestige" />
-        <img
-          src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
-          alt="Saint Laurent du Pont"
-        />
-        <img
-          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
-          alt="Coeur de Chartreuse"
-        />
-      </article>
-
       <article id="presentation" class="content">
         <h2>{{ $t("presentation") }}</h2>
         <p>{{ $t("CEC1.presentation") }}</p>
@@ -114,8 +94,8 @@ export default {
 <style scoped lang="scss">
 main > div {
   position: relative;
-  top: -140px;
-  margin-bottom: -120px;
+  top: -50px;
+  margin-bottom: -50px;
 }
 
 #sponsors {

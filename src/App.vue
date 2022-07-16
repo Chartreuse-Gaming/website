@@ -1,6 +1,12 @@
 <template>
   <Header :current_link="element" />
-  <router-view @navbar="elements" />
+
+  <router-view v-slot="{ Component }" @navbar="elements">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+
   <Footer />
 </template>
 
@@ -16,6 +22,7 @@ export default {
   data() {
     return {
       element: "home",
+      prevHeight: 0,
     };
   },
   methods: {
@@ -141,6 +148,16 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .splide .splide__pagination {

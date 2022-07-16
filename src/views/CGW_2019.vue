@@ -1,23 +1,18 @@
 <template>
   <main>
-    <Banner :title="$t('CGW_2019.self')" src="assets/img/carousel/CEC_3.webp" />
+    <Banner
+      :title="$t('CGW_2019.self')"
+      src="assets/img/carousel/CGW_2019.webp"
+    />
 
     <div>
       <article id="sponsors" class="content">
-        <img src="@/assets/img/sponsors/FullLife.webp" alt="FullLife" />
+        <img src="@/assets/img/sponsors/Transfo.webp" alt="Transfo" />
         <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
+          src="@/assets/img/sponsors/La_French_Tech_In_The_Alps.webp"
+          alt="La French Tech In The Alps"
         />
-        <img src="@/assets/img/sponsors/Noctua.webp" alt="Noctua" />
-        <img
-          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
-          alt="Coeur de Chartreuse"
-        />
-        <img
-          src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
-          alt="Saint Laurent du Pont"
-        />
+        <img src="@/assets/img/sponsors/Casemate.webp" alt="Casemate" />
       </article>
 
       <article id="presentation" class="content">
