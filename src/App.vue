@@ -168,6 +168,7 @@ body {
     background: var(--text-color) !important;
     opacity: 1;
     padding: 5px !important;
+    margin: 0 4px;
 
     &.is-active {
       background: var(--green-touch) !important;
