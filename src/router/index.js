@@ -52,6 +52,12 @@ const routes = [
       ),
   },
   {
+    path: "/tournament/CEC",
+    name: "CEC",
+    component: () =>
+      import(/* webpackChunkName: "CEC" */ "../views/tournaments/CEC.vue"),
+  },
+  {
     path: "/tournament/CGW-2019",
     name: "CGW_2019",
     component: () =>
@@ -69,14 +75,16 @@ const router = createRouter({
       if (id.length) {
         let yOffset = -90;
         let element = document.getElementById(id);
-        let y =
-          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
+        if (element) {
+          let y =
+            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          return { top: y, behavior: "smooth" };
+        }
       }
     } else if (SavedPosition) {
       return SavedPosition;
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      return { top: 0, behavior: "smooth" };
     }
   },
   routes,

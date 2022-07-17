@@ -41,37 +41,15 @@
                 <transition name="fade">
                   <div v-if="dropdown">
                     <router-link
-                      :to="{ name: 'CEC5' }"
+                      :to="{ name: 'CEC' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC/5')
+                        $route.path.startsWith('/tournament/CEC')
                           ? 'current'
                           : ''
                       "
                       @click="nav = false"
                     >
-                      {{ $t("tournaments.CEC.5.self") }}
-                    </router-link>
-                    <router-link
-                      :to="{ name: 'CEC4' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CEC/4')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CEC.4.self") }}
-                    </router-link>
-                    <router-link
-                      :to="{ name: 'CEC3' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CEC/3')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CEC.3.self") }}
+                      {{ $t("tournaments.CEC.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CGW_2019' }"
@@ -83,28 +61,6 @@
                       @click="nav = false"
                     >
                       {{ $t("tournaments.CGW_2019.self") }}
-                    </router-link>
-                    <router-link
-                      :to="{ name: 'CEC2' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CEC/2')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CEC.2.self") }}
-                    </router-link>
-                    <router-link
-                      :to="{ name: 'CEC1' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CEC/1')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CEC.1.self") }}
                     </router-link>
                   </div>
                 </transition>
@@ -258,7 +214,7 @@ section:first-of-type nav {
       display: flex;
       flex-flow: column nowrap;
       position: absolute;
-      bottom: -204px;
+      bottom: -68px;
       left: 4px;
       background-color: var(--bg-color);
       border-radius: 8px;
