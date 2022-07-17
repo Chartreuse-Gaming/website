@@ -39,7 +39,7 @@
 
       <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
 
-      <Gallery :directory="gallery.directory" :images="gallery.images" />
+      <!--<Gallery :directory="gallery.directory" :images="gallery.images" />-->
     </div>
   </main>
 </template>
@@ -47,7 +47,6 @@
 <script>
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
-import Gallery from "@/components/other/gallery";
 import lol from "@/assets/json/CEC3/league_of_legends.json";
 import rl from "@/assets/json/CEC3/rocket_league.json";
 
@@ -59,7 +58,6 @@ export default {
   components: {
     Banner,
     Table,
-    Gallery,
   },
   data() {
     return {

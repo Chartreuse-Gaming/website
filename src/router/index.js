@@ -12,35 +12,52 @@ const routes = [
     component: Home,
   },
   {
-    path: "/tournament/CEC5",
+    path: "/tournament/CEC/5",
     name: "CEC5",
-    component: () => import(/* webpackChunkName: "CEC5" */ "../views/CEC5.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC5" */ "../views/tournaments/CEC/CEC5.vue"
+      ),
   },
   {
-    path: "/tournament/CEC4",
+    path: "/tournament/CEC/4",
     name: "CEC4",
-    component: () => import(/* webpackChunkName: "CEC4" */ "../views/CEC4.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC4" */ "../views/tournaments/CEC/CEC4.vue"
+      ),
   },
   {
-    path: "/tournament/CEC3",
+    path: "/tournament/CEC/3",
     name: "CEC3",
-    component: () => import(/* webpackChunkName: "CEC3" */ "../views/CEC3.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC3" */ "../views/tournaments/CEC/CEC3.vue"
+      ),
   },
   {
-    path: "/tournament/CEC2",
+    path: "/tournament/CEC/2",
     name: "CEC2",
-    component: () => import(/* webpackChunkName: "CEC2" */ "../views/CEC2.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC2" */ "../views/tournaments/CEC/CEC2.vue"
+      ),
   },
   {
-    path: "/tournament/CEC1",
+    path: "/tournament/CEC/1",
     name: "CEC1",
-    component: () => import(/* webpackChunkName: "CEC1" */ "../views/CEC1.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC1" */ "../views/tournaments/CEC/CEC1.vue"
+      ),
   },
   {
     path: "/tournament/CGW-2019",
     name: "CGW_2019",
     component: () =>
-      import(/* webpackChunkName: "CGW_2019" */ "../views/CGW_2019.vue"),
+      import(
+        /* webpackChunkName: "CGW_2019" */ "../views/tournaments/CGW_2019.vue"
+      ),
   },
 ];
 

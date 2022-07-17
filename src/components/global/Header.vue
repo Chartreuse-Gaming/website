@@ -43,7 +43,7 @@
                     <router-link
                       :to="{ name: 'CEC5' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC5')
+                        $route.path.startsWith('/tournament/CEC/5')
                           ? 'current'
                           : ''
                       "
@@ -54,7 +54,7 @@
                     <router-link
                       :to="{ name: 'CEC4' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC4')
+                        $route.path.startsWith('/tournament/CEC/4')
                           ? 'current'
                           : ''
                       "
@@ -65,7 +65,7 @@
                     <router-link
                       :to="{ name: 'CEC3' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC3')
+                        $route.path.startsWith('/tournament/CEC/3')
                           ? 'current'
                           : ''
                       "
@@ -87,7 +87,7 @@
                     <router-link
                       :to="{ name: 'CEC2' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC2')
+                        $route.path.startsWith('/tournament/CEC/2')
                           ? 'current'
                           : ''
                       "
@@ -98,7 +98,7 @@
                     <router-link
                       :to="{ name: 'CEC1' }"
                       :class="
-                        $route.path.startsWith('/tournament/CEC1')
+                        $route.path.startsWith('/tournament/CEC/1')
                           ? 'current'
                           : ''
                       "

@@ -42,7 +42,7 @@
         :data="ranking.lol"
       />
 
-      <Gallery :directory="gallery.directory" :images="gallery.images" />
+      <!--<Gallery :directory="gallery.directory" :images="gallery.images" />-->
     </div>
   </main>
 </template>
@@ -50,7 +50,6 @@
 <script>
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
-import Gallery from "@/components/other/gallery";
 import rl from "@/assets/json/CEC5/rocket_league.json";
 import cs from "@/assets/json/CEC5/counter_strike.json";
 import lol from "@/assets/json/CEC5/league_of_legends.json";
@@ -63,7 +62,6 @@ export default {
   components: {
     Banner,
     Table,
-    Gallery,
   },
   data() {
     return {

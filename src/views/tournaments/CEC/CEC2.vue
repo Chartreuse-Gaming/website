@@ -26,7 +26,7 @@
 
       <Table img="League_of_Legends" alt="League of Legends" :data="ranking" />
 
-      <Gallery :directory="gallery.directory" :images="gallery.images" />
+      <!--<Gallery :directory="gallery.directory" :images="gallery.images" />-->
     </div>
   </main>
 </template>
@@ -34,7 +34,6 @@
 <script>
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
-import Gallery from "@/components/other/gallery";
 import lol from "@/assets/json/CEC2/league_of_legends.json";
 
 export default {
@@ -45,7 +44,6 @@ export default {
   components: {
     Banner,
     Table,
-    Gallery,
   },
   data() {
     return {
