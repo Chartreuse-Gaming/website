@@ -49,7 +49,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CEC5.self") }}
+                      {{ $t("tournaments.CEC.5.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CEC4' }"
@@ -60,7 +60,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CEC4.self") }}
+                      {{ $t("tournaments.CEC.4.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CEC3' }"
@@ -71,7 +71,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CEC3.self") }}
+                      {{ $t("tournaments.CEC.3.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CGW_2019' }"
@@ -82,7 +82,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CGW_2019.self") }}
+                      {{ $t("tournaments.CGW_2019.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CEC2' }"
@@ -93,7 +93,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CEC2.self") }}
+                      {{ $t("tournaments.CEC.2.self") }}
                     </router-link>
                     <router-link
                       :to="{ name: 'CEC1' }"
@@ -104,7 +104,7 @@
                       "
                       @click="nav = false"
                     >
-                      {{ $t("CEC1.self") }}
+                      {{ $t("tournaments.CEC.1.self") }}
                     </router-link>
                   </div>
                 </transition>

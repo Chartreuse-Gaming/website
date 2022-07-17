@@ -1,11 +1,14 @@
 <template>
   <main>
-    <Banner :title="$t('CEC1.self')" src="assets/img/carousel/CEC_1.webp" />
+    <Banner
+      :title="$t('tournaments.CEC.1.self')"
+      src="assets/img/carousel/CEC_1.webp"
+    />
 
     <div>
       <article id="presentation" class="content">
         <h2>{{ $t("presentation") }}</h2>
-        <p>{{ $t("CEC1.presentation") }}</p>
+        <p>{{ $t("tournaments.CEC.1.presentation") }}</p>
       </article>
 
       <Table img="League_of_Legends" alt="League of Legends" :data="ranking" />
@@ -24,7 +27,7 @@ import lol from "@/assets/json/CEC1/league_of_legends.json";
 export default {
   name: "CEC1View",
   title() {
-    return this.$t("CEC1.self");
+    return this.$t("tournaments.CEC.1.self");
   },
   components: {
     Banner,

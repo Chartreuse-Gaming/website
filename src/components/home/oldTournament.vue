@@ -6,79 +6,79 @@
         <div>
           <img
             src="@/assets/img/tournaments/CEC_5.webp"
-            :alt="$t('CEC5.self')"
+            :alt="$t('tournaments.CEC.5.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CEC5.self") }}</p>
+        <p>{{ $t("tournaments.CEC.5.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC4' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_4.webp"
-            :alt="$t('CEC4.self')"
+            :alt="$t('tournaments.CEC.4.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CEC4.self") }}</p>
+        <p>{{ $t("tournaments.CEC.4.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC3' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_3.webp"
-            :alt="$t('CEC3.self')"
+            :alt="$t('tournaments.CEC.3.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CEC3.self") }}</p>
+        <p>{{ $t("tournaments.CEC.3.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CGW_2019' }">
         <div>
           <img
             src="@/assets/img/tournaments/CGW_2019.webp"
-            :alt="$t('CGW_2019.self')"
+            :alt="$t('tournaments.CGW_2019.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CGW_2019.self") }}</p>
+        <p>{{ $t("tournaments.CGW_2019.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC2' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_2.webp"
-            :alt="$t('CEC2.self')"
+            :alt="$t('tournaments.CEC.2.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CEC2.self") }}</p>
+        <p>{{ $t("tournaments.CEC.2.self") }}</p>
       </router-link>
       <router-link :to="{ name: 'CEC1' }">
         <div>
           <img
             src="@/assets/img/tournaments/CEC_1.webp"
-            :alt="$t('CEC1.self')"
+            :alt="$t('tournaments.CEC.1.self')"
           />
           <span>
             <i></i>
             <i></i>
           </span>
         </div>
-        <p>{{ $t("CEC1.self") }}</p>
+        <p>{{ $t("tournaments.CEC.1.self") }}</p>
       </router-link>
     </section>
     <!--<router-link to="/" class="btn">{{ $t("load-more") }}</router-link>-->

@@ -11,7 +11,7 @@
         <i></i>
         <article>
           <section>
-            <p>{{ $t("CEC5.date") }}</p>
+            <p>{{ $t("tournaments.CEC.5.date") }}</p>
             <p class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -25,16 +25,19 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            :alt="$t('CEC5.self') + 'logo'"
+            :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
-        <img src="@/assets/img/carousel/CEC_5.webp" :alt="$t('CEC5.self')" />
+        <img
+          src="@/assets/img/carousel/CEC_5.webp"
+          :alt="$t('tournaments.CEC.5.self')"
+        />
       </SplideSlide>
       <SplideSlide>
         <i></i>
         <article>
           <section>
-            <p>{{ $t("CEC4.date") }}</p>
+            <p>{{ $t("tournaments.CEC.4.date") }}</p>
             <p id="CEC4" class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -49,16 +52,19 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            :alt="$t('CEC4.self') + 'logo'"
+            :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
-        <img src="@/assets/img/carousel/CEC_4.webp" :alt="$t('CEC4.self')" />
+        <img
+          src="@/assets/img/carousel/CEC_4.webp"
+          :alt="$t('tournaments.CEC.4.self')"
+        />
       </SplideSlide>
       <SplideSlide>
         <i></i>
         <article>
           <section>
-            <p>{{ $t("CEC3.date") }}</p>
+            <p>{{ $t("tournaments.CEC.3.date") }}</p>
             <p class="CEC">
               Chartreuse<br />
               Esport<br />
@@ -72,16 +78,19 @@
           </section>
           <img
             src="@/assets/img/carousel/CEC_logo.webp"
-            :alt="$t('CEC3.self') + 'logo'"
+            :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
-        <img src="@/assets/img/carousel/CEC_3.webp" :alt="$t('CEC3.self')" />
+        <img
+          src="@/assets/img/carousel/CEC_3.webp"
+          :alt="$t('tournaments.CEC.3.self')"
+        />
       </SplideSlide>
       <SplideSlide>
         <i></i>
         <article>
           <section>
-            <p>{{ $t("CGW_2019.date") }}</p>
+            <p>{{ $t("tournaments.CGW_2019.date") }}</p>
             <p>
               Chartreuse<br />
               Gaming<br />
@@ -96,7 +105,7 @@
         </article>
         <img
           src="@/assets/img/carousel/CGW_2019.webp"
-          :alt="$t('CGW_2019.self')"
+          :alt="$t('tournaments.CGW_2019.self')"
         />
       </SplideSlide>
     </Splide>

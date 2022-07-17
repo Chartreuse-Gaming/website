@@ -1,40 +1,40 @@
 <template>
   <main>
-    <Banner :title="$t('CEC3.self')" src="assets/img/carousel/CEC_3.webp" />
+    <Banner
+      :title="$t('tournaments.CEC.4.self')"
+      src="assets/img/carousel/CEC_4.webp"
+    />
 
     <div>
       <article id="sponsors" class="content">
         <img
-          src="@/assets/img/sponsors/Boulangerie_Patisserie_Modelon.webp"
-          alt="Boulangerie Pâtisserie Modelon"
+          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
+          alt="Coeur de Chartreuse"
         />
-        <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
-        />
-        <img src="@/assets/img/sponsors/Ecoprestige.webp" alt="Ecoprestige" />
         <img
           src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
           alt="Saint Laurent du Pont"
         />
         <img
-          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
-          alt="Coeur de Chartreuse"
+          src="@/assets/img/sponsors/Rocket_Baguette.webp"
+          alt="Rocket Baguette"
+        />
+        <img
+          src="@/assets/img/sponsors/Inova_Construction.webp"
+          alt="Inova Construction"
+        />
+        <img
+          src="@/assets/img/sponsors/Inov_Concept.webp"
+          alt="Inov' Concept"
         />
       </article>
 
       <article id="presentation" class="content">
         <h2>{{ $t("presentation") }}</h2>
-        <p>{{ $t("CEC3.presentation") }}</p>
+        <p>{{ $t("tournaments.CEC.4.presentation") }}</p>
       </article>
 
-      <Table
-        img="League_of_Legends"
-        alt="League of Legends"
-        :data="ranking.lol"
-      />
-
-      <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
+      <Table img="Rocket_League" alt="Rocket League" :data="ranking" />
 
       <Gallery :directory="gallery.directory" :images="gallery.images" />
     </div>
@@ -45,13 +45,12 @@
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
 import Gallery from "@/components/other/gallery";
-import lol from "@/assets/json/CEC3/league_of_legends.json";
-import rl from "@/assets/json/CEC3/rocket_league.json";
+import rl from "@/assets/json/CEC4/rocket_league.json";
 
 export default {
-  name: "CEC3View",
+  name: "CEC4View",
   title() {
-    return this.$t("CEC3.self");
+    return this.$t("tournaments.CEC.4.self");
   },
   components: {
     Banner,
@@ -60,10 +59,7 @@ export default {
   },
   data() {
     return {
-      ranking: {
-        lol: lol,
-        rl: rl,
-      },
+      ranking: rl,
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
         images: [

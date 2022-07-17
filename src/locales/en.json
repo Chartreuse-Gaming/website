@@ -2,7 +2,40 @@
   "home": "Home",
   "tournaments": {
     "self": "Tournaments",
-    "previous": "Our previous tournaments"
+    "previous": "Our previous tournaments",
+    "CEC": {
+      "self": "Chartreuse Esport Contest",
+      "1": {
+        "self": "Chartreuse Esport Contest 1",
+        "date": "28th October 2017 ",
+        "presentation": "The association organized its first League Of Legends event in 5vs5 on October 28, 2017, with a rather modest ambition. 5 teams responded and the best of them shared the €150 cashprize."
+      },
+      "2": {
+        "self": "Chartreuse Esport Contest 2",
+        "date": "20th October 2018",
+        "presentation": "The association renewed its first event and made it its flagship event. This second edition took place on October 20, 2018. This edition welcomed 8 teams, on League Of Legends in 5vs5, for a global cashprize of 400€."
+      },
+      "3": {
+        "self": "Chartreuse Esport Contest 3",
+        "date": "26 - 27th October 2019",
+        "presentation": "In its momentum, the association decided to diversify its event by offering League Of Legends and Rocket League at the third edition on October 26 and 27, 2019. League Of Legends had a great event with 16 fierce teams, present to share a cashprize of 1000€ while Rocket League had an encouraging start with 11 teams, coming from all over France for a cashprize of 400€."
+      },
+      "4": {
+        "self": "Chartreuse Esport Contest 4 Online",
+        "date": "25th October 2020",
+        "presentation": "Due to the health crisis, regulatory and legal measures, the association had no choice but to dematerialize its fourth edition by favoring Rocket League over Counter Strike: Global Offensive and League Of Legends. This edition was entirely distributed by Rocket Baguette and had 32 slots for a cashprize of 450€."
+      },
+      "5": {
+        "self": "Chartreuse Esport Contest 5",
+        "date": "24th October 2021",
+        "presentation": "After a pivotal year and a situation in half-tone, the association took the bet to renew its edition under the format of LAN by proposing for the first time three of the most played games on the competitive scene: Counter Strike: Global Offensive, League Of Legends and Rocket League. 98 players answered present on the three games to share a cashprize size XXL, of 3500€!"
+      }
+    },
+    "CGW_2019": {
+      "self": "Chartreuse Gaming Winter 2019",
+      "date": "26th January 2019",
+      "presentation": "During a winter too long for the taste of some, the association proposed a 2vs2 tournament on Counter Strike: Global Offensive during an evening on January 26, 2019 with a final prize of 200€."
+    }
   },
   "association": {
     "self": "Association | The association",
@@ -101,35 +134,5 @@
   "presentation": "Presentation",
   "ranking": "Ranking",
   "gallery": "Gallery",
-  "cashprize": "Cashprize",
-  "CEC5": {
-    "self": "Chartreuse Esport Contest 5",
-    "date": "24th October 2021",
-    "presentation": "After a pivotal year and a situation in half-tone, the association took the bet to renew its edition under the format of LAN by proposing for the first time three of the most played games on the competitive scene: Counter Strike: Global Offensive, League Of Legends and Rocket League. 98 players answered present on the three games to share a cashprize size XXL, of 3500€!"
-  },
-  "CEC4": {
-    "self": "Chartreuse Esport Contest 4 Online",
-    "date": "25th October 2020",
-    "presentation": "Due to the health crisis, regulatory and legal measures, the association had no choice but to dematerialize its fourth edition by favoring Rocket League over Counter Strike: Global Offensive and League Of Legends. This edition was entirely distributed by Rocket Baguette and had 32 slots for a cashprize of 450€."
-  },
-  "CEC3": {
-    "self": "Chartreuse Esport Contest 3",
-    "date": "26 - 27th October 2019",
-    "presentation": "In its momentum, the association decided to diversify its event by offering League Of Legends and Rocket League at the third edition on October 26 and 27, 2019. League Of Legends had a great event with 16 fierce teams, present to share a cashprize of 1000€ while Rocket League had an encouraging start with 11 teams, coming from all over France for a cashprize of 400€."
-  },
-  "CGW_2019": {
-    "self": "Chartreuse Gaming Winter 2019",
-    "date": "26th January 2019",
-    "presentation": "During a winter too long for the taste of some, the association proposed a 2vs2 tournament on Counter Strike: Global Offensive during an evening on January 26, 2019 with a final prize of 200€."
-  },
-  "CEC2": {
-    "self": "Chartreuse Esport Contest 2",
-    "date": "20th October 2018",
-    "presentation": "The association renewed its first event and made it its flagship event. This second edition took place on October 20, 2018. This edition welcomed 8 teams, on League Of Legends in 5vs5, for a global cashprize of 400€."
-  },
-  "CEC1": {
-    "self": "Chartreuse Esport Contest 1",
-    "date": "28th October 2017 ",
-    "presentation": "The association organized its first League Of Legends event in 5vs5 on October 28, 2017, with a rather modest ambition. 5 teams responded and the best of them shared the €150 cashprize."
-  }
+  "cashprize": "Cashprize"
 }

@@ -1,27 +1,30 @@
 <template>
   <main>
-    <Banner :title="$t('CEC2.self')" src="assets/img/carousel/CEC_2.webp" />
+    <Banner
+      :title="$t('tournaments.CGW_2019.self')"
+      src="assets/img/carousel/CGW_2019.webp"
+    />
 
     <div>
       <article id="sponsors" class="content">
+        <img src="@/assets/img/sponsors/Transfo.webp" alt="Transfo" />
         <img
-          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
-          alt="Coeur de Chartreuse"
+          src="@/assets/img/sponsors/La_French_Tech_In_The_Alps.webp"
+          alt="La French Tech In The Alps"
         />
-        <img src="@/assets/img/sponsors/LDLC.webp" alt="LDLC Chambéry" />
-        <img
-          src="@/assets/img/sponsors/gc_informatique.webp"
-          alt="GC Informatique"
-        />
-        <img src="@/assets/img/sponsors/Inov_Concept.webp" alt="Inov Concept" />
+        <img src="@/assets/img/sponsors/Casemate.webp" alt="Casemate" />
       </article>
 
       <article id="presentation" class="content">
         <h2>{{ $t("presentation") }}</h2>
-        <p>{{ $t("CEC2.presentation") }}</p>
+        <p>{{ $t("tournaments.CGW_2019.presentation") }}</p>
       </article>
 
-      <Table img="League_of_Legends" alt="League of Legends" :data="ranking" />
+      <Table
+        img="CSGO"
+        alt="Counter Strike: Global Offensive"
+        :data="ranking"
+      />
 
       <Gallery :directory="gallery.directory" :images="gallery.images" />
     </div>
@@ -32,12 +35,12 @@
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
 import Gallery from "@/components/other/gallery";
-import lol from "@/assets/json/CEC2/league_of_legends.json";
+import cs from "@/assets/json/CGW_2019/counter_strike.json";
 
 export default {
-  name: "CEC2View",
+  name: "CGW2019View",
   title() {
-    return this.$t("CEC2.self");
+    return this.$t("tournaments.CGW_2019.self");
   },
   components: {
     Banner,
@@ -46,7 +49,7 @@ export default {
   },
   data() {
     return {
-      ranking: lol,
+      ranking: cs,
       gallery: {
         directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
         images: [
