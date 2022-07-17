@@ -12,7 +12,7 @@
 ![Website uptime](https://img.shields.io/uptimerobot/ratio/m792191715-272539423c73e2859a54fa41?label=Uptime)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/website?label=Version)&nbsp;
 ![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/website?label=License)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-4.65%20MB-blue)
+![Website build size](https://img.shields.io/badge/Build%20size-5.28%20MB-blue)
 
   <p align="center">
     Website of the Chartreuse Gaming association.
