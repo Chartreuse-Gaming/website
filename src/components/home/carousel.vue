@@ -24,7 +24,7 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC/CEC.webp"
+            src="@/assets/img/carousel/CEC/CEC_logo.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
@@ -51,7 +51,7 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC/CEC.webp"
+            src="@/assets/img/carousel/CEC/CEC_logo.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
@@ -77,7 +77,7 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC/CEC.webp"
+            src="@/assets/img/carousel/CEC/CEC_logo.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
