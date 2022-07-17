@@ -68,13 +68,13 @@
               <router-link
                 to="/#association"
                 :class="current_link === 'association' ? 'current' : ''"
-                @click="nav = false"
+                @click.prevent="toAnchor('association')"
                 >{{ $t("association.self", 1) }}</router-link
               >
               <router-link
                 to="/#contact"
                 :class="current_link === 'contact' ? 'current' : ''"
-                @click="nav = false"
+                @click.prevent="toAnchor('contact')"
                 >{{ $t("contact.self") }}</router-link
               >
               <span @click.prevent="nav = false"></span>
@@ -132,6 +132,16 @@ export default {
         header.classList.remove("scroll");
       }
     };
+  },
+  methods: {
+    toAnchor(anchor) {
+      this.nav = false;
+      if (this.$route.path !== "/") {
+        setTimeout(() => {
+          this.$router.push("/#" + anchor);
+        }, 450);
+      }
+    },
   },
 };
 </script>
