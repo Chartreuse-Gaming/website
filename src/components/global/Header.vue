@@ -3,7 +3,7 @@
     <article>
       <section>
         <!-- Logo -->
-        <router-link to="/" id="logo">
+        <router-link to="/" id="logo" @click="nav = false">
           <img
             src="@/assets/svg/logo.svg"
             :alt="$t('association.logo') + '.'"
@@ -233,6 +233,7 @@ section:first-of-type nav {
       a {
         height: auto;
         padding: 8px 16px;
+        font-size: 0.94em;
 
         &:first-of-type {
           padding-top: 16px;
