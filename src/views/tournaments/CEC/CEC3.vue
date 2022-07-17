@@ -2,7 +2,7 @@
   <main>
     <Banner
       :title="$t('tournaments.CEC.3.self')"
-      src="assets/img/carousel/CEC_3.webp"
+      src="assets/img/carousel/CEC/CEC3.webp"
     />
 
     <div>
@@ -47,8 +47,8 @@
 <script>
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
-import lol from "@/assets/json/CEC3/league_of_legends.json";
-import rl from "@/assets/json/CEC3/rocket_league.json";
+import lol from "@/assets/json/CEC/CEC3/league_of_legends.json";
+import rl from "@/assets/json/CEC/CEC3/rocket_league.json";
 
 export default {
   name: "CEC3View",

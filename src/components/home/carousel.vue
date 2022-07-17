@@ -24,12 +24,12 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC_logo.webp"
+            src="@/assets/img/carousel/CEC/CEC.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
         <img
-          src="@/assets/img/carousel/CEC_5.webp"
+          src="@/assets/img/carousel/CEC/CEC5.webp"
           :alt="$t('tournaments.CEC.5.self')"
         />
       </SplideSlide>
@@ -51,12 +51,12 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC_logo.webp"
+            src="@/assets/img/carousel/CEC/CEC.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
         <img
-          src="@/assets/img/carousel/CEC_4.webp"
+          src="@/assets/img/carousel/CEC/CEC4.webp"
           :alt="$t('tournaments.CEC.4.self')"
         />
       </SplideSlide>
@@ -77,12 +77,12 @@
             <i></i>
           </section>
           <img
-            src="@/assets/img/carousel/CEC_logo.webp"
+            src="@/assets/img/carousel/CEC/CEC.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
           />
         </article>
         <img
-          src="@/assets/img/carousel/CEC_3.webp"
+          src="@/assets/img/carousel/CEC/CEC3.webp"
           :alt="$t('tournaments.CEC.3.self')"
         />
       </SplideSlide>

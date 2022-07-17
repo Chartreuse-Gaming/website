@@ -5,7 +5,7 @@
       <router-link :to="{ name: 'CEC5' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_5.webp"
+            src="@/assets/img/tournaments/CEC/CEC5.webp"
             :alt="$t('tournaments.CEC.5.self')"
           />
           <span>
@@ -18,7 +18,7 @@
       <router-link :to="{ name: 'CEC4' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_4.webp"
+            src="@/assets/img/tournaments/CEC/CEC4.webp"
             :alt="$t('tournaments.CEC.4.self')"
           />
           <span>
@@ -31,7 +31,7 @@
       <router-link :to="{ name: 'CEC3' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_3.webp"
+            src="@/assets/img/tournaments/CEC/CEC3.webp"
             :alt="$t('tournaments.CEC.3.self')"
           />
           <span>
@@ -57,7 +57,7 @@
       <router-link :to="{ name: 'CEC2' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_2.webp"
+            src="@/assets/img/tournaments/CEC/CEC2.webp"
             :alt="$t('tournaments.CEC.2.self')"
           />
           <span>
@@ -70,7 +70,7 @@
       <router-link :to="{ name: 'CEC1' }">
         <div>
           <img
-            src="@/assets/img/tournaments/CEC_1.webp"
+            src="@/assets/img/tournaments/CEC/CEC1.webp"
             :alt="$t('tournaments.CEC.1.self')"
           />
           <span>

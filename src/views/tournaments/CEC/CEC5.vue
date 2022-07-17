@@ -2,7 +2,7 @@
   <main>
     <Banner
       :title="$t('tournaments.CEC.5.self')"
-      src="assets/img/carousel/CEC_5.webp"
+      src="assets/img/carousel/CEC/CEC5.webp"
     />
 
     <div>
@@ -50,9 +50,9 @@
 <script>
 import Banner from "@/components/other/banner";
 import Table from "@/components/other/table";
-import rl from "@/assets/json/CEC5/rocket_league.json";
-import cs from "@/assets/json/CEC5/counter_strike.json";
-import lol from "@/assets/json/CEC5/league_of_legends.json";
+import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
+import cs from "@/assets/json/CEC/CEC5/counter_strike.json";
+import lol from "@/assets/json/CEC/CEC5/league_of_legends.json";
 
 export default {
   name: "CEC5View",
