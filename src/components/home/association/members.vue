@@ -34,10 +34,13 @@ export default {
 
 <style scoped lang="scss">
 section {
-  margin-bottom: 10px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 16px;
 
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   & > div {
