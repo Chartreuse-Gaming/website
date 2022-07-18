@@ -41,12 +41,20 @@
     "self": "Association | L'association",
     "logo": "Logo de l'association",
     "t-shirt": "T-shirt de l'association",
-    "members": "Les membres de l'association",
     "presentation": {
       "1": "Un 29 décembre 2015, un noyau de six amis se réunit et fonde Chartreuse Gaming, en tant qu’association loi 1901. Unanimes, ils souhaitent saisir l’opportunité de prendre part à l’essor de l’eSport en s’inscrivant comme des acteurs locaux incontournables du milieu rural et de la région Rhône-Alpes. Ainsi, ils prennent pour leitmotiv l’organisation d’événements physiques et d’événements en ligne.",
       "2": "C’est seulement le 28 octobre 2017, que la première édition de son événement phare voit le jour : le Chartreuse Esport Contest (CEC#1). Après des signes encourageants, l’association souhaite annualiser l’événement et le faire croître jusqu’à obtenir un rayonnement national.",
       "3": "Avec pas moins d’une trentaine de bénévoles et après une période troublée par la crise sanitaire, l’association prend le pari d’un événement physique tandis que les autres organisations préfèrent dématérialiser leur événement. C’est alors que Chartreuse Gaming signe son événement le plus ambitieux avec 98 joueurs répartis sur League Of Legends, Counter Strike : Global Offensive et Rocket League, et une dotation globale de 3500€.",
       "4": "Cette dernière édition conforte les bénévoles dans leur souhait de s’imposer sur la scène régionale puis sur la scène tricolore. Afin d’y parvenir, l’association décide de déménager dans la métropole grenobloise, à Saint-Martin-d’Hères."
+    },
+    "members": {
+      "self": "Les membres de l'association",
+      "head-office": "Membres du siège",
+      "president": "Président",
+      "vice-president": "Vice-Président",
+      "treasurer": "Trésorier",
+      "secretary": "Secrétaire",
+      "administrative-manager": "Responsable Administratif"
     },
     "timeline": {
       "2022": {
