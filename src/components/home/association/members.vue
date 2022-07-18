@@ -36,7 +36,7 @@ export default {
 section {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   margin-bottom: 16px;
 
   h2 {
