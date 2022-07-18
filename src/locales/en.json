@@ -47,6 +47,12 @@
       "3": "With no less than thirty volunteers and after a period troubled by the health crisis, the association takes the bet of a physical event while the other organizations prefer to dematerialize their event. It was then that Chartreuse Gaming signed its most ambitious event with 98 players spread over League Of Legends, Counter Strike: Global Offensive and Rocket League, and a global prize of 3500€.",
       "4": "This last edition confirms the volunteers in their wish to impose themselves on the regional scene and then on the tricolour scene. In order to achieve this, the association decided to move to Saint-Martin-d'Hères, in the Grenoble metropolis."
     },
+    "numbers": {
+      "more-than": "Plus de",
+      "editions": "editions of",
+      "players": "players gathered",
+      "cashprize": "of cashprize"
+    },
     "members": {
       "self": "The members of the association",
       "head-office": "Head office members",

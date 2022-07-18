@@ -72,6 +72,7 @@ future events organized by it.
 - [Disable-scroll](https://github.com/gilbarbara/disable-scroll#readme)
 - [Fontawesome](https://fontawesome.com/)
 - [SplideJS](https://splidejs.com/)
+- [CountUp](https://github.com/inorganik/countUp.js)
 
 ### Color Reference
 

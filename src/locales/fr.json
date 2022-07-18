@@ -47,6 +47,12 @@
       "3": "Avec pas moins d’une trentaine de bénévoles et après une période troublée par la crise sanitaire, l’association prend le pari d’un événement physique tandis que les autres organisations préfèrent dématérialiser leur événement. C’est alors que Chartreuse Gaming signe son événement le plus ambitieux avec 98 joueurs répartis sur League Of Legends, Counter Strike : Global Offensive et Rocket League, et une dotation globale de 3500€.",
       "4": "Cette dernière édition conforte les bénévoles dans leur souhait de s’imposer sur la scène régionale puis sur la scène tricolore. Afin d’y parvenir, l’association décide de déménager dans la métropole grenobloise, à Saint-Martin-d’Hères."
     },
+    "numbers": {
+      "more-than": "Plus de",
+      "editions": "éditions du",
+      "players": "joueurs réunis",
+      "cashprize": "de cashprize"
+    },
     "members": {
       "self": "Les membres de l'association",
       "head-office": "Membres du siège",
@@ -142,5 +148,5 @@
   "presentation": "Présentation",
   "ranking": "Classement",
   "gallery": "Galerie",
-  "cashprize": "Prix"
+  "cashprize": "Cashprize"
 }
