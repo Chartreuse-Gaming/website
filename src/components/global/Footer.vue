@@ -8,11 +8,6 @@
         </p>
         <p>{{ $t("copyright") }}.</p>
       </section>
-      <nav>
-        <router-link to="/">{{ $t("site-map") }}</router-link>
-        <router-link to="/">{{ $t("legal-info") }}</router-link>
-        <router-link to="/">{{ $t("intranet") }}</router-link>
-      </nav>
     </div>
   </footer>
 </template>
@@ -29,7 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$footer-height: 70px;
+$footer-height: 50px;
 $font-size: 0.84em;
 
 footer {
@@ -42,11 +37,11 @@ footer {
   align-items: center;
 
   div {
-    padding: 0;
+    padding: 12px;
     height: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     & * {
       font-family: var(--title-font);
@@ -60,7 +55,6 @@ footer {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 0 18px;
       gap: 0 4px;
 
       p {
@@ -73,18 +67,6 @@ footer {
         }
       }
     }
-
-    nav a {
-      font-size: $font-size;
-      height: $footer-height;
-      display: inline-flex;
-      align-items: center;
-      padding: 18px;
-    }
-
-    a:hover {
-      color: var(--subtext-color);
-    }
   }
 }
 
@@ -92,25 +74,9 @@ footer {
   footer {
     height: auto;
 
-    div {
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-
-      section {
-        padding: 0 12px;
-
-        p a {
-          padding: 8px 0;
-          height: unset;
-        }
-      }
-
-      nav a {
-        padding: 8px 4vw;
-        height: unset;
-        flex-flow: column nowrap;
-      }
+    div section p a {
+      padding: 8px 0;
+      height: unset;
     }
   }
 }
@@ -121,12 +87,6 @@ footer {
 
     section {
       flex-flow: column nowrap;
-    }
-
-    nav {
-      display: flex;
-      flex-flow: column nowrap;
-      padding-top: 16px;
     }
   }
 }
