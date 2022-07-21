@@ -2,20 +2,13 @@
   <article class="content">
     <h2>{{ $t("contact.us") }}</h2>
     <section>
-      <div>
-        <font-awesome-icon icon="fa-solid fa-location-dot" />
-        <p>
-          000 Lorem ipsum dolor,<br />
-          38000 Grenoble
-        </p>
-      </div>
       <a href="tel:+33123456789">
         <font-awesome-icon icon="fa-solid fa-phone" />
-        <p>+331 23 45 67 89</p>
+        <p>+33 6 01 22 53 50</p>
       </a>
-      <a href="mailto:ChartreuseGGaming@gmail.com">
+      <a href="mailto:chartreusegaming.contact@gmail.com">
         <font-awesome-icon icon="fa-solid fa-envelope" />
-        <p>ChartreuseGGaming@gmail.com</p>
+        <p>chartreusegaming.contact@gmail.com</p>
       </a>
       <div>
         <font-awesome-icon icon="fa-solid fa-share-nodes" />
@@ -106,13 +99,12 @@ article {
       }
     }
 
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 800px) {
       justify-content: space-between;
 
       & > * {
-        max-width: 340px;
-        flex-direction: row;
-        flex: 1 0 calc(50% - 20px);
+        flex-direction: column;
+        flex: 1 1 calc(50% - 40px);
 
         &:last-child span {
           width: 100%;
@@ -125,12 +117,6 @@ article {
           align-items: center;
           justify-content: center;
         }
-      }
-    }
-
-    @media only screen and (max-width: 750px) {
-      & > * {
-        flex-direction: column;
       }
     }
 
