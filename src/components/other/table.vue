@@ -145,21 +145,16 @@ article {
           background-color: rgb(50, 50, 50);
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 700px) {
           flex-flow: column nowrap;
           align-items: flex-start;
 
           & > *:last-of-type {
-            flex-flow: column nowrap;
-            align-items: flex-start;
+            display: none;
           }
 
           &:first-of-type {
             padding: 18px 30px 18px 14px;
-
-            & > *:last-of-type {
-              font-size: 0.85em;
-            }
           }
         }
       }
