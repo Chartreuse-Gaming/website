@@ -12,7 +12,7 @@
       </article>
 
       <article id="list" class="content">
-        <h2>{{ $t("tournaments.previous") }}</h2>
+        <h2>{{ $t("tournaments.editions") }}</h2>
         <section>
           <router-link :to="{ name: 'CEC5' }">
             <div>

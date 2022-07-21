@@ -3,8 +3,10 @@
   "tournaments": {
     "self": "Tournois",
     "previous": "Nos précédents tournois",
+    "editions": "Les éditions",
     "CEC": {
       "self": "Chartreuse Esport Contest",
+      "presentation": "Avant de fonder Chartreuse Gaming, ses membres fondateurs se réunissaient régulièrement pour des Lan party. Au fil du temps, l’envie de jouer se métamorphosa en l’envie d’organiser pour les autres. Ainsi, le tournoi Chartreuse Esport Contest vit le jour en octobre 2016. Depuis, cette première édition aux ambitions modestes et principalement destinée aux locaux, l’association décida de redoubler d’efforts pour mettre sur la carte de France, l’Isère et son engagement pour l’essor de l’eSport.",
       "1": {
         "self": "Chartreuse Esport Contest 1",
         "date": "28 Octobre 2017 ",
