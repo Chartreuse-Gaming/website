@@ -2,7 +2,7 @@
   <article class="content">
     <h2>{{ $t("contact.us") }}</h2>
     <section>
-      <a href="tel:+33123456789">
+      <a href="tel:+33601225350">
         <font-awesome-icon icon="fa-solid fa-phone" />
         <p>+33 6 01 22 53 50</p>
       </a>
