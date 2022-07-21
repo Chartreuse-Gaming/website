@@ -2,15 +2,15 @@
 <br />
 
 <div align="center">
-<a href="https://github.com/Chartreuse-Gaming/website">
+<a href="https://github.com/Chartreuse-Gaming/Website">
     <img src="src/assets/svg/logo.svg" alt="Logo" width="80" height="80">
 </a>
 
 <h3 align="center">Website</h3>
 
 ![GitHub deployments](https://img.shields.io/github/deployments/Chartreuse-Gaming/Website/github-pages?label=Deployment)&nbsp;
-![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/website?label=Version)&nbsp;
-![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/website?label=License)&nbsp;
+![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/Website?label=Version)&nbsp;
+![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/Website?label=License)&nbsp;
 ![Website build size](https://img.shields.io/badge/Build%20size-5.31%20MB-blue)
 
   <p align="center">
@@ -103,7 +103,7 @@ future events organized by it.
 1. Clone the project
 
 ```bash
-  git clone https://github.com/Chartreuse-Gaming/website
+  git clone https://github.com/Chartreuse-Gaming/Website
   cd website
 ```
 
@@ -149,7 +149,7 @@ A new `dist` folder will appear containing the entire compiled website.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at [ChartreuseGGaming@gmail.com](mailto:ChartreuseGGaming@gmail.com).
+If you have any feedback, please reach out to us at [chartreusegaming.contact@gmail.com](mailto:chartreusegaming.contact@gmail.com).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
