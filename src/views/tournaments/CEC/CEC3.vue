@@ -123,12 +123,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-main > div {
-  position: relative;
-  top: -140px;
-  margin-bottom: -120px;
-}
-
 #sponsors {
   padding: 20px 16px;
   max-width: 1100px;
@@ -154,8 +148,9 @@ main > div {
 }
 
 #presentation {
+  padding-bottom: 1rem;
+
   p {
-    margin-bottom: 10px;
     font-size: 1.05em;
 
     &:last-of-type {

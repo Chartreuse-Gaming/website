@@ -19,7 +19,10 @@ export default {
 article {
   height: 450px;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
   h1 {
     z-index: 1;
@@ -28,7 +31,7 @@ article {
     top: 44%;
     transform: translateY(-50%);
     font-size: 3.6em;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
     text-shadow: 0 0 16px rgb(0, 0, 0);
 

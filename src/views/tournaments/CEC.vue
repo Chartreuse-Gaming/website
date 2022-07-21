@@ -102,38 +102,13 @@ export default {
 
 <style scoped lang="scss">
 main > div {
-  position: relative;
-  top: -50px;
-  margin-bottom: -50px;
-}
-
-#sponsors {
-  padding: 20px 16px;
-  max-width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
-  background-color: var(--bg-color);
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-
-  img {
-    max-width: 150px;
-    max-height: 110px;
-    padding: 8px;
-
-    @media only screen and (max-width: 600px) {
-      max-width: 120px;
-      max-height: 90px;
-    }
-  }
+  margin-top: 430px !important;
 }
 
 #presentation {
+  padding-bottom: 1rem;
+
   p {
-    margin-bottom: 10px;
     font-size: 1.05em;
 
     &:last-of-type {
@@ -142,81 +117,76 @@ main > div {
   }
 }
 
-#list {
-  padding-top: 16px;
+#list section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 30px;
 
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 30px;
-    margin-bottom: 16px;
+  a {
+    flex: 0 1 calc(100% / 3 - 20px);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    padding: 16px;
 
-    a {
-      flex: 0 1 calc(100% / 3 - 20px);
-      text-decoration: none;
-      color: var(--text-color);
-      font-size: 1.2em;
-      padding: 16px;
+    div {
+      position: relative;
+      width: 100%;
+      margin-bottom: 24px;
 
-      div {
-        position: relative;
+      & * {
+        aspect-ratio: 16/9;
+        border-radius: 8px;
+      }
+
+      img {
         width: 100%;
-        margin-bottom: 24px;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: 3;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
 
-        & * {
-          aspect-ratio: 16/9;
-          border-radius: 8px;
+      span i {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        transform: rotate(0);
+        transition: transform 400ms;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        display: block;
+
+        &:first-of-type {
+          z-index: 2;
+          margin: 5px;
+          width: calc(100% - 12px);
+          height: calc(100% - 12px);
+          background-color: var(--bg-color);
+          border-radius: 6px;
         }
 
-        img {
-          width: 100%;
-          height: 100%;
-          display: block;
-          position: relative;
-          z-index: 3;
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-            0 6px 6px rgba(0, 0, 0, 0.23);
-        }
-
-        span i {
-          width: calc(100% - 2px);
-          height: calc(100% - 2px);
-          transform: rotate(0);
-          transition: transform 400ms;
-          position: absolute;
-          top: 1px;
-          left: 1px;
-          display: block;
-
-          &:first-of-type {
-            z-index: 2;
-            margin: 5px;
-            width: calc(100% - 12px);
-            height: calc(100% - 12px);
-            background-color: var(--bg-color);
-            border-radius: 6px;
-          }
-
-          &:last-of-type {
-            z-index: 1;
-            background-color: var(--green-touch);
-          }
+        &:last-of-type {
+          z-index: 1;
+          background-color: var(--green-touch);
         }
       }
+    }
 
-      &:hover span i {
-        transform: rotate(-5deg);
-      }
+    &:hover span i {
+      transform: rotate(-5deg);
+    }
 
-      @media only screen and (max-width: 920px) {
-        flex-basis: calc(100% / 2 - 20px);
-      }
+    @media only screen and (max-width: 920px) {
+      flex-basis: calc(100% / 2 - 20px);
+    }
 
-      @media only screen and (max-width: 540px) {
-        flex-basis: 100%;
-      }
+    @media only screen and (max-width: 540px) {
+      flex-basis: 100%;
     }
   }
 }
