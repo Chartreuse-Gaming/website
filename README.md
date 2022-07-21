@@ -143,7 +143,6 @@ A new `dist` folder will appear containing the entire compiled website.
 - [ ] Add all events
 - [ ] Twitch API integration
 - [ ] Google Drive integration
-- [ ] Build with [Astro](https://astro.build/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
