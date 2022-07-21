@@ -95,7 +95,7 @@ article {
     ul {
       overflow-x: hidden;
       overflow-y: overlay;
-      max-height: 350px;
+      max-height: 450px;
       list-style: none;
       border-radius: 0 0 8px 8px;
 
