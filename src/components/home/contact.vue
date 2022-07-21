@@ -57,9 +57,9 @@ article {
       flex-flow: column nowrap;
       align-items: center;
       justify-content: stretch;
-      gap: 16px;
+      gap: 8px;
       text-align: center;
-      padding: 16px;
+      padding: 16px 16px 0;
       color: white;
       text-decoration: none;
 
