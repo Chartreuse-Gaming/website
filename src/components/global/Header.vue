@@ -67,13 +67,21 @@
               </a>
               <router-link
                 to="/#association"
-                :class="current_link === 'association' ? 'current' : ''"
+                :class="
+                  $route.path === '/' && current_link === 'association'
+                    ? 'current'
+                    : ''
+                "
                 @click.prevent="toAnchor('association')"
                 >{{ $t("association.self", 1) }}</router-link
               >
               <router-link
                 to="/#contact"
-                :class="current_link === 'contact' ? 'current' : ''"
+                :class="
+                  $route.path === '/' && current_link === 'contact'
+                    ? 'current'
+                    : ''
+                "
                 @click.prevent="toAnchor('contact')"
                 >{{ $t("contact.self") }}</router-link
               >
