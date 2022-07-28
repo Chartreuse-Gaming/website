@@ -112,7 +112,7 @@ body {
 
   h2 {
     font-size: 1.6em;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
