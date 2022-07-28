@@ -117,14 +117,13 @@ body {
 }
 
 .content {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1400px;
-  padding: 40px 18px;
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+  padding: 40px 0;
 }
 
 .btn {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 8px 16px;
   width: 180px;
   display: block;

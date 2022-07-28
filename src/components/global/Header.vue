@@ -190,7 +190,7 @@ header {
 
   article {
     height: inherit;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 0 12px;
     max-width: 1650px;
     display: flex;

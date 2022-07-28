@@ -173,7 +173,7 @@ article {
 
   article {
     position: relative;
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: 1400px;
     height: 100%;
 
