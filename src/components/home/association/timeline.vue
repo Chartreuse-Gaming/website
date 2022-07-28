@@ -1,5 +1,6 @@
 <template>
   <section id="timeline" class="content">
+    <h2>Historique</h2>
     <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
     <article>
       <font-awesome-icon icon="fa-solid fa-caret-up" />
@@ -125,31 +126,33 @@ export default {
 
 <style scoped lang="scss">
 #timeline {
+  padding: 20px 0;
   position: relative;
   overflow: hidden;
 
   & > img {
+    z-index: -1;
     width: 34%;
     min-width: 400px;
-    z-index: 1;
     position: absolute;
-    left: 3vw;
+    left: 5vw;
     bottom: -150px;
     opacity: 0.04;
     transform: rotate(-20deg);
 
     @media only screen and (min-width: 1200px) {
-      & {
-        bottom: -150px;
-      }
+      bottom: -150px;
     }
   }
 
   article {
+    margin-top: 24px;
+
     &:before {
+      z-index: -1;
       content: "";
       position: absolute;
-      top: 40px;
+      top: 90px;
       left: calc(50% - 1px);
       bottom: 0;
       width: 6px;
@@ -159,7 +162,7 @@ export default {
     & > svg {
       font-size: 2.4em;
       position: absolute;
-      top: 18px;
+      top: 66px;
       left: calc(50% - 10px);
       transform: scaleY(1.4);
     }
@@ -189,14 +192,13 @@ export default {
         font-family: var(--title-font);
         font-weight: bold;
         color: var(--green-touch);
-        gap: 14px;
+        gap: 1rem;
 
         i {
           flex-grow: 1;
           border-top: 4px dotted #656565;
 
           &:before {
-            z-index: 1;
             content: "";
             position: absolute;
             border-radius: 50%;
@@ -219,7 +221,6 @@ export default {
           top: 50%;
           transform: translateY(-50%);
           right: -62px;
-          z-index: 1;
         }
 
         &.big {
@@ -291,7 +292,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   #timeline {
     & > img {
       min-width: 300px;
@@ -308,16 +309,18 @@ export default {
       }
 
       section article {
-        width: calc(100% - 46px) !important;
-        float: right !important;
-        text-align: left !important;
+        width: calc(100% - 46px);
+        padding: 32px 0;
+        float: right;
+        text-align: left;
 
         &:not(:first-child) {
-          margin-top: -20px !important;
+          margin-top: -20px;
         }
 
         header {
-          flex-flow: row nowrap !important;
+          flex-flow: row nowrap;
+          margin-left: 18px;
 
           i:before {
             left: -38px !important;
