@@ -300,6 +300,8 @@ export default {
     }
 
     article {
+      padding-right: 1rem;
+
       &:before {
         left: 27px;
       }
@@ -342,6 +344,12 @@ export default {
         }
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 100% !important;
   }
 }
 </style>
