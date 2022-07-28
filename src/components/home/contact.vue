@@ -2,13 +2,13 @@
   <article class="content">
     <h2>{{ $t("contact.us") }}</h2>
     <section>
-      <a href="tel:+33601225350">
-        <font-awesome-icon icon="fa-solid fa-phone" />
-        <p>+33 6 01 22 53 50</p>
-      </a>
       <a href="mailto:chartreusegaming.contact@gmail.com">
         <font-awesome-icon icon="fa-solid fa-envelope" />
         <p>chartreusegaming.contact@gmail.com</p>
+      </a>
+      <a href="tel:+33601225350">
+        <font-awesome-icon icon="fa-solid fa-phone" />
+        <p>+33 (0)6 01 22 53 50</p>
       </a>
       <div>
         <font-awesome-icon icon="fa-solid fa-share-nodes" />
@@ -39,50 +39,37 @@ export default {
 
 <style scoped lang="scss">
 article {
-  padding: 20px;
-  background-color: var(--bg-color);
-  width: 100%;
+  padding: 1.5rem;
   max-width: 1200px;
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
 
   section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: grid;
+    gap: 2.5rem 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
 
     & > * {
-      flex: 1 0 0;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: stretch;
-      gap: 8px;
-      text-align: center;
-      padding: 16px 16px 0;
+      display: inline-grid;
+      justify-items: center;
+      gap: 1rem;
       color: white;
       text-decoration: none;
 
-      & > * {
-        height: 50px;
-        display: flex;
-        align-items: center;
-      }
-
       & > svg {
+        height: 46px;
         color: var(--bg-color);
         stroke: var(--green-touch);
         stroke-width: 26px;
-        stroke-linejoin: round;
       }
 
       span a {
-        padding: 10px;
+        padding: 12px;
         color: white;
 
         & > svg {
           transition: all 150ms;
-          height: 24px;
+          height: 22px;
           transform: scale(1);
         }
 
@@ -92,46 +79,30 @@ article {
             color: var(--subtext-color);
           }
         }
-
-        @media only screen and (max-width: 350px) {
-          padding: 5vw;
-        }
       }
     }
 
-    @media only screen and (max-width: 800px) {
-      justify-content: space-between;
-
-      & > * {
-        flex-direction: column;
-        flex: 1 1 calc(50% - 40px);
-
-        &:last-child span {
-          width: 100%;
-          justify-content: center;
-        }
-
-        p {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+    @media (min-width: 501px) and (max-width: 800px) {
+      & > a:first-of-type {
+        grid-column: span 2;
       }
+
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    @media only screen and (max-width: 600px) {
-      flex-direction: column;
-      align-items: center;
-
-      div {
-        flex: 1 0 100%;
-      }
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
 
       span a {
-        padding: 20px;
+        padding: 16px;
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 100% !important;
   }
 }
 </style>
