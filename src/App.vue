@@ -44,6 +44,7 @@ export default {
 
 :root {
   --bg-color: #262626;
+  --bg-color-alt: #2c2c2c;
   --text-color: #ffffff;
   --subtext-color: #e6e6e6;
   --footer-text-color: #b9b9b9;

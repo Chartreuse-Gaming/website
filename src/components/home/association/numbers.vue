@@ -70,6 +70,7 @@ article {
   p {
     justify-content: center;
     padding: 1.5rem;
+    background-color: var(--bg-color-alt);
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
     border-radius: 8px;
     display: flex;
