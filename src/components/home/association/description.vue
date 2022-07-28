@@ -1,10 +1,5 @@
 <template>
   <section id="description">
-    <img
-      src="@/assets/img/association/Tshirt.webp"
-      :alt="$t('association.t-shirt') + '.'"
-    />
-    <i></i>
     <article class="content">
       <h2>
         {{ $t("association.self", 2) }}
@@ -37,36 +32,38 @@ export default {
 #description {
   position: relative;
 
-  & > img {
-    filter: opacity(0.25);
-    z-index: -2;
+  &::before,
+  &::after {
+    content: "";
+    z-index: -1;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
-  & > i {
+  &::before {
+    background-image: url("@/assets/img/association/Tshirt.webp");
+    background-position: center bottom;
+    background-size: cover;
+    top: 0;
+    opacity: 0.2;
+  }
+
+  &::after {
     @include box-shadow(
       inset 0 100px 50px -30px var(--bg-color),
       inset 0 -100px 50px -30px var(--bg-color)
     );
-    z-index: -1;
-    position: absolute;
-    top: -1px;
-    width: 100%;
     height: calc(100% + 2px);
-  }
-
-  h2 {
-    position: absolute;
+    top: -1px;
   }
 
   article section {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 3rem;
+    margin-bottom: 8px;
 
     p {
       margin-top: 12px;
@@ -74,32 +71,19 @@ export default {
       text-align: justify;
       color: var(--subtext-color);
 
-      &:first-child {
-        margin-top: 50px;
+      &:first-of-type {
+        margin-top: 0;
       }
     }
 
     img {
-      width: 44%;
-      aspect-ratio: 16/9;
+      width: 42%;
       border-radius: 8px;
       box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: 1050px) {
         display: none;
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #description article {
-    h2 {
-      position: relative !important;
-    }
-
-    section p {
-      margin-top: 12px !important;
     }
   }
 }
