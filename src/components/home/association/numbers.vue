@@ -68,6 +68,10 @@ article {
   gap: 2.5rem;
 
   p {
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,7 +84,7 @@ article {
     }
   }
 
-  @media (min-width: 401px) and (max-width: 620px) {
+  @media (min-width: 451px) and (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
 
     p:first-of-type {
@@ -88,7 +92,7 @@ article {
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     grid-template-columns: 1fr;
   }
 }
