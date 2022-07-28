@@ -86,10 +86,6 @@ body {
 
   main:first-of-type {
     margin-top: -90px;
-
-    & > div {
-      margin-top: 330px;
-    }
   }
 
   img {
