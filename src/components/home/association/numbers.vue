@@ -62,7 +62,7 @@ export default {
 
 <style scoped lang="scss">
 article {
-  padding: 12px 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
