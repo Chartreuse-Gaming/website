@@ -21,7 +21,8 @@
     </p>
     <p>
       {{ $t("association.numbers.more-than") }}
-      <span id="cashprize">6000</span> {{ $t("association.numbers.cashprize") }}
+      <span id="cashprize">6000</span>
+      {{ $t("association.numbers.cashprize") }}
     </p>
   </section>
 </template>
@@ -61,17 +62,14 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding-top: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+  padding-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 
   p {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
     font-size: 1.1em;
 
@@ -80,6 +78,18 @@ section {
       font-weight: bold;
       color: var(--green-touch);
     }
+  }
+
+  @media (min-width: 401px) and (max-width: 620px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    p:first-of-type {
+      grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
   }
 }
 </style>
