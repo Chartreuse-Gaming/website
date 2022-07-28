@@ -1,5 +1,5 @@
 <template>
-  <section
+  <article
     class="content"
     v-observe-visibility="{
       callback: visible,
@@ -24,7 +24,7 @@
       <span id="cashprize">6000</span>
       {{ $t("association.numbers.cashprize") }}
     </p>
-  </section>
+  </article>
 </template>
 
 <script>
@@ -61,8 +61,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-section {
-  padding-top: 12px;
+article {
+  padding: 12px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;

@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <div>
     <Description />
 
     <Numbers />
@@ -7,7 +7,7 @@
     <Members />
 
     <Timeline />
-  </article>
+  </div>
 </template>
 
 <script>
