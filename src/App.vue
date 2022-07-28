@@ -113,7 +113,7 @@ body {
 }
 
 .content {
-  width: min(100% - 2.5rem, 1350px);
+  width: min(100% - 2rem, 1350px);
   margin-inline: auto;
   padding: 40px 0;
 }
