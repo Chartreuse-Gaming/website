@@ -8,10 +8,7 @@
             src="@/assets/img/tournaments/CEC/CEC5.webp"
             :alt="$t('tournaments.CEC.5.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CEC.5.self") }}</p>
       </router-link>
@@ -21,10 +18,7 @@
             src="@/assets/img/tournaments/CEC/CEC4.webp"
             :alt="$t('tournaments.CEC.4.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CEC.4.self") }}</p>
       </router-link>
@@ -34,10 +28,7 @@
             src="@/assets/img/tournaments/CEC/CEC3.webp"
             :alt="$t('tournaments.CEC.3.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CEC.3.self") }}</p>
       </router-link>
@@ -47,10 +38,7 @@
             src="@/assets/img/tournaments/CGW_2019.webp"
             :alt="$t('tournaments.CGW_2019.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CGW_2019.self") }}</p>
       </router-link>
@@ -60,10 +48,7 @@
             src="@/assets/img/tournaments/CEC/CEC2.webp"
             :alt="$t('tournaments.CEC.2.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CEC.2.self") }}</p>
       </router-link>
@@ -73,10 +58,7 @@
             src="@/assets/img/tournaments/CEC/CEC1.webp"
             :alt="$t('tournaments.CEC.1.self')"
           />
-          <span>
-            <i></i>
-            <i></i>
-          </span>
+          <i></i>
         </div>
         <p>{{ $t("tournaments.CEC.1.self") }}</p>
       </router-link>
@@ -93,43 +75,38 @@ export default {
 
 <style scoped lang="scss">
 article {
-  padding-top: 16px;
+  padding-top: 20px;
 
   section {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 16px;
+    justify-content: space-evenly;
+    gap: 2.5rem;
 
     a {
-      flex: 0 1 calc(100% / 3 - 20px);
+      flex: 0 1 calc(100% / 3 - 1.7rem);
       text-decoration: none;
       color: var(--text-color);
-      font-size: 1.2em;
-      padding: 16px;
+      font-size: 1.22em;
 
       div {
         position: relative;
-        width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 1em;
 
-        & * {
-          aspect-ratio: 16/9;
+        * {
+          display: block;
           border-radius: 8px;
         }
 
         img {
           width: 100%;
           height: 100%;
-          display: block;
-          position: relative;
-          z-index: 3;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
             0 6px 6px rgba(0, 0, 0, 0.23);
         }
 
-        span i {
+        i {
+          z-index: -1;
           width: calc(100% - 2px);
           height: calc(100% - 2px);
           transform: rotate(0);
@@ -137,36 +114,27 @@ article {
           position: absolute;
           top: 1px;
           left: 1px;
-          display: block;
+          border: 5px solid var(--green-touch);
+          background-color: var(--bg-color);
+        }
 
-          &:first-of-type {
-            z-index: 2;
-            margin: 5px;
-            width: calc(100% - 12px);
-            height: calc(100% - 12px);
-            background-color: var(--bg-color);
-            border-radius: 6px;
-          }
-
-          &:last-of-type {
-            z-index: 1;
-            background-color: var(--green-touch);
-          }
+        &:hover i {
+          transform: rotate(-5deg);
         }
       }
 
-      &:hover span i {
-        transform: rotate(-5deg);
+      @media (max-width: 880px) {
+        flex-basis: calc(100% / 2 - 1.25rem);
       }
 
-      @media only screen and (max-width: 920px) {
-        flex-basis: calc(100% / 2 - 20px);
-      }
-
-      @media only screen and (max-width: 540px) {
+      @media (max-width: 580px) {
         flex-basis: 100%;
       }
     }
   }
+}
+
+.btn {
+  margin-top: 3em;
 }
 </style>
