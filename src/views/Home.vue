@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="hidden">Chartreuse Gaming</h1>
+    <h1>Chartreuse Gaming</h1>
     <Carousel />
 
     <OldTournament />
@@ -64,3 +64,9 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+h1 {
+  display: none;
+}
+</style>

@@ -149,10 +149,6 @@ body {
   }
 }
 
-.hidden {
-  display: none !important;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.35s ease;
