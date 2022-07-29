@@ -101,15 +101,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-main {
-  margin-top: -90px;
+main > article:nth-child(3) {
+  padding-top: 20px;
+}
 
-  h1 {
-    display: none;
-  }
-
-  & > article:nth-child(3) {
-    padding-top: 20px;
-  }
+h1 {
+  display: none;
 }
 </style>

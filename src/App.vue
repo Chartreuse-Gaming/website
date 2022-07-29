@@ -85,6 +85,10 @@ body {
   font-family: var(--text-font);
   overflow: overlay;
 
+  main:first-of-type {
+    margin-top: -90px;
+  }
+
   img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
