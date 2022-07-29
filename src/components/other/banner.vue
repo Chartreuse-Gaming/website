@@ -1,8 +1,7 @@
 <template>
-  <article>
+  <article id="banner">
     <h1>{{ title }}</h1>
-    <i></i>
-    <img :src="require(`@/${src}`)" :alt="title" />
+    <img :src="require(`@/${src}`)" :alt="title + '.'" />
   </article>
 </template>
 
@@ -19,10 +18,23 @@ export default {
 article {
   height: 450px;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
+
+  &::after {
+    @include box-shadow(
+      inset 0 150px 180px 0 var(--bg-color),
+      inset 0 -150px 80px -30px var(--bg-color)
+    );
+    height: calc(100% + 2px);
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
   h1 {
     z-index: 1;
@@ -38,16 +50,6 @@ article {
     @media only screen and (max-width: 600px) {
       font-size: 2.6em;
     }
-  }
-
-  i {
-    position: absolute;
-    width: 100%;
-    height: calc(100% + 1px);
-    @include box-shadow(
-      inset 0 150px 180px 0 var(--bg-color),
-      inset 0 -150px 80px -30px var(--bg-color)
-    );
   }
 
   img {
