@@ -136,11 +136,10 @@ A new `dist` folder will appear containing the entire compiled website.
 ## Roadmap
 
 - [x] Home page
-- [x] Timeline
 - [x] Carousel
+- [x] Timeline
 - [x] Ranking
-- [x] Gallery
-- [ ] Add all events
+- [ ] Gallery
 - [ ] Twitch API integration
 - [ ] Google Drive integration
 
