@@ -100,9 +100,9 @@ article {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .content {
-    width: 100% !important;
+    width: 100%;
   }
 }
 </style>

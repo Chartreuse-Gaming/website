@@ -47,7 +47,7 @@ article {
     text-align: center;
     text-shadow: 0 0 16px rgb(0, 0, 0);
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 650px) {
       font-size: 2.6em;
     }
   }
