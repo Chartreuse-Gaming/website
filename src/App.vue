@@ -172,7 +172,48 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+.banner-content {
+  position: sticky;
+  margin-top: -120px;
+}
+
+#presentation {
+  padding-bottom: 1rem;
+
+  p {
+    font-size: 1.05em;
+  }
+}
+
+#sponsors {
+  padding: 1rem;
+  width: min(100% - 2rem, 1100px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: var(--bg-color-alt);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 110px;
+    padding: 8px;
+
+    @media only screen and (max-width: 650px) {
+      max-width: 120px;
+      max-height: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
   h2 {
     text-align: center;
   }

@@ -65,15 +65,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-main {
-  margin-top: -90px;
-
-  #presentation {
-    padding: 0 0 1rem;
-
-    p {
-      font-size: 1.1em;
-    }
-  }
+#presentation {
+  padding: 0 0 1rem;
 }
 </style>
