@@ -40,7 +40,7 @@ export default {
 <style scoped lang="scss">
 article {
   padding: 1.5rem;
-  max-width: 1200px;
+  width: min(100% - 2rem, 1200px);
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
 
