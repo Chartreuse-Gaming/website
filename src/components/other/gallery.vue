@@ -4,12 +4,12 @@
 
     <transition-group name="thumbnailfade" tag="div">
       <img
-        v-for="thumb in images"
-        :key="thumb.id"
-        @click="showLightbox(thumb.name)"
-        :src="directory + thumb.name"
-        :alt="thumb.alt"
-        :title="thumb.alt"
+        loading="lazy"
+        v-for="id in images"
+        :key="id"
+        @click="showLightbox(id)"
+        :src="directory + id"
+        alt=""
       />
     </transition-group>
 
@@ -30,13 +30,14 @@ import Lightbox from "vue-my-photos";
 import disableScroll from "disable-scroll";
 
 export default {
-  name: "CEC5View",
-  props: ["directory", "images"],
+  name: "galleryComponent",
+  props: ["images"],
   components: {
     Lightbox,
   },
   data() {
     return {
+      directory: "https://drive.google.com/uc?id=",
       body: document.getElementsByTagName("body")[0],
     };
   },
