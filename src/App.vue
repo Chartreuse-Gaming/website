@@ -213,6 +213,19 @@ body {
   }
 }
 
+#ranking {
+  display: flex;
+  gap: 0 2rem;
+  padding: 0;
+  margin-bottom: -1rem;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: unset;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   h2 {
     text-align: center;

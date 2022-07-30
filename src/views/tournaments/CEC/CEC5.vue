@@ -28,13 +28,15 @@
         <p>{{ $t("tournaments.CEC.5.presentation") }}</p>
       </article>
 
-      <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
+      <article id="ranking" class="content">
+        <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
 
-      <Table
-        img="CSGO"
-        alt="Counter Strike: Global Offensive"
-        :data="ranking.cs"
-      />
+        <Table
+          img="CSGO"
+          alt="Counter Strike: Global Offensive"
+          :data="ranking.cs"
+        />
+      </article>
 
       <Table
         img="League_of_Legends"

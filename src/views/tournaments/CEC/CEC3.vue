@@ -31,13 +31,15 @@
         <p>{{ $t("tournaments.CEC.3.presentation") }}</p>
       </article>
 
-      <Table
-        img="League_of_Legends"
-        alt="League of Legends"
-        :data="ranking.lol"
-      />
+      <article id="ranking" class="content">
+        <Table
+          img="League_of_Legends"
+          alt="League of Legends"
+          :data="ranking.lol"
+        />
 
-      <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
+        <Table img="Rocket_League" alt="Rocket League" :data="ranking.rl" />
+      </article>
 
       <!--<Gallery :directory="gallery.directory" :images="gallery.images" />-->
     </div>
@@ -121,3 +123,9 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+#ranking {
+  margin-bottom: unset;
+}
+</style>
