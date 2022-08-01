@@ -31,6 +31,7 @@ export default {
       options: {
         duration: 3,
         enableScrollSpy: true,
+        scrollSpyOnce: true,
       },
     };
   },
