@@ -130,10 +130,12 @@ export default {
       dropdown: false,
       nav: false,
       header: {},
+      body: {},
     };
   },
   mounted() {
     this.header = document.getElementsByTagName("header")[0];
+    this.body = document.getElementsByTagName("body")[0];
     document.addEventListener("scroll", this.scrollClassToggler);
   },
   beforeUnmount() {
@@ -153,6 +155,15 @@ export default {
         this.header.classList.add("scroll");
       } else {
         this.header.classList.remove("scroll");
+      }
+    },
+  },
+  watch: {
+    nav() {
+      if (this.nav) {
+        this.body.style.overflow = "hidden";
+      } else {
+        this.body.style.overflow = "overlay";
       }
     },
   },
