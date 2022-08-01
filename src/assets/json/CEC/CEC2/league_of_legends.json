@@ -1,41 +1,41 @@
 [
   {
-    "id": 1,
+    "rank": 1,
     "name": "4girlsfor1fiddle",
     "players": []
   },
   {
-    "id": 2,
+    "rank": 2,
     "name": "Easy Cashprize",
     "players": []
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "Charcuteam",
     "players": []
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "Ekinox",
     "players": []
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "iSnare",
     "players": []
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "Our Jungle Is Bad",
     "players": []
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "Arcana sanctum",
     "players": []
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "Les Bûches",
     "players": []
   }

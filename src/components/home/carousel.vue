@@ -8,7 +8,6 @@
       @splide:active="updateDOM"
     >
       <SplideSlide>
-        <i></i>
         <article>
           <section>
             <p>{{ $t("tournaments.CEC.5.date") }}</p>
@@ -21,7 +20,6 @@
               {{ $t("read-more") }}
               <font-awesome-icon icon="fa-solid fa-right-long" />
             </router-link>
-            <i></i>
           </section>
           <img
             src="@/assets/img/carousel/CEC/CEC_logo.webp"
@@ -34,7 +32,6 @@
         />
       </SplideSlide>
       <SplideSlide>
-        <i></i>
         <article>
           <section>
             <p>{{ $t("tournaments.CEC.4.date") }}</p>
@@ -48,7 +45,6 @@
               {{ $t("read-more") }}
               <font-awesome-icon icon="fa-solid fa-right-long" />
             </router-link>
-            <i></i>
           </section>
           <img
             src="@/assets/img/carousel/CEC/CEC_logo.webp"
@@ -61,7 +57,6 @@
         />
       </SplideSlide>
       <SplideSlide>
-        <i></i>
         <article>
           <section>
             <p>{{ $t("tournaments.CEC.3.date") }}</p>
@@ -74,7 +69,6 @@
               {{ $t("read-more") }}
               <font-awesome-icon icon="fa-solid fa-right-long" />
             </router-link>
-            <i></i>
           </section>
           <img
             src="@/assets/img/carousel/CEC/CEC_logo.webp"
@@ -87,7 +81,6 @@
         />
       </SplideSlide>
       <SplideSlide>
-        <i></i>
         <article>
           <section>
             <p>{{ $t("tournaments.CGW_2019.date") }}</p>
@@ -100,7 +93,6 @@
               {{ $t("read-more") }}
               <font-awesome-icon icon="fa-solid fa-right-long" />
             </router-link>
-            <i></i>
           </section>
         </article>
         <img
@@ -151,30 +143,29 @@ export default {
 @import "node_modules/compass-mixins/lib/compass/css3";
 
 article {
-  &,
-  .splide,
   .splide__slide {
     min-height: 450px;
     max-height: 700px;
-  }
 
-  .splide__slide > i {
-    z-index: 1;
-    pointer-events: none;
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    height: calc(100% + 2px);
-    @include box-shadow(
-      inset 0 175px 180px 0 var(--bg-color),
-      inset 0 -175px 90px -30px var(--bg-color)
-    );
+    &::after {
+      @include box-shadow(
+        inset 0 175px 180px 0 var(--bg-color),
+        inset 0 -175px 90px -30px var(--bg-color)
+      );
+      height: calc(100% + 2px);
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   article {
     position: relative;
-    margin: 0 auto;
-    max-width: 1400px;
+    margin-inline: auto;
+    width: min(100% - 2rem, 1350px);
     height: 100%;
 
     section {
@@ -185,7 +176,22 @@ article {
       display: flex;
       flex-flow: column nowrap;
       gap: 4px;
-      padding-left: 16px;
+
+      &::before {
+        content: "";
+        z-index: -1;
+        width: calc(100% + 300px);
+        height: calc(100% + 300px);
+        top: -150px;
+        left: -150px;
+        position: absolute;
+        background: rgb(38, 38, 38);
+        background: radial-gradient(
+          circle,
+          rgba(38, 38, 38, 1) 0%,
+          rgba(252, 70, 107, 0) 60%
+        );
+      }
 
       & > p:first-of-type {
         color: var(--subtext-color);
@@ -209,25 +215,6 @@ article {
 
         svg {
           margin-left: 10px;
-        }
-      }
-
-      i {
-        z-index: -1;
-        width: calc(100% + 300px);
-        height: calc(100% + 300px);
-        top: -150px;
-        left: -150px;
-        position: absolute;
-        background: rgb(38, 38, 38);
-        background: radial-gradient(
-          circle,
-          rgba(38, 38, 38, 1) 0%,
-          rgba(252, 70, 107, 0) 60%
-        );
-
-        @media only screen and (max-width: 600px) {
-          opacity: 0.7;
         }
       }
 
@@ -324,10 +311,9 @@ article {
     }
 
     img {
-      z-index: 0;
       height: 80%;
       position: absolute;
-      right: 0;
+      right: -16px;
       bottom: 0;
       transform: rotate(12deg);
     }

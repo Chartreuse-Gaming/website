@@ -5,7 +5,7 @@
       src="assets/img/carousel/CEC/CEC2.webp"
     />
 
-    <div>
+    <div class="banner-content">
       <article id="sponsors" class="content">
         <img
           src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
@@ -26,7 +26,7 @@
 
       <Table img="League_of_Legends" alt="League of Legends" :data="ranking" />
 
-      <!--<Gallery :directory="gallery.directory" :images="gallery.images" />-->
+      <!--<Gallery :images="images" />-->
     </div>
   </main>
 </template>
@@ -48,97 +48,8 @@ export default {
   data() {
     return {
       ranking: lol,
-      gallery: {
-        directory: "https://unpkg.com/vue-my-photos@1.0.0/src/assets/",
-        images: [
-          {
-            name: "mountains.jpg",
-            alt: "The Dolomites",
-            id: "image1",
-          },
-
-          {
-            name: "bird.jpg",
-            alt: "It is a bird on a tree!",
-            id: "image2",
-          },
-
-          {
-            name: "alps.jpg",
-            alt: "I will live here someday",
-            id: "image3",
-          },
-
-          {
-            name: "bear.jpg",
-            alt: "Friendly bear",
-            id: "image4",
-          },
-
-          {
-            name: "canyon.jpg",
-            alt: "A worthy hike",
-            id: "image5",
-          },
-
-          {
-            name: "monumentvalley.jpg",
-            alt: "Monument Valley",
-            id: "image6",
-          },
-
-          {
-            name: "puppy.jpg",
-            alt: "Puppy with a feather",
-            id: "image7",
-          },
-
-          {
-            name: "redwoods.jpg",
-            alt: "Foggy evening in the Redwoods",
-            id: "image8",
-          },
-        ],
-      },
+      images: [""],
     };
   },
 };
 </script>
-
-<style scoped lang="scss">
-#sponsors {
-  padding: 20px 16px;
-  max-width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
-  background-color: var(--bg-color);
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-
-  img {
-    max-width: 150px;
-    max-height: 110px;
-    padding: 8px;
-
-    @media only screen and (max-width: 600px) {
-      max-width: 120px;
-      max-height: 90px;
-    }
-  }
-}
-
-#presentation {
-  padding-bottom: 1rem;
-
-  p {
-    font-size: 1.05em;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-}
-</style>

@@ -1,7 +1,7 @@
 <template>
-  <section class="content">
+  <article class="content">
     <h2>{{ $t("association.members.head-office") }}</h2>
-    <div>
+    <section>
       <div>
         <p>{{ $t("association.members.president") }}</p>
         <p>Maxime <span>Myself Fake</span> MOIROUD</p>
@@ -22,8 +22,8 @@
         <p>{{ $t("association.members.administrative-manager") }}</p>
         <p>Martial <span>Battlesheep</span> BLANCHARD</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </article>
 </template>
 
 <script>
@@ -34,52 +34,40 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding: 30px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
 
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  & > div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
+  div {
+    flex: 1 1 calc(100% / 3 - 1.334rem);
     text-align: center;
-    gap: 36px 16px;
 
-    & > div {
-      flex: 1 0 calc(100% / 6);
-      min-width: 200px;
+    p:first-of-type {
+      font-weight: bold;
+      font-size: 1.25em;
+      color: var(--green-touch);
+      margin-bottom: 6px;
+    }
 
-      p:first-of-type {
-        font-weight: bold;
-        font-size: 1.25em;
-        color: var(--green-touch);
-        margin-bottom: 6px;
+    span {
+      font-weight: bold;
+
+      &:before {
+        content: "“";
       }
 
-      span {
-        font-weight: bold;
-
-        &:before {
-          content: "« ";
-          font-size: 1.2em;
-        }
-
-        &:after {
-          content: " »";
-          font-size: 1.2em;
-        }
+      &:after {
+        content: "”";
       }
+    }
 
-      @media only screen and (max-width: 400px) {
-        min-width: unset;
-        flex-basis: 100%;
-      }
+    @media (max-width: 900px) {
+      flex-basis: calc(100% / 2 - 1rem);
+    }
+
+    @media (max-width: 560px) {
+      flex-basis: 100%;
     }
   }
 }

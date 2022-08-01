@@ -11,7 +11,7 @@
 ![GitHub deployments](https://img.shields.io/github/deployments/Chartreuse-Gaming/Website/github-pages?label=Deployment)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/Website?label=Version)&nbsp;
 ![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/Website?label=License)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-5.31%20MB-blue)
+![Website build size](https://img.shields.io/badge/Build%20size-5.27%20MB-blue)
 
   <p align="center">
     Website of the Chartreuse Gaming association.
@@ -73,6 +73,7 @@ future events organized by it.
 - [Fontawesome](https://fontawesome.com/)
 - [SplideJS](https://splidejs.com/)
 - [CountUp](https://github.com/inorganik/countUp.js)
+- [Timeline](https://codepen.io/z-/pen/bwPBjY)
 
 ### Color Reference
 
@@ -136,11 +137,10 @@ A new `dist` folder will appear containing the entire compiled website.
 ## Roadmap
 
 - [x] Home page
-- [x] Timeline
 - [x] Carousel
+- [x] Timeline
 - [x] Ranking
-- [x] Gallery
-- [ ] Add all events
+- [ ] Gallery
 - [ ] Twitch API integration
 - [ ] Google Drive integration
 

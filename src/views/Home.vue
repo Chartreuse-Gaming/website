@@ -1,16 +1,16 @@
 <template>
   <main>
-    <h1 class="hidden">Chartreuse Gaming</h1>
+    <h1>Chartreuse Gaming</h1>
     <Carousel />
 
-    <OldTournament />
+    <Tournaments :data="tournaments" />
 
     <Association
       id="association"
       v-observe-visibility="{
         callback: visibilityAssociation,
         intersection: {
-          rootMargin: '-300px',
+          rootMargin: '-150px',
         },
       }"
     />
@@ -29,7 +29,7 @@
 
 <script>
 import Carousel from "@/components/home/carousel";
-import OldTournament from "@/components/home/oldTournament";
+import Tournaments from "@/components/home/tournaments";
 import Association from "@/components/home/association";
 import Contact from "@/components/home/contact";
 
@@ -40,7 +40,7 @@ export default {
   },
   components: {
     Carousel,
-    OldTournament,
+    Tournaments,
     Association,
     Contact,
   },
@@ -49,6 +49,41 @@ export default {
       visibility: {
         association: false,
         contact: false,
+      },
+      tournaments: {
+        title: this.$t("tournaments.previous"),
+        links: [
+          {
+            name: "CEC5",
+            title: this.$t("tournaments.CEC.5.self"),
+            img: "assets/img/tournaments/CEC/CEC5.webp",
+          },
+          {
+            name: "CEC4",
+            title: this.$t("tournaments.CEC.4.self"),
+            img: "assets/img/tournaments/CEC/CEC4.webp",
+          },
+          {
+            name: "CEC3",
+            title: this.$t("tournaments.CEC.3.self"),
+            img: "assets/img/tournaments/CEC/CEC3.webp",
+          },
+          {
+            name: "CGW_2019",
+            title: this.$t("tournaments.CGW_2019.self"),
+            img: "assets/img/tournaments/CGW_2019.webp",
+          },
+          {
+            name: "CEC2",
+            title: this.$t("tournaments.CEC.2.self"),
+            img: "assets/img/tournaments/CEC/CEC2.webp",
+          },
+          {
+            name: "CEC1",
+            title: this.$t("tournaments.CEC.1.self"),
+            img: "assets/img/tournaments/CEC/CEC1.webp",
+          },
+        ],
       },
     };
   },
@@ -64,3 +99,13 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+main > article:nth-child(3) {
+  padding-top: 20px;
+}
+
+h1 {
+  display: none;
+}
+</style>

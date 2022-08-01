@@ -1,14 +1,5 @@
 <template>
-  <section
-    class="content"
-    v-observe-visibility="{
-      callback: visible,
-      once: true,
-      intersection: {
-        rootMargin: '-250px',
-      },
-    }"
-  >
+  <article class="content">
     <p>
       <span id="editions">5</span>
       {{ $t("association.numbers.editions") }}<br />
@@ -21,9 +12,10 @@
     </p>
     <p>
       {{ $t("association.numbers.more-than") }}
-      <span id="cashprize">6000</span> {{ $t("association.numbers.cashprize") }}
+      <span id="cash-prize">6000</span>
+      {{ $t("association.numbers.cashprize") }}
     </p>
-  </section>
+  </article>
 </template>
 
 <script>
@@ -36,42 +28,43 @@ export default {
       editions: {},
       players: {},
       cashprize: {},
+      options: {
+        duration: 3,
+        enableScrollSpy: true,
+        scrollSpyOnce: true,
+      },
     };
   },
   mounted() {
-    this.editions = new CountUp("editions", 5, { duration: 3 });
-    this.players = new CountUp("players", 350, { duration: 3 });
-    this.cashprize = new CountUp("cashprize", 6000, {
-      duration: 3,
+    this.editions = new CountUp("editions", 5, this.options);
+    this.players = new CountUp("players", 350, this.options);
+    this.cashprize = new CountUp("cash-prize", 6000, {
+      ...this.options,
       separator: " ",
       suffix: " €",
     });
-  },
-  methods: {
-    visible() {
-      if (window.pageYOffset !== 0) {
-        this.editions.start();
-        this.players.start();
-        this.cashprize.start();
-      }
-    },
+    this.editions.handleScroll();
+    this.players.handleScroll();
+    this.cashprize.handleScroll();
   },
 };
 </script>
 
 <style scoped lang="scss">
-section {
-  padding-top: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+article {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 
   p {
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--bg-color-alt);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+    border-radius: 8px;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
     font-size: 1.1em;
 
@@ -80,6 +73,18 @@ section {
       font-weight: bold;
       color: var(--green-touch);
     }
+  }
+
+  @media (min-width: 451px) and (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    p:first-of-type {
+      grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
   }
 }
 </style>

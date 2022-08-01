@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "rank": 1,
     "name": "QTBG",
     "players": [
       "UnDé",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "id": 2,
+    "rank": 2,
     "name": "Flash in for scuttle",
     "players": [
       "Kaw",
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "Ekinox",
     "players": [
       "Sukyos",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "id": 4,
+    "rank": 4,
     "name": "GHB Crew/AS",
     "players": [
       "TTarKKen",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "On S'lave Pas",
     "players": [
       "ArtikTonik",
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "VGY CORP",
     "players": [
       "Xwortex Gamers",
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "id": 7,
+    "rank": 7,
     "name": "Les Bûches",
     "players": [
       "Shownt",
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "id": 7,
+    "rank": 7,
     "name": "Hardstuck (Step) Bros",
     "players": [
       "Cloud",

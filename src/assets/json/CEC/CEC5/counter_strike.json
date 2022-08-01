@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "rank": 1,
     "name": "HuB eSport Club",
     "players": [
       "Etrau'D",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "id": 2,
+    "rank": 2,
     "name": "JPGam1ng_",
     "players": [
       "ArKa0s",
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "23H.Max",
     "players": [
       "NES",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "id": 4,
+    "rank": 4,
     "name": "30 y/o Talent",
     "players": [
       "_k1v",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "BTR",
     "players": [
       "GaaTho",

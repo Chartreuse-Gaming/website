@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Header from "@/components/global/Header";
-import Footer from "@/components/global/Footer";
+import Header from "@/components/global/header";
+import Footer from "@/components/global/footer";
 
 export default {
   components: {
@@ -44,6 +44,7 @@ export default {
 
 :root {
   --bg-color: #262626;
+  --bg-color-alt: #2c2c2c;
   --text-color: #ffffff;
   --subtext-color: #e6e6e6;
   --footer-text-color: #b9b9b9;
@@ -86,10 +87,6 @@ body {
 
   main:first-of-type {
     margin-top: -90px;
-
-    & > div {
-      margin-top: 330px;
-    }
   }
 
   img {
@@ -112,19 +109,18 @@ body {
 
   h2 {
     font-size: 1.6em;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
 .content {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1400px;
-  padding: 40px 18px;
+  width: min(100% - 2rem, 1350px);
+  margin-inline: auto;
+  padding: 40px 0;
 }
 
 .btn {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 8px 16px;
   width: 180px;
   display: block;
@@ -148,10 +144,6 @@ body {
     width: 100% !important;
     padding: 10px 12px !important;
   }
-}
-
-.hidden {
-  display: none !important;
 }
 
 .fade-enter-active,
@@ -180,7 +172,61 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+.banner-content {
+  position: sticky;
+  margin-top: -120px;
+}
+
+#presentation {
+  padding-bottom: 1rem;
+
+  p {
+    font-size: 1.05em;
+  }
+}
+
+#sponsors {
+  padding: 1rem;
+  width: min(100% - 2rem, 1100px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: var(--bg-color-alt);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 110px;
+    padding: 8px;
+
+    @media only screen and (max-width: 650px) {
+      max-width: 120px;
+      max-height: 90px;
+    }
+  }
+}
+
+#ranking {
+  display: flex;
+  gap: 0 2rem;
+  padding: 0;
+  margin-bottom: -1rem;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: unset;
+  }
+}
+
+@media only screen and (max-width: 650px) {
   h2 {
     text-align: center;
   }

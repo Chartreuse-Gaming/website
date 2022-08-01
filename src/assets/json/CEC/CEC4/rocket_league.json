@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "rank": 1,
     "name": "CALIENTE",
     "players": [
       "saizen",
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "id": 2,
+    "rank": 2,
     "name": "Camenfrites",
     "players": [
       "Grimflam",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "CiNOZE",
     "players": [
       "DGZ",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": 4,
+    "rank": 4,
     "name": "Les Mini-Retraités",
     "players": [
       "Rizdax",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "Valderium",
     "players": [
       "Hydrese",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "VF",
     "players": [
       "Måmøk",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "K2k_gang",
     "players": [
       "Nefariouz83",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "Heternaze",
     "players": [
       "Neova",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Heternaze",
     "players": [
       "Major",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Old Boys",
     "players": [
       "Flow_Flo74",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Ergüel Performance Gaming Club",
     "players": [
       "H5-N1",
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "NewRange",
     "players": [
       "NewRange Stock/-\\ge.",
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Rocket Park",
     "players": [
       "SciHype",
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "SKAALS SOCIETY",
     "players": [
       "Pazzaaar",
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "ESCR1",
     "players": [
       "Ponponce",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Vanadium",
     "players": [
       "Miro_",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Bayern les verres cul sec",
     "players": [
       "DraZz0u",
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "French Army",
     "players": [
       "SkySoft38",
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Ultimatum top 1 fortnite chartreuse gaming 2020",
     "players": [
       "ACG MasSS",
@@ -152,7 +152,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "667",
     "players": [
       "TXpr0Wwzz",
@@ -160,7 +160,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Les Maitres Kebabiers",
     "players": [
       "bobyfunk",
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Engel Esport",
     "players": [
       "KaiiZiX",
@@ -176,7 +176,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "La Houille",
     "players": [
       "La Mangue",
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Grumeaux",
     "players": [
       "NaZuRo-_23",
@@ -192,7 +192,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Oui",
     "players": [
       "JunkieCat",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "PouletEnFeu",
     "players": [
       "Xelium_Poulet",
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "MN'S",
     "players": [
       "the_noob.73",
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "id": 17,
+    "rank": 17,
     "name": "Drag0nFly",
     "players": [
       "Igrander",
