@@ -9,17 +9,23 @@
     </header>
     <section>
       <ul>
-        <li v-for="team in data" :key="team.id">
-          <div>
-            <p v-if="team.id === 1">🥇</p>
-            <p v-else-if="team.id === 2">🥈</p>
-            <p v-else-if="team.id === 3">🥉</p>
-            <p v-else>{{ team.id }}</p>
-            <p>{{ team.name }}</p>
-          </div>
-          <!--<div>
-            <p v-for="player in team.players" :key="player">{{ player }}</p>
-          </div>-->
+        <li
+          v-for="(team, index) in data"
+          :key="index"
+          @click="togglePlayers(index)"
+        >
+          <p v-if="team.rank === 1">🥇</p>
+          <p v-else-if="team.rank === 2">🥈</p>
+          <p v-else-if="team.rank === 3">🥉</p>
+          <p v-else>{{ team.rank }}</p>
+          <transition mode="out-in">
+            <p v-if="!toogleTeams[index]">{{ team.name }}</p>
+            <p v-else>
+              <span v-for="player in team.players" :key="player">
+                {{ player }}
+              </span>
+            </p>
+          </transition>
         </li>
       </ul>
     </section>
@@ -30,6 +36,19 @@
 export default {
   name: "tableComponent",
   props: ["img", "alt", "data"],
+  data() {
+    return {
+      toogleTeams: [],
+    };
+  },
+  mounted() {
+    this.data.forEach(() => this.toogleTeams.push(false));
+  },
+  methods: {
+    togglePlayers(id) {
+      this.toogleTeams[id] = !this.toogleTeams[id];
+    },
+  },
 };
 </script>
 
@@ -137,5 +156,19 @@ article {
       }
     }
   }
+}
+
+.v-enter-active {
+  transition: all 500ms;
+}
+
+.v-leave-active {
+  transition: all 220ms cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>
