@@ -129,17 +129,15 @@ export default {
     return {
       dropdown: false,
       nav: false,
+      header: {},
     };
   },
   mounted() {
-    const header = document.getElementsByTagName("header")[0];
-    window.onscroll = function () {
-      if (document.documentElement.scrollTop > 70) {
-        header.classList.add("scroll");
-      } else {
-        header.classList.remove("scroll");
-      }
-    };
+    this.header = document.getElementsByTagName("header")[0];
+    document.addEventListener("scroll", this.scrollClassToggler);
+  },
+  beforeUnmount() {
+    document.removeEventListener("scroll", this.scrollClassToggler);
   },
   methods: {
     toAnchor(anchor) {
@@ -148,6 +146,13 @@ export default {
         setTimeout(() => {
           this.$router.push("/#" + anchor);
         }, 450);
+      }
+    },
+    scrollClassToggler() {
+      if (document.documentElement.scrollTop > 70) {
+        this.header.classList.add("scroll");
+      } else {
+        this.header.classList.remove("scroll");
       }
     },
   },
