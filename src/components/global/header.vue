@@ -38,7 +38,7 @@
               >
                 {{ $t("tournaments.self") }}
                 <font-awesome-icon icon="fa-solid fa-sort-down" />
-                <transition name="fade">
+                <transition>
                   <div v-if="dropdown">
                     <router-link
                       :to="{ name: 'CEC' }"
@@ -169,12 +169,12 @@ $header-height: 90px;
   background-color: rgba(38, 38, 38, 0.6);
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease;
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 200ms ease;
 }
-.fade-enter-from,
-.fade-leave-to {
+.v-enter-from,
+.v-leave-to {
   opacity: 0;
 }
 
@@ -196,8 +196,7 @@ header {
   article {
     height: inherit;
     margin-inline: auto;
-    padding: 0 12px;
-    max-width: 1650px;
+    width: min(100% - 1rem, 1650px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -225,8 +224,8 @@ section:first-of-type nav {
   #mobile {
     height: $header-height;
     display: none;
-    padding: 0 20px;
-    width: 30px;
+    padding: 0 1.4rem;
+    width: 2em;
   }
 
   #dropdown {
@@ -244,16 +243,16 @@ section:first-of-type nav {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
       a {
-        height: auto;
-        padding: 8px 16px;
+        height: max-content;
+        padding: 0.5rem 1rem;
         font-size: 0.94em;
 
         &:first-of-type {
-          padding-top: 16px;
+          padding-top: 1rem;
         }
 
         &:last-of-type {
-          padding-bottom: 16px;
+          padding-bottom: 1rem;
         }
       }
     }
@@ -261,10 +260,10 @@ section:first-of-type nav {
 
   a {
     transition: color 150ms;
-    padding: 20px;
+    padding: 1.2rem;
 
     svg {
-      margin-left: 8px;
+      margin-left: 0.6rem;
       padding-bottom: 6px;
     }
 
@@ -280,7 +279,7 @@ section:first-of-type nav {
 }
 
 section:last-of-type > a {
-  padding: 18px;
+  padding: 1rem;
 
   & > svg {
     transition: all 150ms;
@@ -309,7 +308,7 @@ section:last-of-type > a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 1rem;
 
   img {
     height: 56px;
@@ -355,7 +354,7 @@ section:last-of-type > a {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1080px) {
   section:first-of-type {
     width: 100%;
     justify-content: space-between;
@@ -379,7 +378,7 @@ section:last-of-type > a {
     height: 100vh;
     top: 0;
     left: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 200ms ease-in-out;
 
     & > div {
       position: absolute;
@@ -399,7 +398,9 @@ section:last-of-type > a {
       }
 
       a {
-        height: 80px;
+        width: 100%;
+        display: block;
+        text-align: center;
       }
 
       #dropdown {
@@ -410,21 +411,21 @@ section:last-of-type > a {
           height: max-content;
           flex-flow: column nowrap;
           align-items: center;
-          top: 70px;
+          top: 74px;
           left: 0;
           border-radius: 0;
           width: 100vw;
 
           a {
             text-align: center;
-            padding: 20px 12px;
+            padding: 1rem 0.8rem;
 
             &:first-of-type {
-              padding-top: 40px;
+              padding-top: 2rem;
             }
 
             &:last-of-type {
-              padding-bottom: 40px;
+              padding-bottom: 2rem;
             }
           }
         }
