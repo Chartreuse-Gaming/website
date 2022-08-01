@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "rank": 1,
     "name": "C'EST MON MAIN",
     "players": [
       "KxN",
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "id": 2,
+    "rank": 2,
     "name": "1TERNET",
     "players": [
       "U1P",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": 3,
+    "rank": 3,
     "name": "WoodX",
     "players": [
       "Goladan",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": 4,
+    "rank": 4,
     "name": "NIPS",
     "players": [
       "Blateman",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": 5,
+    "rank": 5,
     "name": "CerealesEXTRA",
     "players": [
       "Parano",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id": 7,
+    "rank": 7,
     "name": "FuryMarmottes",
     "players": [
       "Kitano",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": 7,
+    "rank": 7,
     "name": "Noobteam",
     "players": [
       "Noibman",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "FifiLeFou",
     "players": [
       "Miro_",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": 9,
+    "rank": 9,
     "name": "Vanadium",
     "players": [
       "FlwrTheFck",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "id": 13,
+    "rank": 13,
     "name": "Bibop",
     "players": [
       "armagedon21fr",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": 13,
+    "rank": 13,
     "name": "border detection scientist",
     "players": [
       "Rayden",
