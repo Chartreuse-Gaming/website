@@ -10,7 +10,7 @@
       v-observe-visibility="{
         callback: visibilityAssociation,
         intersection: {
-          rootMargin: '-300px',
+          rootMargin: '-150px',
         },
       }"
     />
