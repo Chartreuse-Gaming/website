@@ -58,7 +58,7 @@ article {
     }
 
     div {
-      height: 100%;
+      height: inherit;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -69,7 +69,7 @@ article {
       }
 
       img {
-        height: 70px;
+        height: 50%;
         filter: drop-shadow(0 0 0.75rem var(--bg-color));
       }
 
@@ -101,34 +101,34 @@ article {
       border-radius: 0 0 8px 8px;
 
       li {
-        padding: 14px 30px 14px 14px;
+        padding: 1rem;
         font-size: 1.2em;
         display: flex;
+        align-items: center;
+        gap: 1rem;
 
-        & > * {
+        p:first-of-type {
+          font-size: 1.6em;
+          line-height: 0;
+          text-align: center;
+          min-width: 60px;
+          font-family: var(--title-font);
+          font-weight: bold;
+        }
+
+        p:last-of-type {
           display: flex;
-          align-items: center;
-
-          p:first-of-type {
-            font-size: 1.6em;
-            line-height: 0;
-            text-align: center;
-            width: 60px;
-            font-family: var(--title-font);
-            font-weight: bold;
-          }
-
-          &:last-of-type {
-            gap: 8px 1.5rem;
-          }
+          flex-flow: row wrap;
+          gap: 0.2rem 1rem;
         }
 
         &:first-of-type {
-          padding: 28px 30px 28px 14px;
+          padding: 2rem 1rem;
           font-size: 1.6em;
           font-family: var(--title-font);
           font-weight: bold;
           background-image: url("@/assets/svg/confettis.svg");
+          color: var(--green-touch);
         }
 
         &:nth-child(even) {
