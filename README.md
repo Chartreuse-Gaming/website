@@ -73,6 +73,7 @@ future events organized by it.
 - [Fontawesome](https://fontawesome.com/)
 - [SplideJS](https://splidejs.com/)
 - [CountUp](https://github.com/inorganik/countUp.js)
+- [Timeline](https://codepen.io/z-/pen/bwPBjY)
 
 ### Color Reference
 
