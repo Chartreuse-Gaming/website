@@ -1,14 +1,5 @@
 <template>
-  <article
-    class="content"
-    v-observe-visibility="{
-      callback: visible,
-      once: true,
-      intersection: {
-        rootMargin: '-250px',
-      },
-    }"
-  >
+  <article class="content">
     <p>
       <span id="editions">5</span>
       {{ $t("association.numbers.editions") }}<br />
@@ -21,7 +12,7 @@
     </p>
     <p>
       {{ $t("association.numbers.more-than") }}
-      <span id="cashprize">6000</span>
+      <span id="cash-prize">6000</span>
       {{ $t("association.numbers.cashprize") }}
     </p>
   </article>
@@ -37,25 +28,23 @@ export default {
       editions: {},
       players: {},
       cashprize: {},
+      options: {
+        duration: 3,
+        enableScrollSpy: true,
+      },
     };
   },
   mounted() {
-    this.editions = new CountUp("editions", 5, { duration: 3 });
-    this.players = new CountUp("players", 350, { duration: 3 });
-    this.cashprize = new CountUp("cashprize", 6000, {
-      duration: 3,
+    this.editions = new CountUp("editions", 5, this.options);
+    this.players = new CountUp("players", 350, this.options);
+    this.cashprize = new CountUp("cash-prize", 6000, {
+      ...this.options,
       separator: " ",
       suffix: " €",
     });
-  },
-  methods: {
-    visible() {
-      if (window.pageYOffset !== 0) {
-        this.editions.start();
-        this.players.start();
-        this.cashprize.start();
-      }
-    },
+    this.editions.handleScroll();
+    this.players.handleScroll();
+    this.cashprize.handleScroll();
   },
 };
 </script>
