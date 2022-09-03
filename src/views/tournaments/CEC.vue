@@ -33,6 +33,11 @@ export default {
         title: this.$t("tournaments.editions"),
         links: [
           {
+            name: "CEC6",
+            title: this.$t("tournaments.CEC.6.self"),
+            img: "assets/img/tournaments/CEC/CEC5.webp",
+          },
+          {
             name: "CEC5",
             title: this.$t("tournaments.CEC.5.self"),
             img: "assets/img/tournaments/CEC/CEC5.webp",

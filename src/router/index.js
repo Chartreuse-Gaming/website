@@ -12,6 +12,14 @@ const routes = [
     component: Home,
   },
   {
+    path: "/tournament/CEC/6",
+    name: "CEC6",
+    component: () =>
+      import(
+        /* webpackChunkName: "CEC6" */ "../views/tournaments/CEC/CEC6.vue"
+      ),
+  },
+  {
     path: "/tournament/CEC/5",
     name: "CEC5",
     component: () =>

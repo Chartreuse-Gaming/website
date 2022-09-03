@@ -177,6 +177,15 @@ body {
   margin-top: -120px;
 }
 
+#teaser {
+  text-align: center;
+  border-radius: 6px;
+
+  iframe {
+    border-radius: 6px;
+  }
+}
+
 #presentation {
   padding-bottom: 1rem;
 
