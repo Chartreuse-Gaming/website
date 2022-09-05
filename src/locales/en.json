@@ -147,7 +147,8 @@
   },
   "contact": {
     "self": "Contact",
-    "us": "Contact us"
+    "us": "Contact us",
+    "join-us": "Join us !"
   },
   "copyright": "All rights reserved",
   "site-map": "Site Map",

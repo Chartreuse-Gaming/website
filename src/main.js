@@ -25,6 +25,7 @@ import {
   faPhone,
   faEnvelope,
   faShareNodes,
+  faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -42,7 +43,8 @@ library.add(
   faLocationDot,
   faPhone,
   faEnvelope,
-  faShareNodes
+  faShareNodes,
+  faClipboardList
 );
 
 createApp(App)
