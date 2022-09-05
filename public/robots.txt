@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://chartreuse-gaming.fr/sitemap.xml
