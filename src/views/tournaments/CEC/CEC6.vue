@@ -5,114 +5,95 @@
       src="assets/img/carousel/CEC/CEC6.webp"
     />
 
-    <div class="banner-content">
-      <article id="sponsors" class="content">
-        <img src="@/assets/img/sponsors/FullLife.webp" alt="FullLife" />
-        <img
-          src="@/assets/img/sponsors/Drone_Process.webp"
-          alt="Drone Process"
-        />
-        <img src="@/assets/img/sponsors/Noctua.webp" alt="Noctua" />
-        <img
-          src="@/assets/img/sponsors/Coeur_de_Chartreuse.webp"
-          alt="Coeur de Chartreuse"
-        />
-        <img
-          src="@/assets/img/sponsors/Saint_Laurent_du_Pont.webp"
-          alt="Saint Laurent du Pont"
-        />
-      </article>
+    <article id="teaser" class="content">
+      <iframe
+        width="852"
+        height="480"
+        src="https://www.youtube.com/embed/lso8jmnlcFU?controls=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </article>
 
-      <article id="teaser" class="content">
-        <iframe
-          width="852"
-          height="480"
-          src="https://www.youtube.com/embed/lso8jmnlcFU?controls=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </article>
+    <article id="presentation" class="content">
+      <h2>{{ $t("presentation") }}</h2>
+      <p>{{ $t("tournaments.CEC.6.presentation") }}</p>
+    </article>
 
-      <article id="presentation" class="content">
-        <h2>{{ $t("presentation") }}</h2>
-        <p>{{ $t("tournaments.CEC.6.presentation") }}</p>
-      </article>
-
-      <article id="cash-prize" class="content">
-        <section>
+    <article id="cash-prize" class="content">
+      <section>
+        <img
+          src="@/assets/img/games/banner/League_of_Legends.webp"
+          alt="League of Legends"
+          loading="lazy"
+        />
+        <div>
           <img
-            src="@/assets/img/games/banner/League_of_Legends.webp"
-            alt="League of Legends"
+            src="@/assets/img/games/logo/League_of_Legends.webp"
+            alt="Logo League of Legends"
             loading="lazy"
           />
+          <h3><span>🥇</span>250 €</h3>
           <div>
-            <img
-              src="@/assets/img/games/logo/League_of_Legends.webp"
-              alt="Logo League of Legends"
-              loading="lazy"
-            />
-            <h3><span>🥇</span>250 €</h3>
-            <div>
-              <p><span>🥈</span>200 €</p>
-              <p><span>🥉</span>125 €</p>
-            </div>
-            <a href="#" class="btn">
-              {{ $t("read-more") }}
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </a>
+            <p><span>🥈</span>200 €</p>
+            <p><span>🥉</span>125 €</p>
           </div>
-        </section>
-        <section>
+          <a href="#" class="btn">
+            {{ $t("read-more") }}
+            <font-awesome-icon icon="fa-solid fa-right-long" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <img
+          src="@/assets/img/games/banner/CSGO.webp"
+          alt="Valorant"
+          loading="lazy"
+        />
+        <div>
           <img
-            src="@/assets/img/games/banner/CSGO.webp"
-            alt="Valorant"
+            src="@/assets/img/games/logo/CSGO.webp"
+            alt="Logo Valorant"
             loading="lazy"
           />
+          <h3><span>🥇</span>250 €</h3>
           <div>
-            <img
-              src="@/assets/img/games/logo/CSGO.webp"
-              alt="Logo Valorant"
-              loading="lazy"
-            />
-            <h3><span>🥇</span>250 €</h3>
-            <div>
-              <p><span>🥈</span>200 €</p>
-              <p><span>🥉</span>125 €</p>
-            </div>
-            <a href="#" class="btn">
-              {{ $t("read-more") }}
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </a>
+            <p><span>🥈</span>200 €</p>
+            <p><span>🥉</span>125 €</p>
           </div>
-        </section>
-        <section>
+          <a href="#" class="btn">
+            {{ $t("read-more") }}
+            <font-awesome-icon icon="fa-solid fa-right-long" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <img
+          src="@/assets/img/games/banner/Rocket_League.webp"
+          alt="Rocket League"
+          loading="lazy"
+        />
+        <div>
           <img
-            src="@/assets/img/games/banner/Rocket_League.webp"
-            alt="Rocket League"
+            src="@/assets/img/games/logo/Rocket_League.webp"
+            alt="Logo Rocket League"
             loading="lazy"
           />
+          <h3><span>🥇</span>150 €</h3>
           <div>
-            <img
-              src="@/assets/img/games/logo/Rocket_League.webp"
-              alt="Logo Rocket League"
-              loading="lazy"
-            />
-            <h3><span>🥇</span>150 €</h3>
-            <div>
-              <p><span>🥈</span>120 €</p>
-              <p><span>🥉</span>75 €</p>
-            </div>
-            <a href="#" class="btn">
-              {{ $t("read-more") }}
-              <font-awesome-icon icon="fa-solid fa-right-long" />
-            </a>
+            <p><span>🥈</span>120 €</p>
+            <p><span>🥉</span>75 €</p>
           </div>
-        </section>
-      </article>
+          <a href="#" class="btn">
+            {{ $t("read-more") }}
+            <font-awesome-icon icon="fa-solid fa-right-long" />
+          </a>
+        </div>
+      </section>
+    </article>
 
-      <!--<Gallery :images="images" />-->
-    </div>
+    <!--<Gallery :images="images" />-->
   </main>
 </template>
 
