@@ -22,78 +22,91 @@
     </article>
 
     <article id="cash-prize" class="content">
-      <section>
-        <img
-          src="@/assets/img/games/banner/League_of_Legends.webp"
-          alt="League of Legends"
-          loading="lazy"
-        />
-        <div>
-          <img
-            src="@/assets/img/games/logo/League_of_Legends.webp"
-            alt="Logo League of Legends"
-            loading="lazy"
-          />
-          <h3><span>🥇</span>250 €</h3>
+      <h2>{{ $t("games") }}</h2>
+      <div>
+        <section>
+          <header>
+            <img
+              src="@/assets/img/games/banner/League_of_Legends.webp"
+              alt="League of Legends"
+              loading="lazy"
+            />
+          </header>
           <div>
-            <p><span>🥈</span>200 €</p>
-            <p><span>🥉</span>125 €</p>
+            <img
+              src="@/assets/img/games/logo/League_of_Legends.webp"
+              alt="Logo League of Legends"
+              loading="lazy"
+            />
+            <h3><span>🥇</span>250 €</h3>
+            <div>
+              <p><span>🥈</span>200 €</p>
+              <p><span>🥉</span>125 €</p>
+            </div>
+            <a href="#" class="btn">
+              {{ $t("regulation") }}
+            </a>
+            <a href="#" class="btn">
+              {{ $t("registration") }}
+            </a>
           </div>
-          <a href="#" class="btn">
-            {{ $t("read-more") }}
-            <font-awesome-icon icon="fa-solid fa-right-long" />
-          </a>
-        </div>
-      </section>
-      <section>
-        <img
-          src="@/assets/img/games/banner/CSGO.webp"
-          alt="Valorant"
-          loading="lazy"
-        />
-        <div>
-          <img
-            src="@/assets/img/games/logo/CSGO.webp"
-            alt="Logo Valorant"
-            loading="lazy"
-          />
-          <h3><span>🥇</span>250 €</h3>
+        </section>
+        <section>
+          <header>
+            <img
+              src="@/assets/img/games/banner/Rocket_League.webp"
+              alt="Rocket League"
+              loading="lazy"
+            />
+          </header>
           <div>
-            <p><span>🥈</span>200 €</p>
-            <p><span>🥉</span>125 €</p>
+            <img
+              src="@/assets/img/games/logo/Rocket_League.webp"
+              alt="Logo Rocket League"
+              loading="lazy"
+            />
+            <h3><span>🥇</span>150 €</h3>
+            <div>
+              <p><span>🥈</span>120 €</p>
+              <p><span>🥉</span>75 €</p>
+            </div>
+            <a href="#" class="btn">
+              {{ $t("regulation") }}
+            </a>
+            <a href="#" class="btn">
+              {{ $t("registration") }}
+            </a>
           </div>
-          <a href="#" class="btn">
-            {{ $t("read-more") }}
-            <font-awesome-icon icon="fa-solid fa-right-long" />
-          </a>
-        </div>
-      </section>
-      <section>
-        <img
-          src="@/assets/img/games/banner/Rocket_League.webp"
-          alt="Rocket League"
-          loading="lazy"
-        />
-        <div>
-          <img
-            src="@/assets/img/games/logo/Rocket_League.webp"
-            alt="Logo Rocket League"
-            loading="lazy"
-          />
-          <h3><span>🥇</span>150 €</h3>
+        </section>
+        <section>
+          <header>
+            <img
+              src="@/assets/img/games/banner/Valorant.webp"
+              alt="Valorant"
+              loading="lazy"
+            />
+          </header>
           <div>
-            <p><span>🥈</span>120 €</p>
-            <p><span>🥉</span>75 €</p>
+            <img
+              src="@/assets/img/games/logo/Valorant.webp"
+              alt="Logo Valorant"
+              loading="lazy"
+            />
+            <h3><span>🥇</span>250 €</h3>
+            <div>
+              <p><span>🥈</span>200 €</p>
+              <p><span>🥉</span>125 €</p>
+            </div>
+            <a href="#" class="btn">
+              {{ $t("regulation") }}
+            </a>
+            <a href="#" class="btn">
+              {{ $t("registration") }}
+            </a>
           </div>
-          <a href="#" class="btn">
-            {{ $t("read-more") }}
-            <font-awesome-icon icon="fa-solid fa-right-long" />
-          </a>
-        </div>
-      </section>
+        </section>
+      </div>
     </article>
-
-    <!--<Gallery :images="images" />-->
   </main>
 </template>
 
@@ -104,9 +117,9 @@ import cs from "@/assets/json/CEC/CEC5/counter_strike.json";
 import lol from "@/assets/json/CEC/CEC5/league_of_legends.json";
 
 export default {
-  name: "CEC5View",
+  name: "CEC6View",
   title() {
-    return this.$t("tournaments.CEC.5.self");
+    return this.$t("tournaments.CEC.6.self");
   },
   components: {
     Banner,
@@ -132,89 +145,108 @@ export default {
 }
 
 #cash-prize {
-  border-radius: 6px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 0 !important;
 
-  section {
-    &:first-child img {
-      border-radius: 6px 0 0 0;
-    }
-    &:last-child img {
-      border-radius: 0 6px 0 0;
-    }
+  > div {
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    > img {
-      object-fit: cover;
-      width: 100%;
-      height: 180px;
-    }
-
-    > div {
-      transform: translateY(-50px);
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      gap: 3rem;
-
-      img {
-        margin-inline: auto;
+    > section {
+      &:first-child header img {
+        border-radius: 6px 0 0 0;
       }
 
-      h3 {
-        padding: 1rem 2rem 1.2rem;
-        border-radius: 6px;
-        font-size: 2em;
-        font-family: var(--title-font);
-        display: inline-flex;
-        align-items: baseline;
-        gap: 0.8rem;
-        box-shadow: rgba(0, 0, 0, 0.4) 0 4px 18px 0;
-        position: relative;
-        background-color: var(--bg-color);
-        color: var(--green-touch);
+      &:last-child header img {
+        border-radius: 0 6px 0 0;
+      }
 
-        &::before {
-          z-index: -2;
-          content: "";
-          border-radius: 6px;
-          background-color: var(--green-touch);
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          transform: rotate(-6deg);
-        }
+      > header {
+        @include box-shadow(inset 0px -116px 40px -50px var(--bg-color));
 
-        &::after {
+        img {
           z-index: -1;
-          content: "";
-          border-radius: 4px;
-          background-color: var(--bg-color);
-          position: absolute;
-          top: 4px;
-          left: 4px;
-          bottom: 4px;
-          right: 4px;
-          transform: rotate(-6deg);
+          object-fit: cover;
+          width: 100%;
+          height: 200px;
+          position: relative;
         }
       }
 
       > div {
+        transform: translateY(-50px);
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         align-items: center;
-        justify-content: space-between;
-        gap: 4rem;
 
-        p {
+        img {
+          object-fit: contain;
+          width: 300px;
+          height: 90px;
+        }
+
+        h3 {
+          margin-top: 2.4rem;
+          padding: 1rem 2rem 1.2rem;
+          border-radius: 6px;
+          font-size: 2em;
           font-family: var(--title-font);
-          font-size: 1.6em;
-          font-weight: bold;
           display: inline-flex;
           align-items: baseline;
-          gap: 0.4rem;
+          gap: 0.8rem;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 4px 18px 0;
+          position: relative;
+          background-color: var(--bg-color);
+          color: var(--green-touch);
+
+          &::before {
+            z-index: -2;
+            content: "";
+            border-radius: 6px;
+            background-color: var(--green-touch);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: rotate(-6deg);
+          }
+
+          &::after {
+            z-index: -1;
+            content: "";
+            border-radius: 4px;
+            background-color: var(--bg-color);
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            bottom: 4px;
+            right: 4px;
+            transform: rotate(-6deg);
+          }
+        }
+
+        > div {
+          margin: 2.4rem 0;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 4rem;
+
+          p {
+            font-family: var(--title-font);
+            font-size: 1.6em;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.4rem;
+          }
+        }
+
+        > a:first-of-type {
+          margin-bottom: 0.8rem;
+          background-color: #656565;
         }
       }
     }
