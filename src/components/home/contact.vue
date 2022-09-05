@@ -13,16 +13,19 @@
       <div>
         <font-awesome-icon icon="fa-solid fa-share-nodes" />
         <span>
-          <a href="https://discord.gg/invite/ENY2nV6">
+          <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
             <font-awesome-icon icon="fa-brands fa-discord" />
           </a>
-          <a href="https://twitter.com/chartreusegame">
+          <a href="https://twitter.com/chartreusegame" title="Twitter">
             <font-awesome-icon icon="fa-brands fa-twitter" />
           </a>
-          <a href="https://www.facebook.com/chartreusegaming/">
+          <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
             <font-awesome-icon icon="fa-brands fa-facebook-f" />
           </a>
-          <a href="https://www.instagram.com/chartreusegaming/">
+          <a
+            href="https://www.instagram.com/chartreusegaming/"
+            title="Instagram"
+          >
             <font-awesome-icon icon="fa-brands fa-instagram" />
           </a>
         </span>

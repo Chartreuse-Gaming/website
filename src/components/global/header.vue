@@ -93,27 +93,37 @@
 
       <!-- Réseaux sociaux -->
       <section>
-        <a href="https://discord.gg/invite/ENY2nV6">
+        <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
           <font-awesome-icon icon="fa-brands fa-discord" />
         </a>
-        <a id="live" href="https://www.twitch.tv/chartreusegaming">
+        <a
+          id="live"
+          href="https://www.twitch.tv/chartreusegaming"
+          title="Twitch"
+        >
           <font-awesome-icon icon="fa-brands fa-twitch" />
           <i></i>
           <i></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg">
+        <a
+          href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
+          title="YouTube"
+        >
           <font-awesome-icon icon="fa-brands fa-youtube" />
         </a>
-        <a href="https://twitter.com/chartreusegame">
+        <a href="https://twitter.com/chartreusegame" title="Twitter">
           <font-awesome-icon icon="fa-brands fa-twitter" />
         </a>
-        <a href="https://www.instagram.com/chartreusegaming/">
+        <a href="https://www.instagram.com/chartreusegaming/" title="Instagram">
           <font-awesome-icon icon="fa-brands fa-instagram" />
         </a>
-        <a href="https://www.facebook.com/chartreusegaming/">
+        <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
           <font-awesome-icon icon="fa-brands fa-facebook-f" />
         </a>
-        <a href="https://www.linkedin.com/company/chartreuse-gaming/">
+        <a
+          href="https://www.linkedin.com/company/chartreuse-gaming/"
+          title="LinkedIn"
+        >
           <font-awesome-icon icon="fa-brands fa-linkedin" />
         </a>
       </section>
