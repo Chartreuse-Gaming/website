@@ -7,6 +7,8 @@
           <img
             src="@/assets/svg/logo.svg"
             :alt="$t('association.logo') + '.'"
+            width="44"
+            height="56"
           />
         </router-link>
 
