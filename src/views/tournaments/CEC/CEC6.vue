@@ -2,7 +2,7 @@
   <main>
     <Banner
       :title="$t('tournaments.CEC.6.self')"
-      src="assets/img/carousel/CEC/CEC5.webp"
+      src="assets/img/carousel/CEC/CEC6.webp"
     />
 
     <div class="banner-content">
