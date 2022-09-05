@@ -10,6 +10,30 @@
       <SplideSlide>
         <article>
           <section>
+            <p>{{ $t("tournaments.CEC.6.date") }}</p>
+            <p class="CEC">
+              Chartreuse<br />
+              Esport<br />
+              Contest <span>6</span>
+            </p>
+            <router-link :to="{ name: 'CEC6' }" class="btn">
+              {{ $t("read-more") }}
+              <font-awesome-icon icon="fa-solid fa-right-long" />
+            </router-link>
+          </section>
+          <img
+            src="@/assets/img/carousel/CEC/CEC_logo.webp"
+            :alt="$t('tournaments.CEC.self') + ' logo'"
+          />
+        </article>
+        <img
+          src="@/assets/img/carousel/CEC/CEC6.webp"
+          :alt="$t('tournaments.CEC.6.self')"
+        />
+      </SplideSlide>
+      <!--<SplideSlide>
+        <article>
+          <section>
             <p>{{ $t("tournaments.CEC.5.date") }}</p>
             <p class="CEC">
               Chartreuse<br />
@@ -99,7 +123,7 @@
           src="@/assets/img/carousel/CGW_2019.webp"
           :alt="$t('tournaments.CGW_2019.self')"
         />
-      </SplideSlide>
+      </SplideSlide>-->
     </Splide>
   </article>
 </template>
@@ -113,13 +137,15 @@ export default {
     return {
       DOM: {},
       options: {
+        drag: false,
         type: "loop",
         rewind: true,
         rewindByDrag: true,
-        autoplay: true,
+        autoplay: false,
         keyboard: true,
         cover: true,
         arrows: false,
+        pagination: false,
         heightRatio: 0.4,
         speed: 350,
         rewindSpeed: this.speed,
