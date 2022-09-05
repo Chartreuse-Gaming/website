@@ -35,7 +35,7 @@ export default {
           {
             name: "CEC6",
             title: this.$t("tournaments.CEC.6.self"),
-            img: "assets/img/tournaments/CEC/CEC5.webp",
+            img: "assets/img/tournaments/CEC/CEC6.webp",
           },
           {
             name: "CEC5",
