@@ -5,17 +5,6 @@
       src="assets/img/carousel/CEC/CEC6.webp"
     />
 
-    <article id="teaser" class="content">
-      <iframe
-        width="852"
-        height="480"
-        src="https://www.youtube.com/embed/lso8jmnlcFU?controls=0"
-        frameborder="0"
-        allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </article>
-
     <article id="presentation" class="content">
       <h2>{{ $t("presentation") }}</h2>
       <p>{{ $t("tournaments.CEC.6.presentation") }}</p>
