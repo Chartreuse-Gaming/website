@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap");
+@import "node_modules/compass-mixins/lib/compass/css3";
 
 :root {
   --bg-color: #262626;
@@ -218,6 +219,115 @@ body {
     @media only screen and (max-width: 650px) {
       max-width: 120px;
       max-height: 90px;
+    }
+  }
+}
+
+#cash-prize {
+  padding-bottom: 0 !important;
+
+  > div {
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    > section {
+      &:first-child header img {
+        border-radius: 6px 0 0 0;
+      }
+
+      &:last-child header img {
+        border-radius: 0 6px 0 0;
+      }
+
+      > header {
+        @include box-shadow(inset 0px -116px 40px -50px var(--bg-color));
+
+        img {
+          z-index: -1;
+          object-fit: cover;
+          width: 100%;
+          height: 200px;
+          position: relative;
+        }
+      }
+
+      > div {
+        transform: translateY(-50px);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        img {
+          object-fit: contain;
+          width: 300px;
+          height: 90px;
+        }
+
+        h3 {
+          margin-top: 2.4rem;
+          padding: 1rem 2rem 1.2rem;
+          border-radius: 6px;
+          font-size: 2em;
+          font-family: var(--title-font);
+          display: inline-flex;
+          align-items: baseline;
+          gap: 0.8rem;
+          box-shadow: rgba(0, 0, 0, 0.4) 0 4px 18px 0;
+          position: relative;
+          background-color: var(--bg-color);
+          color: var(--green-touch);
+
+          &::before {
+            z-index: -2;
+            content: "";
+            border-radius: 6px;
+            background-color: var(--green-touch);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: rotate(-6deg);
+          }
+
+          &::after {
+            z-index: -1;
+            content: "";
+            border-radius: 4px;
+            background-color: var(--bg-color);
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            bottom: 4px;
+            right: 4px;
+            transform: rotate(-6deg);
+          }
+        }
+
+        > div {
+          margin: 2.4rem 0;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 4rem;
+
+          p {
+            font-family: var(--title-font);
+            font-size: 1.6em;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.4rem;
+          }
+        }
+
+        > a:first-of-type {
+          margin-bottom: 0.8rem;
+          background-color: #656565;
+        }
+      }
     }
   }
 }
