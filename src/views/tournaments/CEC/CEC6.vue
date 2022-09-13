@@ -32,10 +32,13 @@
               <p><span>🥈</span>200 €</p>
               <p><span>🥉</span>125 €</p>
             </div>
-            <a href="#" class="btn">
+            <a
+              href="https://drive.google.com/file/d/1M1_Mr85IhaMMkHW8-YypOpcRFDUQzJNO/view?usp=sharing"
+              class="btn"
+            >
               {{ $t("regulation") }}
             </a>
-            <a href="#" class="btn">
+            <a href="https://challonge.com/fr/CEC6_LOL" class="btn">
               {{ $t("registration") }}
             </a>
           </div>
@@ -59,10 +62,13 @@
               <p><span>🥈</span>120 €</p>
               <p><span>🥉</span>75 €</p>
             </div>
-            <a href="#" class="btn">
+            <a
+              href="https://drive.google.com/file/d/1d-hkNKFVxXByoFO5EezvKgppO7gm7s5_/view?usp=sharing"
+              class="btn"
+            >
               {{ $t("regulation") }}
             </a>
-            <a href="#" class="btn">
+            <a href="https://challonge.com/fr/CEC6_RL" class="btn">
               {{ $t("registration") }}
             </a>
           </div>
@@ -86,10 +92,13 @@
               <p><span>🥈</span>200 €</p>
               <p><span>🥉</span>125 €</p>
             </div>
-            <a href="#" class="btn">
+            <a
+              href="https://drive.google.com/file/d/1w_xYmoIipwf_pdF660A5pArMBPs0LWxV/view?usp=sharing"
+              class="btn"
+            >
               {{ $t("regulation") }}
             </a>
-            <a href="#" class="btn">
+            <a href="https://challonge.com/fr/CEC6_VALORANT" class="btn">
               {{ $t("registration") }}
             </a>
           </div>
