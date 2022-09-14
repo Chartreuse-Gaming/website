@@ -3,9 +3,17 @@
     <header>
       <div>
         <h2>{{ $t("ranking") }}</h2>
-        <img :src="require(`@/assets/img/games/logo/${img}.webp`)" :alt="alt" />
+        <img
+          :src="require(`@/assets/img/games/logo/${img}.webp`)"
+          :alt="alt"
+          loading="lazy"
+        />
       </div>
-      <img :src="require(`@/assets/img/games/banner/${img}.webp`)" :alt="alt" />
+      <img
+        :src="require(`@/assets/img/games/banner/${img}.webp`)"
+        :alt="alt"
+        loading="lazy"
+      />
     </header>
     <section>
       <ul>

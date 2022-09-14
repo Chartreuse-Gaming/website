@@ -1,7 +1,7 @@
 <template>
   <article id="banner">
     <h1>{{ title }}</h1>
-    <img :src="require(`@/${src}`)" :alt="title + '.'" />
+    <img :src="require(`@/${src}`)" :alt="title + '.'" loading="lazy" />
   </article>
 </template>
 

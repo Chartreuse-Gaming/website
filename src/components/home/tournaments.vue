@@ -8,7 +8,11 @@
         :to="{ name: link.name }"
       >
         <div>
-          <img :src="require('@/' + link.img)" :alt="link.title + '.'" />
+          <img
+            :src="require('@/' + link.img)"
+            :alt="link.title + '.'"
+            loading="lazy"
+          />
           <i></i>
         </div>
         <p>{{ link.title }}</p>

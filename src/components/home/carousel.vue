@@ -24,11 +24,13 @@
           <img
             src="@/assets/img/carousel/CEC/CEC_logo.webp"
             :alt="$t('tournaments.CEC.self') + ' logo'"
+            loading="lazy"
           />
         </article>
         <img
           src="@/assets/img/carousel/CEC/CEC6.webp"
           :alt="$t('tournaments.CEC.6.self')"
+          loading="lazy"
         />
       </SplideSlide>
       <!--<SplideSlide>
