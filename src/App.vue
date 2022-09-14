@@ -189,6 +189,7 @@ body {
 
 #presentation {
   padding-bottom: 1rem;
+  text-align: justify;
 
   p {
     font-size: 1.05em;
