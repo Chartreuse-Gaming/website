@@ -41,7 +41,7 @@ export default {
         {
           name: "League of Legends",
           image: "League_of_Legends.webp",
-          cash: ["275", "175", "125", "100"],
+          cash: 675,
           regulation:
             "https://drive.google.com/file/d/1M1_Mr85IhaMMkHW8-YypOpcRFDUQzJNO/view?usp=sharing",
           registration: "https://challonge.com/fr/CEC6_LOL",
@@ -49,7 +49,7 @@ export default {
         {
           name: "Valorant",
           image: "Valorant.webp",
-          cash: ["275", "175", "125", "100"],
+          cash: 675,
           regulation:
             "https://drive.google.com/file/d/1w_xYmoIipwf_pdF660A5pArMBPs0LWxV/view?usp=sharing",
           registration: "https://challonge.com/fr/CEC6_VALORANT",
@@ -57,7 +57,7 @@ export default {
         {
           name: "Rocket League",
           image: "Rocket_League.webp",
-          cash: ["165", "105", "75", "60"],
+          cash: 405,
           regulation:
             "https://drive.google.com/file/d/1d-hkNKFVxXByoFO5EezvKgppO7gm7s5_/view?usp=sharing",
           registration: "https://challonge.com/fr/CEC6_RL",

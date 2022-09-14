@@ -16,12 +16,7 @@
             :alt="game.name + 'logo'"
             loading="lazy"
           />
-          <h3><span>🥇</span>{{ game.cash[0] }} €</h3>
-          <div>
-            <p><span>🥈</span>{{ game.cash[1] }} €</p>
-            <p><span>🥉</span>{{ game.cash[2] }} €</p>
-            <p v-if="game.cash[3]"><span>4</span>{{ game.cash[3] }} €</p>
-          </div>
+          <h3>{{ game.cash }} €</h3>
           <a :href="game.regulation" class="btn">
             {{ $t("regulation") }}
           </a>
@@ -51,7 +46,7 @@ article {
     border-radius: 6px;
     display: flex;
     flex-flow: row wrap;
-    gap: 3rem 0;
+    gap: 2.4rem 0;
 
     > section {
       flex: 1 1 calc(100% / 3);
@@ -94,7 +89,7 @@ article {
         }
 
         h3 {
-          margin-top: 2.4rem;
+          margin: 2rem 0 2.4rem;
           padding: 1rem 2rem 1.2rem;
           border-radius: 6px;
           font-size: 2em;
@@ -132,48 +127,6 @@ article {
             bottom: 4px;
             right: 4px;
             transform: rotate(-6deg);
-          }
-        }
-
-        > div {
-          margin: 2.4rem 0;
-          display: flex;
-          flex-flow: row wrap;
-          align-items: baseline;
-          justify-content: space-between;
-          width: 95%;
-
-          p {
-            font-family: var(--title-font);
-            font-size: 1.6em;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: baseline;
-            gap: 0.4rem;
-
-            &:last-of-type span {
-              height: 34px;
-              width: 35px;
-              font-size: 0.85em;
-              text-align: center;
-              color: var(--green-touch);
-            }
-          }
-
-          @media only screen and (max-width: 1250px) {
-            justify-content: center;
-            gap: 0.8rem 0;
-
-            p {
-              flex: 1 1 calc(100% / 2);
-              justify-content: center;
-            }
-          }
-
-          @media only screen and (max-width: 350px) {
-            p {
-              flex: 1 1 100%;
-            }
           }
         }
 
