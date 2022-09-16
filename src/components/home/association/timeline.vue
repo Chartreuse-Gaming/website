@@ -12,6 +12,10 @@
           </header>
           <section>
             <div>
+              <h3>{{ $t("association.timeline.2022.3.title") }}</h3>
+              <p>{{ $t("association.timeline.2022.3.description") }}</p>
+            </div>
+            <div>
               <h3>{{ $t("association.timeline.2022.2.title") }}</h3>
               <p>{{ $t("association.timeline.2022.2.description") }}</p>
             </div>

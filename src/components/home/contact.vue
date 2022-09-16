@@ -13,20 +13,29 @@
       <div>
         <font-awesome-icon icon="fa-solid fa-share-nodes" />
         <span>
-          <a href="https://discord.gg/invite/ENY2nV6">
+          <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
             <font-awesome-icon icon="fa-brands fa-discord" />
           </a>
-          <a href="https://twitter.com/chartreusegame">
+          <a href="https://twitter.com/chartreusegame" title="Twitter">
             <font-awesome-icon icon="fa-brands fa-twitter" />
           </a>
-          <a href="https://www.facebook.com/chartreusegaming/">
+          <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
             <font-awesome-icon icon="fa-brands fa-facebook-f" />
           </a>
-          <a href="https://www.instagram.com/chartreusegaming/">
+          <a
+            href="https://www.instagram.com/chartreusegaming/"
+            title="Instagram"
+          >
             <font-awesome-icon icon="fa-brands fa-instagram" />
           </a>
         </span>
       </div>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfcbA1-m4z9OUv0fpYxFEjYVLha2giUXg_9nIP8a6qQSNnKXg/viewform"
+      >
+        <font-awesome-icon icon="fa-solid fa-clipboard-list" />
+        <p>{{ $t("contact.join-us") }}</p>
+      </a>
     </section>
   </article>
 </template>
@@ -47,7 +56,7 @@ article {
   section {
     display: grid;
     gap: 2.5rem 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     & > * {
       display: inline-grid;
@@ -82,15 +91,15 @@ article {
       }
     }
 
-    @media (min-width: 501px) and (max-width: 800px) {
+    @media (min-width: 551px) and (max-width: 1000px) {
       & > a:first-of-type {
-        grid-column: span 2;
+        grid-column: 1;
       }
 
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       grid-template-columns: 1fr;
 
       span a {

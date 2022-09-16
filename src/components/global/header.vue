@@ -7,6 +7,8 @@
           <img
             src="@/assets/svg/logo.svg"
             :alt="$t('association.logo') + '.'"
+            width="44"
+            height="56"
           />
         </router-link>
 
@@ -93,27 +95,37 @@
 
       <!-- Réseaux sociaux -->
       <section>
-        <a href="https://discord.gg/invite/ENY2nV6">
+        <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
           <font-awesome-icon icon="fa-brands fa-discord" />
         </a>
-        <a id="live" href="https://www.twitch.tv/chartreusegaming">
+        <a
+          :class="data.livestream ? 'livestream' : ''"
+          href="https://www.twitch.tv/chartreusegaming"
+          title="Twitch"
+        >
           <font-awesome-icon icon="fa-brands fa-twitch" />
           <i></i>
           <i></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg">
+        <a
+          href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
+          title="YouTube"
+        >
           <font-awesome-icon icon="fa-brands fa-youtube" />
         </a>
-        <a href="https://twitter.com/chartreusegame">
+        <a href="https://twitter.com/chartreusegame" title="Twitter">
           <font-awesome-icon icon="fa-brands fa-twitter" />
         </a>
-        <a href="https://www.instagram.com/chartreusegaming/">
+        <a href="https://www.instagram.com/chartreusegaming/" title="Instagram">
           <font-awesome-icon icon="fa-brands fa-instagram" />
         </a>
-        <a href="https://www.facebook.com/chartreusegaming/">
+        <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
           <font-awesome-icon icon="fa-brands fa-facebook-f" />
         </a>
-        <a href="https://www.linkedin.com/company/chartreuse-gaming/">
+        <a
+          href="https://www.linkedin.com/company/chartreuse-gaming/"
+          title="LinkedIn"
+        >
           <font-awesome-icon icon="fa-brands fa-linkedin" />
         </a>
       </section>
@@ -131,12 +143,19 @@ export default {
       nav: false,
       header: {},
       body: {},
+      data: {
+        livestream: false,
+      },
     };
   },
-  mounted() {
+  async mounted() {
     this.header = document.getElementsByTagName("header")[0];
     this.body = document.getElementsByTagName("body")[0];
     document.addEventListener("scroll", this.scrollClassToggler);
+    let response = await fetch("https://api.minarox.fr/chartreusegaming", {
+      cache: "force-cache",
+    });
+    this.data = await response.json();
   },
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollClassToggler);
@@ -334,15 +353,13 @@ section:last-of-type > a {
   }
 }
 
-#live {
+.livestream {
   position: relative;
 
   i {
-    // TODO: Twitch API integration
-    display: none;
     position: absolute;
     top: 30px;
-    right: 14px;
+    right: 13px;
     width: 9px;
     height: 9px;
     border-radius: 50%;

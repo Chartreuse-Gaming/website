@@ -31,6 +31,11 @@
         "self": "Chartreuse Esport Contest 5",
         "date": "24 Octobre 2021",
         "presentation": "Après une année charnière et une situation en demi-teinte, l’association prit le pari de renouveler son édition sous le format de LAN en proposant pour la première fois trois des jeux les plus joués sur la scène compétitive : Counter Strike : Global Offensive, League Of Legends et Rocket League. 98 joueurs répondirent présents sur les trois jeux pour se partager un cashprize taille XXL, de 3500€ !"
+      },
+      "6": {
+        "self": "Chartreuse Esport Contest 6",
+        "date": "15 et 29 Octobre 2022",
+        "presentation": "Pour un retour flamboyant, l’association vous propose un événement en deux phases sur trois jeux : League Of Legends, Rocket League et Valorant. La première phase, qualificative, se déroule en ligne le samedi 15 octobre 2022. Quant à la seconde phase, finale, elle se tiendra dans les locaux de la Gaming House « Grenoble Esport ». Un généreux cashprize de plus de 1500,00€ sera à se partager entre les derniers combattants de l’arène."
       }
     },
     "CGW_2019": {
@@ -72,6 +77,10 @@
         "2": {
           "title": "Tournoi FIFA SOS Jeunes pousses",
           "description": "Le 4 juillet 2022 à la maison de quartier Paul-Bert."
+        },
+        "3": {
+          "title": "Chartreuse Esport Contest 6",
+          "description": "Le 15 Octobre 2022 en ligne et le 29 Octobre 2022 Octobre en phsique dans les locaux de Grenoble Esport."
         }
       },
       "2021": {
@@ -138,7 +147,8 @@
   },
   "contact": {
     "self": "Contact",
-    "us": "Nous contacter"
+    "us": "Nous contacter",
+    "join-us": "Rejoignez-nous !"
   },
   "copyright": "Tous droits réservés",
   "site-map": "Plan du site",
@@ -146,6 +156,9 @@
   "intranet": "Intranet",
   "load-more": "Charger plus",
   "read-more": "En savoir plus",
+  "games": "Jeux",
+  "registration": "Inscription",
+  "regulation": "Règlement",
   "presentation": "Présentation",
   "ranking": "Classement",
   "gallery": "Galerie",

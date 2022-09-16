@@ -14,6 +14,7 @@
         <img
           src="@/assets/img/association/Members.webp"
           :alt="$t('association.members.self') + '.'"
+          loading="lazy"
         />
       </section>
     </article>
