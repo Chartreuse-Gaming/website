@@ -99,7 +99,7 @@
           <font-awesome-icon icon="fa-brands fa-discord" />
         </a>
         <a
-          id="live"
+          :class="data.livestream ? 'livestream' : ''"
           href="https://www.twitch.tv/chartreusegaming"
           title="Twitch"
         >
@@ -143,12 +143,19 @@ export default {
       nav: false,
       header: {},
       body: {},
+      data: {
+        livestream: false,
+      },
     };
   },
-  mounted() {
+  async mounted() {
     this.header = document.getElementsByTagName("header")[0];
     this.body = document.getElementsByTagName("body")[0];
     document.addEventListener("scroll", this.scrollClassToggler);
+    let response = await fetch("https://api.minarox.fr/chartreusegaming", {
+      cache: "force-cache",
+    });
+    this.data = await response.json();
   },
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollClassToggler);
@@ -346,15 +353,13 @@ section:last-of-type > a {
   }
 }
 
-#live {
+.livestream {
   position: relative;
 
   i {
-    // TODO: Twitch API integration
-    display: none;
     position: absolute;
     top: 30px;
-    right: 14px;
+    right: 13px;
     width: 9px;
     height: 9px;
     border-radius: 50%;
