@@ -11,7 +11,7 @@
 ![GitHub deployments](https://img.shields.io/github/deployments/Chartreuse-Gaming/Website/github-pages?label=Deployment)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/Chartreuse-Gaming/Website?label=Version)&nbsp;
 ![Project License](https://img.shields.io/github/license/Chartreuse-Gaming/Website?label=License)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-5.27%20MB-blue)
+![Website build size](https://img.shields.io/badge/Build%20size-5.53%20MB-blue)
 
   <p align="center">
     Website of the Chartreuse Gaming association.
