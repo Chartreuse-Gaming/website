@@ -43,7 +43,7 @@ export default {
           image: "League_of_Legends.webp",
           cash: 675,
           regulation:
-            "https://drive.google.com/file/d/1M1_Mr85IhaMMkHW8-YypOpcRFDUQzJNO/view?usp=sharing",
+            "https://docs.google.com/document/d/1GKTMMvaYPcfDy1wIB-k-9XGlAZJDDmcS",
           registration: "https://challonge.com/fr/CEC6_LOL",
         },
         {
@@ -51,7 +51,7 @@ export default {
           image: "Valorant.webp",
           cash: 675,
           regulation:
-            "https://drive.google.com/file/d/1w_xYmoIipwf_pdF660A5pArMBPs0LWxV/view?usp=sharing",
+            "https://docs.google.com/document/d/1AIX7Drj1b6Y4aFXMzGPjQqqxvk9Gfa0w",
           registration: "https://challonge.com/fr/CEC6_VALORANT",
         },
         {
@@ -59,7 +59,7 @@ export default {
           image: "Rocket_League.webp",
           cash: 405,
           regulation:
-            "https://drive.google.com/file/d/1d-hkNKFVxXByoFO5EezvKgppO7gm7s5_/view?usp=sharing",
+            "https://docs.google.com/document/d/1T-a3IJQHkku3cZ4GjiQPRTKs7T-52SLw",
           registration: "https://challonge.com/fr/CEC6_RL",
         },
       ],
