@@ -30,9 +30,7 @@
           </a>
         </span>
       </div>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfcbA1-m4z9OUv0fpYxFEjYVLha2giUXg_9nIP8a6qQSNnKXg/viewform"
-      >
+      <a href="https://forms.gle/zJoD1x4DTWFb8o5R6">
         <font-awesome-icon icon="fa-solid fa-clipboard-list" />
         <p>{{ $t("contact.join-us") }}</p>
       </a>
