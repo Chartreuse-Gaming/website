@@ -8,7 +8,7 @@ export default {
   created() {
     const title = getTitle(this);
     if (title) {
-      document.title = title + " | Chartreuse Gaming";
+      document.title = title + " | Alpes Esport";
     }
   },
 };

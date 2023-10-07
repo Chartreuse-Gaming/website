@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Chartreuse Gaming</h1>
+    <h1>Alpes Esport</h1>
     <Carousel />
 
     <Tournaments :data="tournaments" />
