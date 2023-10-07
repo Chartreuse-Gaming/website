@@ -43,13 +43,13 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --bg-color: rgb(24, 29, 51);
-  --bg-color-alt: rgb(35, 45, 82);
+  --bg-color: rgb(26, 26, 26);
+  --bg-color-alt: rgb(24, 29, 51);
   --text-color: #ffffff;
   --subtext-color: #e6e6e6;
   --footer-text-color: #b9b9b9;
-  --green-touch: rgb(205, 79, 74);
-  --green-touch-alt: rgb(173, 54, 44);
+  --special-color: rgb(205, 79, 74);
+  --special-color-alt: rgb(173, 54, 44);
 
   --title-font: "Montserrat", "Georgia", "Arial", sans-serif;
   --text-font: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -130,7 +130,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  background-color: var(--green-touch-alt);
+  background-color: var(--special-color-alt);
   box-shadow: rgba(0, 0, 0, 0.15) 0 8px 16px 0;
   border-radius: 8px;
   transition: transform 150ms;
@@ -167,7 +167,7 @@ body {
     margin: 0 4px;
 
     &.is-active {
-      background: var(--green-touch) !important;
+      background: var(--special-color) !important;
     }
   }
 }

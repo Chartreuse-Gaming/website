@@ -126,6 +126,7 @@ article {
       overflow-y: overlay;
       max-height: 500px;
       border-radius: 0 0 8px 8px;
+      background-color: var(--bg-color);
 
       li {
         padding: 1rem;
@@ -155,11 +156,11 @@ article {
           font-family: var(--title-font);
           font-weight: bold;
           background-image: url("@/assets/svg/confettis.svg");
-          color: var(--green-touch);
+          color: var(--special-color);
         }
 
         &:nth-child(even) {
-          background-color: var(--bg-color-alt);
+          backdrop-filter: brightness(1.3);
         }
       }
     }

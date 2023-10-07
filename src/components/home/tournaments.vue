@@ -67,7 +67,7 @@ article section {
         position: absolute;
         top: 1px;
         left: 1px;
-        border: 5px solid var(--green-touch);
+        border: 5px solid var(--special-color);
         background-color: var(--bg-color);
       }
 

@@ -298,11 +298,11 @@ section:first-of-type nav {
     }
 
     &:hover {
-      color: var(--green-touch);
+      color: var(--special-color);
 
       svg {
         transition: color 150ms;
-        color: var(--green-touch);
+        color: var(--special-color);
       }
     }
   }
@@ -326,10 +326,10 @@ section:last-of-type > a {
 }
 
 .current {
-  color: var(--green-touch);
+  color: var(--special-color);
 
   svg {
-    color: var(--green-touch);
+    color: var(--special-color);
   }
 }
 

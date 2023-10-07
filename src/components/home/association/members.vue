@@ -46,7 +46,7 @@ section {
     p:first-of-type {
       font-weight: bold;
       font-size: 1.25em;
-      color: var(--green-touch);
+      color: var(--special-color);
       margin-bottom: 6px;
     }
 

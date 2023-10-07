@@ -50,6 +50,21 @@ article {
   width: min(100% - 2rem, 1200px);
   border-radius: 8px 8px 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: brightness(1.3);
+  }
 
   section {
     display: grid;
@@ -66,7 +81,7 @@ article {
       & > svg {
         height: 46px;
         color: var(--bg-color);
-        stroke: var(--green-touch);
+        stroke: var(--special-color);
         stroke-width: 26px;
       }
 

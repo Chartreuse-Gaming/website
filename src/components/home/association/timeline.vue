@@ -140,13 +140,10 @@ export default {
     min-width: 400px;
     position: absolute;
     left: 5vw;
-    bottom: -150px;
-    opacity: 0.04;
+    bottom: 0;
+    opacity: 0.06;
     transform: rotate(-20deg);
-
-    @media only screen and (min-width: 1200px) {
-      bottom: -150px;
-    }
+    filter: contrast(0);
   }
 
   article {
@@ -195,7 +192,7 @@ export default {
         align-items: center;
         font-family: var(--title-font);
         font-weight: bold;
-        color: var(--green-touch);
+        color: var(--special-color);
         gap: 1rem;
 
         i {
@@ -206,7 +203,7 @@ export default {
             content: "";
             position: absolute;
             border-radius: 50%;
-            background-color: var(--green-touch);
+            background-color: var(--special-color);
             width: 8px;
             height: 8px;
             right: -56px;
@@ -300,7 +297,6 @@ export default {
   #timeline {
     & > img {
       min-width: 300px;
-      bottom: -120px;
     }
 
     article {

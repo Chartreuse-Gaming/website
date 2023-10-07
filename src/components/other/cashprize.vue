@@ -100,14 +100,14 @@ article {
           box-shadow: rgba(0, 0, 0, 0.4) 0 4px 18px 0;
           position: relative;
           background-color: var(--bg-color);
-          color: var(--green-touch);
+          color: var(--special-color);
           inline-size: max-content;
 
           &::before {
             z-index: -2;
             content: "";
             border-radius: 6px;
-            background-color: var(--green-touch);
+            background-color: var(--special-color);
             position: absolute;
             top: 0;
             left: 0;

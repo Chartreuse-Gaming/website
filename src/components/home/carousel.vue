@@ -274,7 +274,7 @@ article {
             position: absolute;
             border-radius: 8px;
             background-color: var(--bg-color);
-            border: 2px solid var(--green-touch);
+            border: 2px solid var(--special-color);
             height: 46px;
             top: -25px;
             left: -11px;

@@ -71,7 +71,7 @@ article {
     span {
       font-size: 2em;
       font-weight: bold;
-      color: var(--green-touch);
+      color: var(--special-color);
     }
   }
 
