@@ -27,7 +27,7 @@
           <p v-else-if="team.rank === 3">🥉</p>
           <p v-else>{{ team.rank }}</p>
           <transition mode="out-in">
-            <p v-if="!toogleTeams[index]">{{ team.name }}</p>
+            <p v-if="!toggleTeams[index]">{{ team.name }}</p>
             <p v-else>
               <span v-for="player in team.players" :key="player">
                 {{ player }}
@@ -46,15 +46,17 @@ export default {
   props: ["img", "alt", "data"],
   data() {
     return {
-      toogleTeams: [],
+      toggleTeams: [],
     };
   },
   mounted() {
-    this.data.forEach(() => this.toogleTeams.push(false));
+    this.data.forEach(() => this.toggleTeams.push(false));
   },
   methods: {
     togglePlayers(id) {
-      this.toogleTeams[id] = !this.toogleTeams[id];
+      if (this.data[id].players.length > 1) {
+        this.toggleTeams[id] = !this.toggleTeams[id];
+      }
     },
   },
 };
@@ -168,7 +170,7 @@ article {
 }
 
 .v-enter-active {
-  transition: all 500ms;
+  transition: all 300ms;
 }
 
 .v-leave-active {
