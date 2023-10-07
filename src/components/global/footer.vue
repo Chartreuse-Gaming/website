@@ -3,7 +3,7 @@
     <section class="content">
       <p>
         &copy; {{ current_year }}
-        <router-link to="/">CHARTREUSE GAMING</router-link>.
+        <router-link to="/">Alpes Esport</router-link>.
       </p>
       <p>{{ $t("copyright") }}.</p>
     </section>
@@ -51,6 +51,7 @@ footer {
         display: inline-flex;
         align-items: center;
         transition: color 150ms;
+        text-transform: uppercase;
 
         &:hover {
           color: var(--text-color);
