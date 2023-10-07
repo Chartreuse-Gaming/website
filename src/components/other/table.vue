@@ -159,7 +159,7 @@ article {
         }
 
         &:nth-child(even) {
-          background-color: rgb(50, 50, 50);
+          background-color: var(--bg-color-alt);
         }
       }
     }
