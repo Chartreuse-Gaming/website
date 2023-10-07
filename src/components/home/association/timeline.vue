@@ -224,7 +224,7 @@ export default {
           border-radius: 100%;
           top: 50%;
           transform: translateY(-50%);
-          right: -62px;
+          right: -61.5px;
         }
 
         &.big {
@@ -238,7 +238,7 @@ export default {
             width: 20px;
             height: 20px;
             top: calc(50% - 10px);
-            right: -62px;
+            right: -61px;
           }
         }
       }
@@ -271,7 +271,7 @@ export default {
           i:before {
             right: 0;
             left: -52px;
-            top: calc(50% - 4px);
+            top: calc(50% - 3.8px);
           }
 
           &:before {
