@@ -39,7 +39,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
-    font-family: var(--title-font);
+    font-family: var(--text-font);
 
     p {
       font-size: 0.84em;

@@ -253,7 +253,7 @@ article {
           position: absolute;
           font-size: 2.8em;
           line-height: 0;
-          right: 10px;
+          right: 0;
           transform: rotate(8deg);
         }
       }

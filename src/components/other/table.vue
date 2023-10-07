@@ -142,8 +142,6 @@ article {
           line-height: 0;
           text-align: center;
           min-width: 60px;
-          font-family: var(--title-font);
-          font-weight: bold;
         }
 
         p:last-of-type {
@@ -155,7 +153,6 @@ article {
         &:first-of-type {
           padding: 2rem 1rem;
           font-size: 1.6em;
-          font-family: var(--title-font);
           font-weight: bold;
           background-image: url("@/assets/svg/confettis.svg");
           color: var(--special-color);

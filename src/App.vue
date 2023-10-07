@@ -40,7 +40,37 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("~@/assets/font/lemonmilk/normal/medium.woff2") format("woff2"),
+    url("~@/assets/font/lemonmilk/normal/medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("~@/assets/font/lemonmilk/normal/bold.woff2") format("woff2"),
+    url("~@/assets/font/lemonmilk/normal/bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("~@/assets/font/opensans/normal/regular.woff2") format("woff2"),
+    url("~@/assets/font/opensans/normal/regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("~@/assets/font/opensans/normal/bold.woff2") format("woff2"),
+    url("~@/assets/font/opensans/normal/bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
 
 :root {
   --bg-color: rgb(26, 26, 26);
@@ -51,8 +81,8 @@ export default {
   --special-color: rgb(205, 79, 74);
   --special-color-alt: rgb(173, 54, 44);
 
-  --title-font: "Montserrat", "Georgia", "Arial", sans-serif;
-  --text-font: "Roboto", "Helvetica", "Arial", sans-serif;
+  --title-font: "Lemon Milk", "Georgia", "Arial", sans-serif;
+  --text-font: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
 ::-webkit-scrollbar {
