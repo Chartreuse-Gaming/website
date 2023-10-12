@@ -2,89 +2,56 @@
   {
     "rank": 1,
     "name": "SPM",
-    "players": [
-      "Reijin",
-      "Voltage"
-    ]
+    "players": ["Reijin", "Voltage"]
   },
   {
     "rank": 2,
     "name": "Astro Red",
-    "players": [
-      "Linkluc",
-      "Ogawa"
-    ]
+    "players": ["Linkluc", "Ogawa"]
   },
   {
     "rank": 3,
     "name": "Les Videurs",
-    "players": [
-      "Les Videurs",
-      "FrotteMan"
-    ]
+    "players": ["Les Videurs", "FrotteMan"]
   },
   {
     "rank": 4,
     "name": "ESP Esports",
-    "players": [
-      "Rizdax",
-      "Zodark"
-    ]
+    "players": ["Rizdax", "Zodark"]
   },
   {
     "rank": 5,
     "name": "VST",
-    "players": [
-      "Sillent-FuRiious",
-      "YoshiDels"
-    ]
+    "players": ["Sillent-FuRiious", "YoshiDels"]
   },
   {
     "rank": 5,
     "name": "Volt",
-    "players": [
-      "MasterS",
-      "MCK fr"
-    ]
+    "players": ["MasterS", "MCK fr"]
   },
   {
     "rank": 5,
     "name": "Déso Max",
-    "players": [
-      "Neko",
-      "Olirus"
-    ]
+    "players": ["Neko", "Olirus"]
   },
   {
     "rank": 5,
     "name": "Oziris Esport",
-    "players": [
-      "Aqua",
-      "Qeziaa"
-    ]
+    "players": ["Aqua", "Qeziaa"]
   },
   {
     "rank": 9,
     "name": "FuRy",
-    "players": [
-      "AtomiX312",
-      "xDreameur"
-    ]
+    "players": ["AtomiX312", "xDreameur"]
   },
   {
     "rank": 9,
     "name": "Easy Cashprize",
-    "players": [
-      "Heidjou",
-      "Myself Fake"
-    ]
+    "players": ["Heidjou", "Myself Fake"]
   },
   {
     "rank": 11,
     "name": "Ekinox",
-    "players": [
-      "Kisaro",
-      "Vrakst"
-    ]
+    "players": ["Kisaro", "Vrakst"]
   }
 ]

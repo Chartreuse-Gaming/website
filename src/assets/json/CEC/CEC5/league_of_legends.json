@@ -2,46 +2,22 @@
   {
     "rank": 1,
     "name": "QTBG",
-    "players": [
-      "UnDé",
-      "Popotam",
-      "Choub",
-      "Toinankam",
-      "eBoy"
-    ]
+    "players": ["UnDé", "Popotam", "Choub", "Toinankam", "eBoy"]
   },
   {
     "rank": 2,
     "name": "Flash in for scuttle",
-    "players": [
-      "Kaw",
-      "Gyndared",
-      "Averose",
-      "VVinner",
-      "RÛVËN"
-    ]
+    "players": ["Kaw", "Gyndared", "Averose", "VVinner", "RÛVËN"]
   },
   {
     "rank": 3,
     "name": "Ekinox",
-    "players": [
-      "Sukyos",
-      "Xenot",
-      "Veka",
-      "Koba la Ducs",
-      "Bardukin"
-    ]
+    "players": ["Sukyos", "Xenot", "Veka", "Koba la Ducs", "Bardukin"]
   },
   {
     "rank": 4,
     "name": "GHB Crew/AS",
-    "players": [
-      "TTarKKen",
-      "GCK Desert Raven",
-      "Sacus",
-      "Tissma",
-      "NAWACK"
-    ]
+    "players": ["TTarKKen", "GCK Desert Raven", "Sacus", "Tissma", "NAWACK"]
   },
   {
     "rank": 5,
@@ -57,24 +33,12 @@
   {
     "rank": 5,
     "name": "VGY CORP",
-    "players": [
-      "Xwortex Gamers",
-      "Ratila",
-      "MARKSMAN ÎŸNLY",
-      "ShirÃ¸",
-      "Hitch"
-    ]
+    "players": ["Xwortex Gamers", "Ratila", "MARKSMAN ÎŸNLY", "ShirÃ¸", "Hitch"]
   },
   {
     "rank": 7,
     "name": "Les Bûches",
-    "players": [
-      "Shownt",
-      "YzBog",
-      "Loonzerra",
-      "Oxyde-Neotik",
-      "GouleXYZ"
-    ]
+    "players": ["Shownt", "YzBog", "Loonzerra", "Oxyde-Neotik", "GouleXYZ"]
   },
   {
     "rank": 7,

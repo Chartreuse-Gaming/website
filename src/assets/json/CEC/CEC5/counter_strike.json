@@ -2,57 +2,26 @@
   {
     "rank": 1,
     "name": "HuB eSport Club",
-    "players": [
-      "Etrau'D",
-      "Sobad",
-      "MICHOUPITCHU",
-      "STN",
-      "SHOGU"
-    ]
+    "players": ["Etrau'D", "Sobad", "MICHOUPITCHU", "STN", "SHOGU"]
   },
   {
     "rank": 2,
     "name": "JPGam1ng_",
-    "players": [
-      "ArKa0s",
-      "Sauli",
-      "BaronVanWaffeln",
-      "wArth",
-      "tEKOS-"
-    ]
+    "players": ["ArKa0s", "Sauli", "BaronVanWaffeln", "wArth", "tEKOS-"]
   },
   {
     "rank": 3,
     "name": "23H.Max",
-    "players": [
-      "NES",
-      "FoxSnb",
-      "Asuny",
-      "AD",
-      "REMS1337"
-    ]
+    "players": ["NES", "FoxSnb", "Asuny", "AD", "REMS1337"]
   },
   {
     "rank": 4,
     "name": "30 y/o Talent",
-    "players": [
-      "_k1v",
-      "oRo`",
-      "JavierZ04",
-      "votreDaron",
-      "PowA"
-    ]
+    "players": ["_k1v", "oRo`", "JavierZ04", "votreDaron", "PowA"]
   },
   {
     "rank": 5,
     "name": "BTR",
-    "players": [
-      "GaaTho",
-      "lewe",
-      "ZAIRBOV",
-      "Huskyne",
-      "Shanks",
-      "sheepfoof"
-    ]
+    "players": ["GaaTho", "lewe", "ZAIRBOV", "Huskyne", "Shanks", "sheepfoof"]
   }
 ]
