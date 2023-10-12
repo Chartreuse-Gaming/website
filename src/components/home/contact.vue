@@ -2,9 +2,9 @@
   <article class="content">
     <h2>{{ $t("contact.us") }}</h2>
     <section>
-      <a href="mailto:chartreusegaming.contact@gmail.com">
+      <a href="mailto:contact.alpes.esport@gmail.com">
         <font-awesome-icon icon="fa-solid fa-envelope" />
-        <p>chartreusegaming.contact@gmail.com</p>
+        <p>contact.alpes.esport@gmail.com</p>
       </a>
       <a href="tel:+33601225350">
         <font-awesome-icon icon="fa-solid fa-phone" />
