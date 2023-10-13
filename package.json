@@ -2,6 +2,12 @@
   "name": "website",
   "type": "module",
   "private": true,
+  "description": "Site Web de l'association Alpes Esport.",
+  "author": {
+    "name": "Mathis Serrieres Maniecki",
+    "email": "contact@minarox.fr",
+    "url": "https://minarox.fr/"
+  },
   "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
@@ -16,5 +22,21 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.1",
     "astro": "^3.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Alpes-Esport/Website/issues",
+    "email": "contact.alpes.esport@gmail.com"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.14.0"
+  },
+  "engineStrict": false,
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/Alpes-Esport/Website#readme",
+  "readme": "./README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alpes-Esport/Website.git"
   }
 }
