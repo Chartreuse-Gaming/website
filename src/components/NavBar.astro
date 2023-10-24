@@ -1,0 +1,56 @@
+---
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import logo from "../assets/svg/logo.svg";
+---
+
+<header>
+  <article>
+    <!-- Partie gauche -->
+    <section>
+      <a>
+        <Image src={logo} alt="Alpes Esport" />
+      </a>
+      <nav>
+        <a href="/#accueil">Accueil</a>
+        <a href="/#">Tournois</a>
+        <a href="/#association">Association</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </section>
+
+    <!-- Partie droite -->
+    <section>
+      <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
+        <Icon name="mdi:discord" />
+      </a>
+      <a
+        href="https://www.twitch.tv/chartreusegaming"
+        title="Twitch"
+      >
+        <Icon name="mdi:twitch" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
+        title="YouTube"
+      >
+        <Icon name="mdi:youtube" />
+      </a>
+      <a href="https://twitter.com/chartreusegame" title="Twitter">
+        <Icon name="mdi:twitter" />
+      </a>
+      <a href="https://www.instagram.com/chartreusegaming/" title="Instagram">
+        <Icon name="mdi:instagram" />
+      </a>
+      <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
+        <Icon name="mdi:facebook" />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/chartreuse-gaming/"
+        title="LinkedIn"
+      >
+        <Icon name="mdi:linkedin" />
+      </a>
+    </section>
+  </article>
+</header>
