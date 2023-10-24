@@ -17,26 +17,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.5.3",
-    "@astrojs/mdx": "^1.1.2",
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.1",
-    "astro": "^3.3.0"
+    "astro": "^3.3.3",
+    "sass": "^1.69.4"
   },
   "bugs": {
     "url": "https://github.com/Alpes-Esport/Website/issues",
     "email": "contact.alpes.esport@gmail.com"
   },
   "engines": {
-    "node": ">=12.0.0",
-    "npm": ">=6.14.0"
+    "node": ">=18.0.0",
+    "npm": ">=8.11.0"
   },
-  "engineStrict": false,
+  "engineStrict": true,
   "license": "GPL-3.0-only",
   "homepage": "https://github.com/Alpes-Esport/Website#readme",
   "readme": "./README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/Alpes-Esport/Website.git"
+  },
+  "devDependencies": {
+    "astro-icon": "^0.8.1"
   }
 }
