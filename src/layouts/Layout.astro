@@ -42,6 +42,7 @@ const { title } = Astro.props as LayoutProp;
   <meta property="twitter:description" content={SITE_DESCRIPTION} />
   <meta property="twitter:image" content="/banner.webp" />
 
+  <!-- Icônes -->
   <link rel="icon" href="/favicons/favicon-dark.ico" media="(prefers-color-scheme:light)" />
   <link rel="icon" href="/favicons/favicon-light.ico" media="(prefers-color-scheme:dark)" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -57,6 +58,9 @@ const { title } = Astro.props as LayoutProp;
   <meta name="msapplication-TileColor" content="#1a1a1a" />
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
   <meta name="theme-color" content="#1a1a1a" />
+  
+  <!-- Site map -->
+  <link rel="sitemap" href="/sitemap-index.xml" />
 </head>
 <body>
 <NavBar />
