@@ -38,6 +38,8 @@
     "url": "https://github.com/Alpes-Esport/Website.git"
   },
   "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9",
     "astro-icon": "^0.8.1"
   }
 }
