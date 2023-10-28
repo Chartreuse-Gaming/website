@@ -50,26 +50,27 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 article {
-    padding: 1.5rem;
-    width: min(100% - 2rem, 1200px);
+    background-color: var(--bg-color);
     border-radius: 8px 8px 0 0;
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-    background-color: var(--bg-color);
     overflow: hidden;
+    padding: 1.5rem;
     position: relative;
+    width: min(100% - 2rem, 1200px);
 
     &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
         backdrop-filter: brightness(1.3);
+        bottom: 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
     }
 
     section {
@@ -78,33 +79,33 @@ article {
         grid-template-columns: repeat(4, 1fr);
 
         & > * {
-            display: inline-grid;
-            justify-items: center;
-            gap: 1rem;
             color: white;
+            display: inline-grid;
+            gap: 1rem;
+            justify-items: center;
             text-decoration: none;
 
             & > svg {
-                height: 46px;
                 color: var(--bg-color);
+                height: 46px;
                 stroke: var(--special-color);
                 stroke-width: 26px;
             }
 
             span a {
-                padding: 12px;
                 color: white;
+                padding: 12px;
 
                 & > svg {
-                    transition: all 150ms;
                     height: 22px;
                     transform: scale(1);
+                    transition: all 150ms;
                 }
 
                 &:hover {
                     svg {
-                        transform: scale(1.1);
                         color: var(--subtext-color);
+                        transform: scale(1.1);
                     }
                 }
             }
