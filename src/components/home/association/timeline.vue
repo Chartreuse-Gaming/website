@@ -1,12 +1,32 @@
 <template>
     <section id="timeline" class="content">
         <h2>Historique</h2>
-        <img src="@/assets/svg/logo.svg" :alt="$t('association.logo') + '.'" />
+        <img :alt="$t('association.logo') + '.'" src="@/assets/svg/logo.svg" />
         <article>
             <font-awesome-icon icon="fa-solid fa-caret-up" />
             <section>
                 <article>
                     <header class="big">
+                        2023
+                        <i></i>
+                    </header>
+                    <section>
+                        <div>
+                            <h3>
+                                {{ $t("association.timeline.2023.1.title") }}
+                            </h3>
+                            <p>
+                                {{
+                                    $t(
+                                        "association.timeline.2023.1.description"
+                                    )
+                                }}
+                            </p>
+                        </div>
+                    </section>
+                </article>
+                <article>
+                    <header>
                         2022
                         <i></i>
                     </header>
@@ -236,43 +256,43 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 #timeline {
+    overflow: hidden;
     padding: 20px 0;
     position: relative;
-    overflow: hidden;
 
     & > img {
-        z-index: -1;
-        width: 34%;
-        min-width: 400px;
-        position: absolute;
-        left: 5vw;
         bottom: 0;
-        opacity: 0.06;
-        transform: rotate(-20deg);
         filter: contrast(0);
+        left: 5vw;
+        min-width: 400px;
+        opacity: 0.06;
+        position: absolute;
+        transform: rotate(-20deg);
+        width: 34%;
+        z-index: -1;
     }
 
     article {
         margin-top: 24px;
 
         &:before {
-            z-index: -1;
+            background-color: #fff;
+            bottom: 0;
             content: "";
+            left: calc(50% - 1px);
             position: absolute;
             top: 90px;
-            left: calc(50% - 1px);
-            bottom: 0;
             width: 6px;
-            background-color: #fff;
+            z-index: -1;
         }
 
         & > svg {
             font-size: 2.4em;
+            left: calc(50% - 10px);
             position: absolute;
             top: 66px;
-            left: calc(50% - 10px);
             transform: scaleY(1.4);
         }
 
