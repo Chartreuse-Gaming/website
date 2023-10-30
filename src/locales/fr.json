@@ -55,8 +55,10 @@
       "5": "Ainsi, plongez dans l’univers en constante évolution d’Alpes Esport, une association pionnière. Poursuivons nos efforts, dynamisons notre fabuleuse région et tâchons de faire rayonner la France sur la scène internationale."
     },
     "numbers": {
+      "tournament": "tournois organisés",
+      "since-2017": "depuis 2017",
+      "up-to": "Jusqu'à",
       "more-than": "Plus de",
-      "editions": "éditions du",
       "players": "joueurs réunis",
       "cashprize": "de cashprize"
     },

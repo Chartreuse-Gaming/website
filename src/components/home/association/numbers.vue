@@ -1,18 +1,18 @@
 <template>
     <article class="content">
         <p>
-            <span id="editions">5</span>
-            {{ $t("association.numbers.editions") }}<br />
-            {{ $t("tournaments.CEC.self") }}
+            <span id="editions">11</span>
+            {{ $t("association.numbers.tournament") }}<br />
+            {{ $t("association.numbers.since-2017") }}
         </p>
         <p>
-            {{ $t("association.numbers.more-than") }}
-            <span id="players">350</span>
+            {{ $t("association.numbers.up-to") }}
+            <span id="players">450</span>
             {{ $t("association.numbers.players") }}
         </p>
         <p>
             {{ $t("association.numbers.more-than") }}
-            <span id="cash-prize">6000</span>
+            <span id="cash-prize">6500</span>
             {{ $t("association.numbers.cashprize") }}
         </p>
     </article>
@@ -50,28 +50,28 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 article {
-    padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
 
     p {
-        justify-content: center;
-        padding: 1.5rem;
         background-color: var(--bg-color-alt);
-        box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
         border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
         display: flex;
         flex-direction: column;
-        text-align: center;
         font-size: 1.1em;
+        justify-content: center;
+        padding: 1.5rem;
+        text-align: center;
 
         span {
+            color: var(--special-color);
             font-size: 2em;
             font-weight: bold;
-            color: var(--special-color);
         }
     }
 
