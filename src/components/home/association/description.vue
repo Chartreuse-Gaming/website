@@ -10,11 +10,12 @@
                     <p>{{ $t("association.presentation.2") }}</p>
                     <p>{{ $t("association.presentation.3") }}</p>
                     <p>{{ $t("association.presentation.4") }}</p>
+                    <p>{{ $t("association.presentation.5") }}</p>
                 </div>
                 <img
-                    src="@/assets/img/association/Members.webp"
                     :alt="$t('association.members.self') + '.'"
                     loading="lazy"
+                    src="@/assets/img/association/Members.webp"
                 />
             </section>
         </article>
@@ -27,7 +28,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../../../../node_modules/compass-mixins/lib/compass/css3";
 
 #description {
@@ -35,20 +36,20 @@ export default {
 
     &::before,
     &::after {
+        bottom: 0;
         content: "";
-        z-index: -1;
+        left: 0;
         position: absolute;
         right: 0;
-        bottom: 0;
-        left: 0;
+        z-index: -1;
     }
 
     &::before {
         background-image: url("@/assets/img/association/Tshirt.webp");
         background-position: center bottom;
         background-size: cover;
-        top: 0;
         opacity: 0.2;
+        top: 0;
     }
 
     &::after {
@@ -61,16 +62,16 @@ export default {
     }
 
     article section {
-        display: flex;
         align-items: center;
+        display: flex;
         gap: 3rem;
         margin-bottom: 8px;
 
         p {
-            margin-top: 12px;
-            font-size: 1.1em;
-            text-align: justify;
             color: var(--subtext-color);
+            font-size: 1.1em;
+            margin-top: 12px;
+            text-align: justify;
 
             &:first-of-type {
                 margin-top: 0;
@@ -78,9 +79,9 @@ export default {
         }
 
         img {
-            width: 42%;
             border-radius: 8px;
             box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+            width: 42%;
 
             @media only screen and (max-width: 1050px) {
                 display: none;
