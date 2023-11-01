@@ -20,6 +20,14 @@
                             <font-awesome-icon icon="fa-solid fa-right-long" />
                         </router-link>
                     </section>
+                    <section>
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            src="@/assets/mp4/changement_nom.mp4"
+                        />
+                    </section>
                 </article>
                 <img
                     :alt="$t('tournaments.CEC.6.self')"
@@ -199,135 +207,157 @@ article {
             position: absolute;
             z-index: 2;
 
-            &::before {
-                background: rgb(38, 38, 38);
-                background: radial-gradient(
-                    circle,
-                    rgba(38, 38, 38, 1) 0%,
-                    rgba(252, 70, 107, 0) 60%
-                );
-                content: "";
-                height: calc(100% + 300px);
-                left: -150px;
+            &:last-of-type {
+                aspect-ratio: 1/1;
+                border-radius: 8px;
+                left: unset;
+                overflow: hidden;
                 position: absolute;
-                top: -150px;
-                width: calc(100% + 300px);
-                z-index: -1;
-            }
+                right: 0;
+                top: 26%;
 
-            & > p:first-of-type {
-                color: var(--subtext-color);
-                font-size: 1.4em;
-                text-shadow: 0 0 8px rgb(0, 0, 0);
-            }
+                @media screen and (max-width: 680px) {
+                    display: none;
+                }
 
-            & > p:last-of-type {
-                font-family: var(--title-font);
-                font-size: 3.6em;
-                font-weight: bold;
-                position: relative;
-                text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-                text-transform: uppercase;
-            }
-
-            a {
-                margin: 20px 0 0;
-                padding: 8px 30px;
-                width: max-content;
-
-                svg {
-                    margin-left: 10px;
+                video {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
                 }
             }
 
-            .CEC {
-                text-align: left !important;
-
-                span {
-                    font-size: 2.8em;
-                    line-height: 0;
+            &:first-of-type {
+                &::before {
+                    background: rgb(38, 38, 38);
+                    background: radial-gradient(
+                        circle,
+                        rgba(38, 38, 38, 1) 0%,
+                        rgba(252, 70, 107, 0) 60%
+                    );
+                    content: "";
+                    height: calc(100% + 300px);
+                    left: -150px;
                     position: absolute;
-                    right: 0;
-                    transform: rotate(8deg);
-                }
-            }
-
-            #CEC4 {
-                span:first-of-type {
-                    right: 0;
+                    top: -150px;
+                    width: calc(100% + 300px);
+                    z-index: -1;
                 }
 
-                span:last-of-type {
-                    font-size: 0.6em;
-                    right: -50px;
-                    top: 0;
+                & > p:first-of-type {
+                    color: var(--subtext-color);
+                    font-size: 1.4em;
+                    text-shadow: 0 0 8px rgb(0, 0, 0);
+                }
 
-                    &:before {
-                        background-color: var(--bg-color);
-                        border: 2px solid var(--special-color);
-                        border-radius: 8px;
-                        box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-                        content: "";
-                        height: 46px;
-                        left: -11px;
+                & > p:last-of-type {
+                    font-family: var(--title-font);
+                    font-size: 3.6em;
+                    font-weight: bold;
+                    position: relative;
+                    text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+                    text-transform: uppercase;
+                }
+
+                a {
+                    margin: 20px 0 0;
+                    padding: 8px 30px;
+                    width: max-content;
+
+                    svg {
+                        margin-left: 10px;
+                    }
+                }
+
+                .CEC {
+                    text-align: left !important;
+
+                    span {
+                        font-size: 2.8em;
+                        line-height: 0;
                         position: absolute;
-                        top: -25px;
-                        width: 160px;
-                        z-index: -1;
+                        right: 0;
+                        transform: rotate(8deg);
+                    }
+                }
 
-                        @media only screen and (max-width: 1300px) {
-                            height: 40px;
-                            top: -22px;
-                            width: 136px;
+                #CEC4 {
+                    span:first-of-type {
+                        right: 0;
+                    }
+
+                    span:last-of-type {
+                        font-size: 0.6em;
+                        right: -50px;
+                        top: 0;
+
+                        &:before {
+                            background-color: var(--bg-color);
+                            border: 2px solid var(--special-color);
+                            border-radius: 8px;
+                            box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+                            content: "";
+                            height: 46px;
+                            left: -11px;
+                            position: absolute;
+                            top: -25px;
+                            width: 160px;
+                            z-index: -1;
+
+                            @media only screen and (max-width: 1300px) {
+                                height: 40px;
+                                top: -22px;
+                                width: 136px;
+                            }
+                        }
+
+                        @media only screen and (max-width: 450px) {
+                            display: none;
                         }
                     }
+                }
 
-                    @media only screen and (max-width: 450px) {
-                        display: none;
+                @media only screen and (max-width: 1300px) {
+                    bottom: 16%;
+
+                    & > p:first-of-type {
+                        color: var(--subtext-color);
+                        font-size: 1.2em;
+                        text-shadow: 0 0 8px rgb(0, 0, 0);
+                    }
+
+                    & > p:last-of-type {
+                        font-family: var(--title-font);
+                        font-size: 3em;
+                        font-weight: bold;
+                        position: relative;
+                        text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+                        text-transform: uppercase;
                     }
                 }
-            }
 
-            @media only screen and (max-width: 1300px) {
-                bottom: 16%;
+                @media only screen and (max-width: 450px) {
+                    align-items: center;
+                    height: calc(100% - 170px);
+                    justify-content: center;
+                    padding: 0 16px;
+                    text-align: center;
+                    width: 100%;
 
-                & > p:first-of-type {
-                    color: var(--subtext-color);
-                    font-size: 1.2em;
-                    text-shadow: 0 0 8px rgb(0, 0, 0);
-                }
+                    & > p:first-of-type {
+                        color: var(--subtext-color);
+                        font-size: 1.1em;
+                        text-shadow: 0 0 8px rgb(0, 0, 0);
+                    }
 
-                & > p:last-of-type {
-                    font-family: var(--title-font);
-                    font-size: 3em;
-                    font-weight: bold;
-                    position: relative;
-                    text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-                    text-transform: uppercase;
-                }
-            }
-
-            @media only screen and (max-width: 450px) {
-                align-items: center;
-                height: calc(100% - 170px);
-                justify-content: center;
-                padding: 0 16px;
-                text-align: center;
-                width: 100%;
-
-                & > p:first-of-type {
-                    color: var(--subtext-color);
-                    font-size: 1.1em;
-                    text-shadow: 0 0 8px rgb(0, 0, 0);
-                }
-
-                & > p:last-of-type {
-                    font-family: var(--title-font);
-                    font-size: 2.4em;
-                    font-weight: bold;
-                    position: relative;
-                    text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-                    text-transform: uppercase;
+                    & > p:last-of-type {
+                        font-family: var(--title-font);
+                        font-size: 2.4em;
+                        font-weight: bold;
+                        position: relative;
+                        text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
