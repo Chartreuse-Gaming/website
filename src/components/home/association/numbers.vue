@@ -1,18 +1,18 @@
 <template>
     <article class="content">
         <p>
-            <span id="editions">11</span>
+            <span id="editions">{{ editions }}</span>
             {{ $t("association.numbers.tournament") }}<br />
             {{ $t("association.numbers.since-2017") }}
         </p>
         <p>
             {{ $t("association.numbers.up-to") }}
-            <span id="players">450</span>
+            <span id="players">{{ players }}</span>
             {{ $t("association.numbers.players") }}
         </p>
         <p>
             {{ $t("association.numbers.more-than") }}
-            <span id="cash-prize">6500</span>
+            <span id="cash-prize">{{ cashprize }}</span>
             {{ $t("association.numbers.cashprize") }}
         </p>
     </article>
@@ -25,9 +25,9 @@ export default {
     name: "numbersAssociationComponent",
     data() {
         return {
-            editions: {},
-            players: {},
-            cashprize: {},
+            editions: 11,
+            players: 450,
+            cashprize: 6500,
             options: {
                 duration: 3,
                 enableScrollSpy: true,
@@ -36,16 +36,24 @@ export default {
         };
     },
     mounted() {
-        this.editions = new CountUp("editions", 5, this.options);
-        this.players = new CountUp("players", 350, this.options);
-        this.cashprize = new CountUp("cash-prize", 6000, {
+        const counter_editions = new CountUp(
+            "editions",
+            this.editions,
+            this.options
+        );
+        const counter_players = new CountUp(
+            "players",
+            this.players,
+            this.options
+        );
+        const counter_cashprize = new CountUp("cash-prize", this.cashprize, {
             ...this.options,
             separator: " ",
             suffix: " €",
         });
-        this.editions.handleScroll();
-        this.players.handleScroll();
-        this.cashprize.handleScroll();
+        counter_editions.handleScroll();
+        counter_players.handleScroll();
+        counter_cashprize.handleScroll();
     },
 };
 </script>
