@@ -1,191 +1,212 @@
 <template>
-  <header>
-    <article>
-      <section>
-        <!-- Logo -->
-        <router-link to="/" id="logo" @click="nav = false">
-          <img
-            src="@/assets/svg/logo.svg"
-            :alt="$t('association.logo') + '.'"
-            width="44"
-            height="56"
-          />
-        </router-link>
+    <header>
+        <article>
+            <section>
+                <!-- Logo -->
+                <router-link to="/" id="logo" @click="nav = false">
+                    <img
+                        src="@/assets/svg/logo.svg"
+                        :alt="$t('association.logo') + '.'"
+                        width="44"
+                        height="56"
+                    />
+                </router-link>
 
-        <!-- Navigation -->
-        <nav>
-          <font-awesome-icon
-            id="mobile"
-            icon="fa-solid fa-bars"
-            @click.prevent="nav = !nav"
-          />
-          <div :class="nav === true ? 'appear' : ''">
-            <div>
-              <router-link
-                :to="{ name: 'home' }"
-                :class="
-                  $route.path === '/' && current_link === 'home'
-                    ? 'current'
-                    : ''
-                "
-                @click="nav = false"
-                >{{ $t("home") }}</router-link
-              >
-              <a
-                id="dropdown"
-                href=""
-                :class="$route.path.startsWith('/tournament/') ? 'current' : ''"
-                @mouseleave="dropdown = false"
-                @click.prevent="dropdown = !dropdown"
-              >
-                {{ $t("tournaments.self") }}
-                <font-awesome-icon icon="fa-solid fa-sort-down" />
-                <transition>
-                  <div v-if="dropdown">
-                    <router-link
-                      :to="{ name: 'CEC' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CEC')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CEC.self") }}
-                    </router-link>
-                    <router-link
-                      :to="{ name: 'CGW_2019' }"
-                      :class="
-                        $route.path.startsWith('/tournament/CGW-2019')
-                          ? 'current'
-                          : ''
-                      "
-                      @click="nav = false"
-                    >
-                      {{ $t("tournaments.CGW_2019.self") }}
-                    </router-link>
-                  </div>
-                </transition>
-              </a>
-              <router-link
-                to="/#association"
-                :class="
-                  $route.path === '/' && current_link === 'association'
-                    ? 'current'
-                    : ''
-                "
-                @click.prevent="toAnchor('association')"
-                >{{ $t("association.self", 1) }}</router-link
-              >
-              <router-link
-                to="/#contact"
-                :class="
-                  $route.path === '/' && current_link === 'contact'
-                    ? 'current'
-                    : ''
-                "
-                @click.prevent="toAnchor('contact')"
-                >{{ $t("contact.self") }}</router-link
-              >
-              <span @click.prevent="nav = false"></span>
-            </div>
-          </div>
-        </nav>
-      </section>
+                <!-- Navigation -->
+                <nav>
+                    <font-awesome-icon
+                        id="mobile"
+                        icon="fa-solid fa-bars"
+                        @click.prevent="nav = !nav"
+                    />
+                    <div :class="nav === true ? 'appear' : ''">
+                        <div>
+                            <router-link
+                                :to="{ name: 'home' }"
+                                :class="
+                                    $route.path === '/' &&
+                                    current_link === 'home'
+                                        ? 'current'
+                                        : ''
+                                "
+                                @click="nav = false"
+                                >{{ $t("home") }}</router-link
+                            >
+                            <a
+                                id="dropdown"
+                                href=""
+                                :class="
+                                    $route.path.startsWith('/tournament/')
+                                        ? 'current'
+                                        : ''
+                                "
+                                @mouseleave="dropdown = false"
+                                @click.prevent="dropdown = !dropdown"
+                            >
+                                {{ $t("tournaments.self") }}
+                                <font-awesome-icon
+                                    icon="fa-solid fa-sort-down"
+                                />
+                                <transition>
+                                    <div v-if="dropdown">
+                                        <router-link
+                                            :to="{ name: 'CEC' }"
+                                            :class="
+                                                $route.path.startsWith(
+                                                    '/tournament/CEC'
+                                                )
+                                                    ? 'current'
+                                                    : ''
+                                            "
+                                            @click="nav = false"
+                                        >
+                                            {{ $t("tournaments.CEC.self") }}
+                                        </router-link>
+                                        <router-link
+                                            :to="{ name: 'CGW_2019' }"
+                                            :class="
+                                                $route.path.startsWith(
+                                                    '/tournament/CGW-2019'
+                                                )
+                                                    ? 'current'
+                                                    : ''
+                                            "
+                                            @click="nav = false"
+                                        >
+                                            {{
+                                                $t("tournaments.CGW_2019.self")
+                                            }}
+                                        </router-link>
+                                    </div>
+                                </transition>
+                            </a>
+                            <router-link
+                                to="/#association"
+                                :class="
+                                    $route.path === '/' &&
+                                    current_link === 'association'
+                                        ? 'current'
+                                        : ''
+                                "
+                                @click.prevent="toAnchor('association')"
+                                >{{ $t("association.self", 1) }}</router-link
+                            >
+                            <router-link
+                                to="/#contact"
+                                :class="
+                                    $route.path === '/' &&
+                                    current_link === 'contact'
+                                        ? 'current'
+                                        : ''
+                                "
+                                @click.prevent="toAnchor('contact')"
+                                >{{ $t("contact.self") }}</router-link
+                            >
+                            <span @click.prevent="nav = false"></span>
+                        </div>
+                    </div>
+                </nav>
+            </section>
 
-      <!-- Réseaux sociaux -->
-      <section>
-        <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
-          <font-awesome-icon icon="fa-brands fa-discord" />
-        </a>
-        <a
-          :class="data.livestream ? 'livestream' : ''"
-          href="https://www.twitch.tv/chartreusegaming"
-          title="Twitch"
-        >
-          <font-awesome-icon icon="fa-brands fa-twitch" />
-          <i></i>
-          <i></i>
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
-          title="YouTube"
-        >
-          <font-awesome-icon icon="fa-brands fa-youtube" />
-        </a>
-        <a href="https://twitter.com/chartreusegame" title="Twitter">
-          <font-awesome-icon icon="fa-brands fa-twitter" />
-        </a>
-        <a href="https://www.instagram.com/chartreusegaming/" title="Instagram">
-          <font-awesome-icon icon="fa-brands fa-instagram" />
-        </a>
-        <a href="https://www.facebook.com/chartreusegaming/" title="Facebook">
-          <font-awesome-icon icon="fa-brands fa-facebook-f" />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/chartreuse-gaming/"
-          title="LinkedIn"
-        >
-          <font-awesome-icon icon="fa-brands fa-linkedin" />
-        </a>
-      </section>
-    </article>
-  </header>
+            <!-- Réseaux sociaux -->
+            <section>
+                <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
+                    <font-awesome-icon icon="fa-brands fa-discord" />
+                </a>
+                <a
+                    :class="data.livestream ? 'livestream' : ''"
+                    href="https://www.twitch.tv/chartreusegaming"
+                    title="Twitch"
+                >
+                    <font-awesome-icon icon="fa-brands fa-twitch" />
+                    <i></i>
+                    <i></i>
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
+                    title="YouTube"
+                >
+                    <font-awesome-icon icon="fa-brands fa-youtube" />
+                </a>
+                <a href="https://twitter.com/chartreusegame" title="Twitter">
+                    <font-awesome-icon icon="fa-brands fa-twitter" />
+                </a>
+                <a
+                    href="https://www.instagram.com/chartreusegaming/"
+                    title="Instagram"
+                >
+                    <font-awesome-icon icon="fa-brands fa-instagram" />
+                </a>
+                <a
+                    href="https://www.facebook.com/chartreusegaming/"
+                    title="Facebook"
+                >
+                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/company/chartreuse-gaming/"
+                    title="LinkedIn"
+                >
+                    <font-awesome-icon icon="fa-brands fa-linkedin" />
+                </a>
+            </section>
+        </article>
+    </header>
 </template>
 
 <script>
 export default {
-  name: "HeaderComponent",
-  props: ["current_link"],
-  data() {
-    return {
-      dropdown: false,
-      nav: false,
-      header: {},
-      body: {},
-      data: {
-        livestream: false,
-      },
-    };
-  },
-  async mounted() {
-    this.header = document.getElementsByTagName("header")[0];
-    this.body = document.getElementsByTagName("body")[0];
-    document.addEventListener("scroll", this.scrollClassToggler);
-    let response = await fetch("https://api.minarox.fr/chartreusegaming", {
-      cache: "force-cache",
-    });
-    this.data = await response.json();
-  },
-  beforeUnmount() {
-    document.removeEventListener("scroll", this.scrollClassToggler);
-  },
-  methods: {
-    toAnchor(anchor) {
-      this.nav = false;
-      if (this.$route.path !== "/") {
-        setTimeout(() => {
-          this.$router.push("/#" + anchor);
-        }, 450);
-      }
+    name: "HeaderComponent",
+    props: ["current_link"],
+    data() {
+        return {
+            dropdown: false,
+            nav: false,
+            header: {},
+            body: {},
+            data: {
+                livestream: false,
+            },
+        };
     },
-    scrollClassToggler() {
-      if (document.documentElement.scrollTop > 70) {
-        this.header.classList.add("scroll");
-      } else {
-        this.header.classList.remove("scroll");
-      }
+    async mounted() {
+        this.header = document.getElementsByTagName("header")[0];
+        this.body = document.getElementsByTagName("body")[0];
+        document.addEventListener("scroll", this.scrollClassToggler);
+        let response = await fetch("https://api.minarox.fr/chartreusegaming", {
+            cache: "force-cache",
+        });
+        this.data = await response.json();
     },
-  },
-  watch: {
-    nav() {
-      if (this.nav) {
-        this.body.style.overflow = "hidden";
-      } else {
-        this.body.style.overflow = "overlay";
-      }
+    beforeUnmount() {
+        document.removeEventListener("scroll", this.scrollClassToggler);
     },
-  },
+    methods: {
+        toAnchor(anchor) {
+            this.nav = false;
+            if (this.$route.path !== "/") {
+                setTimeout(() => {
+                    this.$router.push("/#" + anchor);
+                }, 450);
+            }
+        },
+        scrollClassToggler() {
+            if (document.documentElement.scrollTop > 70) {
+                this.header.classList.add("scroll");
+            } else {
+                this.header.classList.remove("scroll");
+            }
+        },
+    },
+    watch: {
+        nav() {
+            if (this.nav) {
+                this.body.style.overflow = "hidden";
+            } else {
+                this.body.style.overflow = "overlay";
+            }
+        },
+    },
 };
 </script>
 
@@ -194,275 +215,276 @@ export default {
 $header-height: 90px;
 
 .scroll {
-  @include box-shadow(inset 0 100px 90px -100px var(--bg-color));
-  backdrop-filter: blur(8px);
-  background-color: rgba(38, 38, 38, 0.6);
+    @include box-shadow(inset 0 100px 90px -100px var(--bg-color));
+    backdrop-filter: blur(8px);
+    background-color: rgba(38, 38, 38, 0.6);
 }
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
 }
 .v-enter-from,
 .v-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
 
 .appear {
-  opacity: 1 !important;
-  pointer-events: unset !important;
-  user-select: unset !important;
-  user-focus: unset !important;
+    opacity: 1 !important;
+    pointer-events: unset !important;
+    user-select: unset !important;
+    user-focus: unset !important;
 }
 
 header {
-  z-index: 99;
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: $header-height;
-  transition: all 600ms;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: $header-height;
+    transition: all 600ms;
 
-  article {
-    height: inherit;
-    margin-inline: auto;
-    width: min(100% - 1rem, 1650px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    section {
-      height: inherit;
-      display: flex;
-      align-items: center;
-
-      a {
-        color: var(--text-color);
-        font-family: var(--title-font);
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        height: $header-height;
-        display: inline-flex;
+    article {
+        height: inherit;
+        margin-inline: auto;
+        width: min(100% - 1rem, 1650px);
+        display: flex;
         align-items: center;
-      }
+        justify-content: space-between;
+
+        section {
+            height: inherit;
+            display: flex;
+            align-items: center;
+
+            a {
+                color: var(--text-color);
+                font-family: var(--title-font);
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                height: $header-height;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
     }
-  }
 }
 
 section:first-of-type nav {
-  #mobile {
-    height: $header-height;
-    display: none;
-    padding: 0 1.4rem;
-    width: 2em;
-  }
-
-  #dropdown {
-    position: relative;
-
-    div {
-      width: max-content;
-      display: flex;
-      flex-flow: column nowrap;
-      position: absolute;
-      bottom: -68px;
-      left: 4px;
-      background-color: var(--bg-color);
-      border-radius: 8px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
-      a {
-        height: max-content;
-        padding: 0.5rem 1rem;
-        font-size: 0.94em;
-
-        &:first-of-type {
-          padding-top: 1rem;
-        }
-
-        &:last-of-type {
-          padding-bottom: 1rem;
-        }
-      }
-    }
-  }
-
-  a {
-    transition: color 150ms;
-    padding: 1.2rem;
-
-    svg {
-      margin-left: 0.6rem;
-      padding-bottom: 6px;
+    #mobile {
+        height: $header-height;
+        display: none;
+        padding: 0 1.4rem;
+        width: 2em;
     }
 
-    &:hover {
-      color: var(--green-touch);
+    #dropdown {
+        position: relative;
 
-      svg {
+        div {
+            width: max-content;
+            display: flex;
+            flex-flow: column nowrap;
+            position: absolute;
+            bottom: -68px;
+            left: 4px;
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
+
+            a {
+                height: max-content;
+                padding: 0.5rem 1rem;
+                font-size: 0.94em;
+
+                &:first-of-type {
+                    padding-top: 1rem;
+                }
+
+                &:last-of-type {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    a {
         transition: color 150ms;
-        color: var(--green-touch);
-      }
+        padding: 1.2rem;
+
+        svg {
+            margin-left: 0.6rem;
+            padding-bottom: 6px;
+        }
+
+        &:hover {
+            color: var(--special-color);
+
+            svg {
+                transition: color 150ms;
+                color: var(--special-color);
+            }
+        }
     }
-  }
 }
 
 section:last-of-type > a {
-  padding: 1rem;
+    padding: 1rem;
 
-  & > svg {
-    transition: all 150ms;
-    height: 20px;
-    transform: scale(1);
-  }
-
-  &:hover {
-    svg {
-      transform: scale(1.1);
-      color: var(--subtext-color);
+    & > svg {
+        transition: all 150ms;
+        height: 20px;
+        transform: scale(1);
     }
-  }
+
+    &:hover {
+        svg {
+            transform: scale(1.1);
+            color: var(--subtext-color);
+        }
+    }
 }
 
 .current {
-  color: var(--green-touch);
+    color: var(--special-color);
 
-  svg {
-    color: var(--green-touch);
-  }
+    svg {
+        color: var(--special-color);
+    }
 }
 
 #logo {
-  height: $header-height;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+    height: $header-height;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 
-  img {
-    height: 56px;
-    transform: scale(1);
-    transition: transform 200ms;
-  }
-
-  &:hover {
     img {
-      transform: scale(1.08);
+        height: 56px;
+        transform: scale(1);
+        transition: transform 200ms;
     }
-  }
+
+    &:hover {
+        img {
+            transform: scale(1.08);
+        }
+    }
 }
 
 .livestream {
-  position: relative;
+    position: relative;
 
-  i {
-    position: absolute;
-    top: 30px;
-    right: 13px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: #f00000;
-  }
-
-  i:last-of-type {
-    animation: pulse-scale 2.6s infinite;
-  }
-
-  @keyframes pulse-scale {
-    0% {
-      opacity: 0.7;
-      transform: scale(1);
+    i {
+        position: absolute;
+        top: 30px;
+        right: 13px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #f00000;
     }
-    100% {
-      opacity: 0;
-      transform: scale(2.4);
+
+    i:last-of-type {
+        animation: pulse-scale 2.6s infinite;
     }
-  }
+
+    @keyframes pulse-scale {
+        0% {
+            opacity: 0.7;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(2.4);
+        }
+    }
 }
 
 @media only screen and (max-width: 1080px) {
-  section:first-of-type {
-    width: 100%;
-    justify-content: space-between;
-  }
+    section:first-of-type {
+        width: 100%;
+        justify-content: space-between;
+    }
 
-  section:last-of-type {
-    display: none;
-  }
+    section:last-of-type {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-  section:first-of-type > nav > div {
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    user-focus: none;
-    background-color: rgba(38, 38, 38, 0.9);
-    z-index: -1;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: opacity 200ms ease-in-out;
+    section:first-of-type > nav > div {
+        opacity: 0;
+        pointer-events: none;
+        user-select: none;
+        user-focus: none;
+        background-color: rgba(38, 38, 38, 0.9);
+        z-index: -1;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: opacity 200ms ease-in-out;
 
-    & > div {
-      position: absolute;
-      height: calc(100% - $header-height);
-      width: 100%;
-      top: $header-height;
-      left: 0;
-      font-size: 1.5em;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      overflow-y: overlay;
+        & > div {
+            position: absolute;
+            height: calc(100% - $header-height);
+            width: 100%;
+            top: $header-height;
+            left: 0;
+            font-size: 1.5em;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            overflow-y: overlay;
 
-      span {
-        width: 100%;
-        height: 100%;
-      }
-
-      a {
-        width: 100%;
-        display: block;
-        text-align: center;
-      }
-
-      #dropdown {
-        width: 100%;
-        justify-content: center;
-
-        div {
-          height: max-content;
-          flex-flow: column nowrap;
-          align-items: center;
-          top: 74px;
-          left: 0;
-          border-radius: 0;
-          width: 100vw;
-
-          a {
-            text-align: center;
-            padding: 1rem 0.8rem;
-
-            &:first-of-type {
-              padding-top: 2rem;
+            span {
+                width: 100%;
+                height: 100%;
             }
 
-            &:last-of-type {
-              padding-bottom: 2rem;
+            a {
+                width: 100%;
+                display: block;
+                text-align: center;
             }
-          }
+
+            #dropdown {
+                width: 100%;
+                justify-content: center;
+
+                div {
+                    height: max-content;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    top: 74px;
+                    left: 0;
+                    border-radius: 0;
+                    width: 100vw;
+
+                    a {
+                        text-align: center;
+                        padding: 1rem 0.8rem;
+
+                        &:first-of-type {
+                            padding-top: 2rem;
+                        }
+
+                        &:last-of-type {
+                            padding-bottom: 2rem;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  #mobile {
-    display: block !important;
-  }
+    #mobile {
+        display: block !important;
+    }
 }
 </style>

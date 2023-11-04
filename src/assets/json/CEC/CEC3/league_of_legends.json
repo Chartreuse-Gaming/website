@@ -2,46 +2,22 @@
   {
     "rank": 1,
     "name": "Retry",
-    "players": [
-      "Djokz",
-      "Gallic R4ge",
-      "Olcadan",
-      "Salut Moi C Ben",
-      "Thraesh"
-    ]
+    "players": ["Djokz", "Gallic R4ge", "Olcadan", "Salut Moi C Ben", "Thraesh"]
   },
   {
     "rank": 2,
     "name": "Ekinox",
-    "players": [
-      "Kisaro",
-      "Lampadaire",
-      "Sukyos",
-      "Vrakst",
-      "Xenot"
-    ]
+    "players": ["Kisaro", "Lampadaire", "Sukyos", "Vrakst", "Xenot"]
   },
   {
     "rank": 3,
     "name": "Volibear's Runners",
-    "players": [
-      "demonbak",
-      "Gyndared",
-      "I How to Hook I",
-      "KübeV2",
-      "Rûvën"
-    ]
+    "players": ["demonbak", "Gyndared", "I How to Hook I", "KübeV2", "Rûvën"]
   },
   {
     "rank": 4,
     "name": "VGY Corp",
-    "players": [
-      "Gaëtan Picon",
-      "Hitch",
-      "MARKSMAN ONLY",
-      "Ratila",
-      "Shirø Lee"
-    ]
+    "players": ["Gaëtan Picon", "Hitch", "MARKSMAN ONLY", "Ratila", "Shirø Lee"]
   },
   {
     "rank": 5,
@@ -57,25 +33,12 @@
   {
     "rank": 5,
     "name": "Flight",
-    "players": [
-      "Apaz0x",
-      "Arcad0x",
-      "FLT WhyNoz",
-      "Glum",
-      "Melioa",
-      "Volr0d"
-    ]
+    "players": ["Apaz0x", "Arcad0x", "FLT WhyNoz", "Glum", "Melioa", "Volr0d"]
   },
   {
     "rank": 7,
     "name": "Easy Cashprize",
-    "players": [
-      "Averose",
-      "dodu",
-      "Kaw",
-      "Myself Fake",
-      "neaph"
-    ]
+    "players": ["Averose", "dodu", "Kaw", "Myself Fake", "neaph"]
   },
   {
     "rank": 7,
@@ -92,46 +55,22 @@
   {
     "rank": 9,
     "name": "hade",
-    "players": [
-      "Crawstorne",
-      "ÐΣŁŦΔ",
-      "hade",
-      "Tissma",
-      "Joueurdumilieu"
-    ]
+    "players": ["Crawstorne", "ÐΣŁŦΔ", "hade", "Tissma", "Joueurdumilieu"]
   },
   {
     "rank": 9,
     "name": "BeGreedy",
-    "players": [
-      "123Sσłειł",
-      "EctaNeko",
-      "SpookyYordle",
-      "Yatori",
-      "Youri"
-    ]
+    "players": ["123Sσłειł", "EctaNeko", "SpookyYordle", "Yatori", "Youri"]
   },
   {
     "rank": 9,
     "name": "Wolfs Origins",
-    "players": [
-      "Darkpattate",
-      "Giralight",
-      "Sekedh",
-      "Slash812",
-      "Yasanno"
-    ]
+    "players": ["Darkpattate", "Giralight", "Sekedh", "Slash812", "Yasanno"]
   },
   {
     "rank": 9,
     "name": "Wapteam",
-    "players": [
-      "Drawgeek38",
-      "Esteed",
-      "ExxKí",
-      "FrSami",
-      "Sacus"
-    ]
+    "players": ["Drawgeek38", "Esteed", "ExxKí", "FrSami", "Sacus"]
   },
   {
     "rank": 13,
@@ -148,34 +87,16 @@
   {
     "rank": 13,
     "name": "Gnocchi",
-    "players": [
-      "Akro",
-      "Bill ivan",
-      "Kazoo",
-      "winstaff",
-      "Zephyx"
-    ]
+    "players": ["Akro", "Bill ivan", "Kazoo", "winstaff", "Zephyx"]
   },
   {
     "rank": 13,
     "name": "Les Bûches",
-    "players": [
-      "Estelebogosse",
-      "Gnôle",
-      "Gobzy73",
-      "Loonzerra",
-      "Shownt"
-    ]
+    "players": ["Estelebogosse", "Gnôle", "Gobzy73", "Loonzerra", "Shownt"]
   },
   {
     "rank": 13,
     "name": "iSNARE",
-    "players": [
-      "Gaemred",
-      "Kyoji",
-      "O Father O Satan",
-      "PharraeL",
-      "Sitron"
-    ]
+    "players": ["Gaemred", "Kyoji", "O Father O Satan", "PharraeL", "Sitron"]
   }
 ]

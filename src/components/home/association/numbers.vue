@@ -1,90 +1,98 @@
 <template>
-  <article class="content">
-    <p>
-      <span id="editions">5</span>
-      {{ $t("association.numbers.editions") }}<br />
-      {{ $t("tournaments.CEC.self") }}
-    </p>
-    <p>
-      {{ $t("association.numbers.more-than") }}
-      <span id="players">350</span>
-      {{ $t("association.numbers.players") }}
-    </p>
-    <p>
-      {{ $t("association.numbers.more-than") }}
-      <span id="cash-prize">6000</span>
-      {{ $t("association.numbers.cashprize") }}
-    </p>
-  </article>
+    <article class="content">
+        <p>
+            <span id="editions">{{ editions }}</span>
+            {{ $t("association.numbers.tournament") }}<br />
+            {{ $t("association.numbers.since-2017") }}
+        </p>
+        <p>
+            {{ $t("association.numbers.up-to") }}
+            <span id="players">{{ players }}</span>
+            {{ $t("association.numbers.players") }}
+        </p>
+        <p>
+            {{ $t("association.numbers.more-than") }}
+            <span id="cash-prize">{{ cashprize }}</span>
+            {{ $t("association.numbers.cashprize") }}
+        </p>
+    </article>
 </template>
 
 <script>
 import { CountUp } from "countup.js";
 
 export default {
-  name: "numbersAssociationComponent",
-  data() {
-    return {
-      editions: {},
-      players: {},
-      cashprize: {},
-      options: {
-        duration: 3,
-        enableScrollSpy: true,
-        scrollSpyOnce: true,
-      },
-    };
-  },
-  mounted() {
-    this.editions = new CountUp("editions", 5, this.options);
-    this.players = new CountUp("players", 350, this.options);
-    this.cashprize = new CountUp("cash-prize", 6000, {
-      ...this.options,
-      separator: " ",
-      suffix: " €",
-    });
-    this.editions.handleScroll();
-    this.players.handleScroll();
-    this.cashprize.handleScroll();
-  },
+    name: "numbersAssociationComponent",
+    data() {
+        return {
+            editions: 11,
+            players: 450,
+            cashprize: 6500,
+            options: {
+                duration: 3,
+                enableScrollSpy: true,
+                scrollSpyOnce: true,
+            },
+        };
+    },
+    mounted() {
+        const counter_editions = new CountUp(
+            "editions",
+            this.editions,
+            this.options
+        );
+        const counter_players = new CountUp(
+            "players",
+            this.players,
+            this.options
+        );
+        const counter_cashprize = new CountUp("cash-prize", this.cashprize, {
+            ...this.options,
+            separator: " ",
+            suffix: " €",
+        });
+        counter_editions.handleScroll();
+        counter_players.handleScroll();
+        counter_cashprize.handleScroll();
+    },
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 article {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
 
-  p {
-    justify-content: center;
-    padding: 1.5rem;
-    background-color: var(--bg-color-alt);
-    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.1em;
+    p {
+        background-color: var(--bg-color-alt);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 8px 24px 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1em;
+        justify-content: center;
+        padding: 1.5rem;
+        text-align: center;
 
-    span {
-      font-size: 2em;
-      font-weight: bold;
-      color: var(--green-touch);
+        span {
+            color: var(--special-color);
+            font-size: 2em;
+            font-weight: bold;
+        }
     }
-  }
 
-  @media (min-width: 451px) and (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 451px) and (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
 
-    p:first-of-type {
-      grid-column: span 2;
+        p:first-of-type {
+            grid-column: span 2;
+        }
     }
-  }
 
-  @media (max-width: 450px) {
-    grid-template-columns: 1fr;
-  }
+    @media (max-width: 450px) {
+        grid-template-columns: 1fr;
+    }
 }
 </style>

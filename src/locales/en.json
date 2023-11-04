@@ -48,14 +48,17 @@
     "self": "Association | The association",
     "logo": "Logo of the association",
     "presentation": {
-      "1": "On December 29, 2015, a core group of six friends got together and founded Chartreuse Gaming, as an association under the law of 1901. Unanimous, they wish to seize the opportunity to take part in the eSport boom by becoming local actors of the rural environment and the Rhône-Alpes region. Thus, they take as their leitmotiv the organization of physical events and online events.",
-      "2": "It is only on October 28, 2017, that the first edition of its flagship event is born: the Chartreuse Esport Contest (CEC#1). After encouraging signs, the association wishes to annualize the event and make it grow until obtaining a national influence.",
-      "3": "With no less than thirty volunteers and after a period troubled by the health crisis, the association takes the bet of a physical event while the other organizations prefer to dematerialize their event. It was then that Chartreuse Gaming signed its most ambitious event with 98 players spread over League Of Legends, Counter Strike: Global Offensive and Rocket League, and a global prize of 3500€.",
-      "4": "This last edition confirms the volunteers in their wish to impose themselves on the regional scene and then on the tricolour scene. In order to achieve this, the association decided to move to Saint-Martin-d'Hères, in the Grenoble metropolis."
+      "1": "Welcome to the world of Alpes Esport, an association under the law of 1901 founded by a team of enthusiasts, united by a common vision: to shape the future of French Esport.",
+      "2": "With experience gained under the Chartreuse Gaming association's colors since 2017 with Chartreuse Gaming Contest #1, its members can testify to no fewer than 11 physical and online tournaments in the space of 7 years, 450 participants and a cashprize exceeding €6500 / €7500.",
+      "3": "Since 2015, members have been striving to take part in the eSport boom and establish themselves as key local players in the Alps. To achieve this, the association aims to organize several events a year in the Grenoble metropolis.",
+      "4": "Propelled by a pool of exceptional skills and (with the conviction that Esport has a greater role to play)/(firmly believing in the transformative power of Esport), the association aims to leave a lasting mark on the world of Esport.",
+      "5": "Immerse yourself in the constantly evolving world of Alpes Esport, a pioneering association. Let's keep up our efforts, energize our fabulous region and help France shine on the international stage."
     },
     "numbers": {
-      "more-than": "Plus de",
-      "editions": "editions of",
+      "tournament": "tournaments organized",
+      "since-2017": "since 2017",
+      "up-to": "Up to",
+      "more-than": "More than",
       "players": "players gathered",
       "cashprize": "of cashprize"
     },
@@ -69,6 +72,12 @@
       "administrative-manager": "Administrative Manager"
     },
     "timeline": {
+      "2023": {
+        "1": {
+          "title": "Name change",
+          "description": "Chartreuse Gaming association changes its name to Alpes Esport."
+        }
+      },
       "2022": {
         "1": {
           "title": "Change of head office",

@@ -2,46 +2,26 @@
   {
     "rank": 1,
     "name": "Les Videurs",
-    "players": [
-      "DGZ",
-      "FrotteMan",
-      "Syn"
-    ]
+    "players": ["DGZ", "FrotteMan", "Syn"]
   },
   {
     "rank": 2,
     "name": "Adamya",
-    "players": [
-      "Snama23",
-      "AYTE",
-      "Kaoup"
-    ]
+    "players": ["Snama23", "AYTE", "Kaoup"]
   },
   {
     "rank": 3,
     "name": "-Smoken Esport-",
-    "players": [
-      "NeferoClear",
-      "6Six6",
-      "NoX TV_RL"
-    ]
+    "players": ["NeferoClear", "6Six6", "NoX TV_RL"]
   },
   {
     "rank": 4,
     "name": "GratianoPolis Squad",
-    "players": [
-      "Ancelin",
-      "Naïto",
-      "Seillama"
-    ]
+    "players": ["Ancelin", "Naïto", "Seillama"]
   },
   {
     "rank": 5,
     "name": "Monique Ranou United",
-    "players": [
-      "Boeuf bourguignon",
-      "Calzone au four",
-      "Bavette d'aloyau"
-    ]
+    "players": ["Boeuf bourguignon", "Calzone au four", "Bavette d'aloyau"]
   }
 ]

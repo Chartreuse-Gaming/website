@@ -2,89 +2,56 @@
   {
     "rank": 1,
     "name": "C'EST MON MAIN",
-    "players": [
-      "KxN",
-      "TchouM"
-    ]
+    "players": ["KxN", "TchouM"]
   },
   {
     "rank": 2,
     "name": "1TERNET",
-    "players": [
-      "U1P",
-      "BluD"
-    ]
+    "players": ["U1P", "BluD"]
   },
   {
     "rank": 3,
     "name": "WoodX",
-    "players": [
-      "Goladan",
-      "Oussoy"
-    ]
+    "players": ["Goladan", "Oussoy"]
   },
   {
     "rank": 4,
     "name": "NIPS",
-    "players": [
-      "Blateman",
-      "YouTookMyOreo"
-    ]
+    "players": ["Blateman", "YouTookMyOreo"]
   },
   {
     "rank": 5,
     "name": "CerealesEXTRA",
-    "players": [
-      "Parano",
-      "Galypo"
-    ]
+    "players": ["Parano", "Galypo"]
   },
   {
     "rank": 7,
     "name": "FuryMarmottes",
-    "players": [
-      "Kitano",
-      "Shaloine"
-    ]
+    "players": ["Kitano", "Shaloine"]
   },
   {
     "rank": 7,
     "name": "Noobteam",
-    "players": [
-      "Noibman",
-      "Roro"
-    ]
+    "players": ["Noibman", "Roro"]
   },
   {
     "rank": 9,
     "name": "FifiLeFou",
-    "players": [
-      "Miro_",
-      "Fou"
-    ]
+    "players": ["Miro_", "Fou"]
   },
   {
     "rank": 9,
     "name": "Vanadium",
-    "players": [
-      "FlwrTheFck",
-      "VinsElBins"
-    ]
+    "players": ["FlwrTheFck", "VinsElBins"]
   },
   {
     "rank": 13,
     "name": "Bibop",
-    "players": [
-      "armagedon21fr",
-      "Fercoq.clement"
-    ]
+    "players": ["armagedon21fr", "Fercoq.clement"]
   },
   {
     "rank": 13,
     "name": "border detection scientist",
-    "players": [
-      "Rayden",
-      "aweur"
-    ]
+    "players": ["Rayden", "aweur"]
   }
 ]

@@ -78,7 +78,7 @@ future events organized by it.
 ### Color Reference
 
 | Color                    | Hex                                                                           | Description              |
-|--------------------------|-------------------------------------------------------------------------------|--------------------------|
+| ------------------------ | ----------------------------------------------------------------------------- | ------------------------ |
 | Text color               | ![#FFFFFFFF](https://via.placeholder.com/8/FFFFFFFF/FFFFFFFF.png) `#FFFFFFFF` | Titles and subtitles     |
 | Subtext Color            | ![#E6E6E6FF](https://via.placeholder.com/8/E6E6E6FF/E6E6E6FF.png) `#E6E6E6FF` | Texts and description    |
 | Footer text Color        | ![#B9B9B9FF](https://via.placeholder.com/8/B9B9B9FF/B9B9B9FF.png) `#B9B9B9FF` | Footer texts             |
