@@ -3,12 +3,12 @@
         <article>
             <section>
                 <!-- Logo -->
-                <router-link to="/" id="logo" @click="nav = false">
+                <router-link id="logo" to="/" @click="nav = false">
                     <img
-                        src="@/assets/svg/logo.svg"
                         :alt="$t('association.logo') + '.'"
-                        width="44"
                         height="56"
+                        src="@/assets/svg/logo.svg"
+                        width="44"
                     />
                 </router-link>
 
@@ -22,24 +22,24 @@
                     <div :class="nav === true ? 'appear' : ''">
                         <div>
                             <router-link
-                                :to="{ name: 'home' }"
                                 :class="
                                     $route.path === '/' &&
                                     current_link === 'home'
                                         ? 'current'
                                         : ''
                                 "
+                                :to="{ name: 'home' }"
                                 @click="nav = false"
-                                >{{ $t("home") }}</router-link
-                            >
+                                >{{ $t("home") }}
+                            </router-link>
                             <a
                                 id="dropdown"
-                                href=""
                                 :class="
                                     $route.path.startsWith('/tournament/')
                                         ? 'current'
                                         : ''
                                 "
+                                href=""
                                 @mouseleave="dropdown = false"
                                 @click.prevent="dropdown = !dropdown"
                             >
@@ -50,7 +50,6 @@
                                 <transition>
                                     <div v-if="dropdown">
                                         <router-link
-                                            :to="{ name: 'CEC' }"
                                             :class="
                                                 $route.path.startsWith(
                                                     '/tournament/CEC'
@@ -58,12 +57,12 @@
                                                     ? 'current'
                                                     : ''
                                             "
+                                            :to="{ name: 'CEC' }"
                                             @click="nav = false"
                                         >
                                             {{ $t("tournaments.CEC.self") }}
                                         </router-link>
                                         <router-link
-                                            :to="{ name: 'CGW_2019' }"
                                             :class="
                                                 $route.path.startsWith(
                                                     '/tournament/CGW-2019'
@@ -71,6 +70,7 @@
                                                     ? 'current'
                                                     : ''
                                             "
+                                            :to="{ name: 'CGW_2019' }"
                                             @click="nav = false"
                                         >
                                             {{
@@ -81,27 +81,27 @@
                                 </transition>
                             </a>
                             <router-link
-                                to="/#association"
                                 :class="
                                     $route.path === '/' &&
                                     current_link === 'association'
                                         ? 'current'
                                         : ''
                                 "
+                                to="/#association"
                                 @click.prevent="toAnchor('association')"
-                                >{{ $t("association.self", 1) }}</router-link
-                            >
+                                >{{ $t("association.self", 1) }}
+                            </router-link>
                             <router-link
-                                to="/#contact"
                                 :class="
                                     $route.path === '/' &&
                                     current_link === 'contact'
                                         ? 'current'
                                         : ''
                                 "
+                                to="/#contact"
                                 @click.prevent="toAnchor('contact')"
-                                >{{ $t("contact.self") }}</router-link
-                            >
+                                >{{ $t("contact.self") }}
+                            </router-link>
                             <span @click.prevent="nav = false"></span>
                         </div>
                     </div>
@@ -115,39 +115,27 @@
                 </a>
                 <a
                     :class="data.livestream ? 'livestream' : ''"
-                    href="https://www.twitch.tv/chartreusegaming"
+                    href="https://www.twitch.tv/alpesesport"
                     title="Twitch"
                 >
                     <font-awesome-icon icon="fa-brands fa-twitch" />
                     <i></i>
                     <i></i>
                 </a>
-                <a
-                    href="https://www.youtube.com/channel/UCJFJe1WVZtdQZuvkcS_2jSg"
-                    title="YouTube"
-                >
+                <a href="https://www.youtube.com/@AlpesEsport" title="YouTube">
                     <font-awesome-icon icon="fa-brands fa-youtube" />
                 </a>
-                <a href="https://twitter.com/chartreusegame" title="Twitter">
+                <a href="https://twitter.com/AlpesEsport" title="Twitter">
                     <font-awesome-icon icon="fa-brands fa-twitter" />
                 </a>
                 <a
-                    href="https://www.instagram.com/chartreusegaming/"
+                    href="https://www.instagram.com/alpes_esport/"
                     title="Instagram"
                 >
                     <font-awesome-icon icon="fa-brands fa-instagram" />
                 </a>
-                <a
-                    href="https://www.facebook.com/chartreusegaming/"
-                    title="Facebook"
-                >
+                <a href="https://www.facebook.com/AlpesEsport" title="Facebook">
                     <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                </a>
-                <a
-                    href="https://www.linkedin.com/company/chartreuse-gaming/"
-                    title="LinkedIn"
-                >
-                    <font-awesome-icon icon="fa-brands fa-linkedin" />
                 </a>
             </section>
         </article>
@@ -210,8 +198,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../../../node_modules/compass-mixins/lib/compass/css3";
+
 $header-height: 90px;
 
 .scroll {
@@ -224,6 +213,7 @@ $header-height: 90px;
 .v-leave-active {
     transition: opacity 200ms ease;
 }
+
 .v-enter-from,
 .v-leave-to {
     opacity: 0;
@@ -232,40 +222,40 @@ $header-height: 90px;
 .appear {
     opacity: 1 !important;
     pointer-events: unset !important;
-    user-select: unset !important;
     user-focus: unset !important;
+    user-select: unset !important;
 }
 
 header {
-    z-index: 99;
+    height: $header-height;
+    left: 0;
     position: sticky;
     top: 0;
-    left: 0;
-    height: $header-height;
     transition: all 600ms;
+    z-index: 99;
 
     article {
+        align-items: center;
+        display: flex;
         height: inherit;
+        justify-content: space-between;
         margin-inline: auto;
         width: min(100% - 1rem, 1650px);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
         section {
-            height: inherit;
-            display: flex;
             align-items: center;
+            display: flex;
+            height: inherit;
 
             a {
+                align-items: center;
                 color: var(--text-color);
+                display: inline-flex;
                 font-family: var(--title-font);
                 font-weight: bold;
-                text-transform: uppercase;
-                text-decoration: none;
                 height: $header-height;
-                display: inline-flex;
-                align-items: center;
+                text-decoration: none;
+                text-transform: uppercase;
             }
         }
     }
@@ -273,8 +263,8 @@ header {
 
 section:first-of-type nav {
     #mobile {
-        height: $header-height;
         display: none;
+        height: $header-height;
         padding: 0 1.4rem;
         width: 2em;
     }
@@ -283,21 +273,21 @@ section:first-of-type nav {
         position: relative;
 
         div {
-            width: max-content;
-            display: flex;
-            flex-flow: column nowrap;
-            position: absolute;
-            bottom: -68px;
-            left: 4px;
             background-color: var(--bg-color);
             border-radius: 8px;
+            bottom: -68px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
+            display: flex;
+            flex-flow: column nowrap;
+            left: 4px;
+            position: absolute;
+            width: max-content;
 
             a {
+                font-size: 0.94em;
                 height: max-content;
                 padding: 0.5rem 1rem;
-                font-size: 0.94em;
 
                 &:first-of-type {
                     padding-top: 1rem;
@@ -311,8 +301,8 @@ section:first-of-type nav {
     }
 
     a {
-        transition: color 150ms;
         padding: 1.2rem;
+        transition: color 150ms;
 
         svg {
             margin-left: 0.6rem;
@@ -323,8 +313,8 @@ section:first-of-type nav {
             color: var(--special-color);
 
             svg {
-                transition: color 150ms;
                 color: var(--special-color);
+                transition: color 150ms;
             }
         }
     }
@@ -334,15 +324,15 @@ section:last-of-type > a {
     padding: 1rem;
 
     & > svg {
-        transition: all 150ms;
         height: 20px;
         transform: scale(1);
+        transition: all 150ms;
     }
 
     &:hover {
         svg {
-            transform: scale(1.1);
             color: var(--subtext-color);
+            transform: scale(1.1);
         }
     }
 }
@@ -356,9 +346,9 @@ section:last-of-type > a {
 }
 
 #logo {
-    height: $header-height;
-    display: inline-flex;
     align-items: center;
+    display: inline-flex;
+    height: $header-height;
     justify-content: center;
     padding: 1rem;
 

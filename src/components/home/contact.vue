@@ -2,9 +2,9 @@
     <article class="content">
         <h2>{{ $t("contact.us") }}</h2>
         <section>
-            <a href="mailto:contact.alpes.esport@gmail.com">
+            <a href="mailto:alpes.esport@gmail.com">
                 <font-awesome-icon icon="fa-solid fa-envelope" />
-                <p>contact.alpes.esport@gmail.com</p>
+                <p>alpes.esport@gmail.com</p>
             </a>
             <a href="tel:+33601225350">
                 <font-awesome-icon icon="fa-solid fa-phone" />
@@ -16,27 +16,24 @@
                     <a href="https://discord.gg/invite/ENY2nV6" title="Discord">
                         <font-awesome-icon icon="fa-brands fa-discord" />
                     </a>
-                    <a
-                        href="https://twitter.com/chartreusegame"
-                        title="Twitter"
-                    >
+                    <a href="https://twitter.com/AlpesEsport" title="Twitter">
                         <font-awesome-icon icon="fa-brands fa-twitter" />
                     </a>
                     <a
-                        href="https://www.facebook.com/chartreusegaming/"
+                        href="https://www.facebook.com/AlpesEsport"
                         title="Facebook"
                     >
                         <font-awesome-icon icon="fa-brands fa-facebook-f" />
                     </a>
                     <a
-                        href="https://www.instagram.com/chartreusegaming/"
+                        href="https://www.instagram.com/alpes_esport/"
                         title="Instagram"
                     >
                         <font-awesome-icon icon="fa-brands fa-instagram" />
                     </a>
                 </span>
             </div>
-            <a href="https://forms.gle/zJoD1x4DTWFb8o5R6">
+            <a href="https://forms.gle/X6teynN1wJKRerPD9">
                 <font-awesome-icon icon="fa-solid fa-clipboard-list" />
                 <p>{{ $t("contact.join-us") }}</p>
             </a>
@@ -112,11 +109,11 @@ article {
         }
 
         @media (min-width: 551px) and (max-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
+
             & > a:first-of-type {
                 grid-column: 1;
             }
-
-            grid-template-columns: repeat(2, 1fr);
         }
 
         @media (max-width: 550px) {
