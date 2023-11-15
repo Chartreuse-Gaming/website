@@ -9,23 +9,22 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
     faDiscord,
-    faTwitch,
-    faYoutube,
-    faTwitter,
-    faInstagram,
     faFacebookF,
-    faLinkedin,
+    faInstagram,
+    faTwitch,
+    faTwitter,
+    faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-    faSortDown,
     faBars,
-    faRightLong,
     faCaretUp,
+    faClipboardList,
+    faEnvelope,
     faLocationDot,
     faPhone,
-    faEnvelope,
+    faRightLong,
     faShareNodes,
-    faClipboardList,
+    faSortDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -37,7 +36,6 @@ library.add(
     faTwitter,
     faInstagram,
     faFacebookF,
-    faLinkedin,
     faRightLong,
     faCaretUp,
     faLocationDot,
