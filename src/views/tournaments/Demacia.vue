@@ -16,9 +16,6 @@
 
 <script>
 import Banner from "@/components/other/banner";
-import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
-import cs from "@/assets/json/CEC/CEC5/counter_strike.json";
-import lol from "@/assets/json/CEC/CEC5/league_of_legends.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
@@ -32,11 +29,6 @@ export default {
     },
     data() {
         return {
-            ranking: {
-                rl: rl,
-                cs: cs,
-                lol: lol,
-            },
             cashprize: [
                 {
                     name: "League of Legends",
@@ -46,24 +38,7 @@ export default {
                         "https://docs.google.com/document/d/1GKTMMvaYPcfDy1wIB-k-9XGlAZJDDmcS",
                     registration: "https://challonge.com/fr/CEC6_LOL",
                 },
-                {
-                    name: "Valorant",
-                    image: "Valorant.webp",
-                    cash: 675,
-                    regulation:
-                        "https://docs.google.com/document/d/1AIX7Drj1b6Y4aFXMzGPjQqqxvk9Gfa0w",
-                    registration: "https://challonge.com/fr/CEC6_VALORANT",
-                },
-                {
-                    name: "Rocket League",
-                    image: "Rocket_League.webp",
-                    cash: 405,
-                    regulation:
-                        "https://docs.google.com/document/d/1T-a3IJQHkku3cZ4GjiQPRTKs7T-52SLw",
-                    registration: "https://challonge.com/fr/CEC6_RL",
-                },
             ],
-            images: [""],
         };
     },
 };
