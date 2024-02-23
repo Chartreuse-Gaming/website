@@ -288,7 +288,7 @@ section:first-of-type nav {
         div {
             background-color: var(--bg-color);
             border-radius: 8px;
-            bottom: -68px;
+            top: 68px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
                 0 6px 6px rgba(0, 0, 0, 0.23);
             display: flex;
