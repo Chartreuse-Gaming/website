@@ -52,6 +52,19 @@
                                         <router-link
                                             :class="
                                                 $route.path.startsWith(
+                                                    '/tournament/Demacia'
+                                                )
+                                                    ? 'current'
+                                                    : ''
+                                            "
+                                            :to="{ name: 'Demacia' }"
+                                            @click="nav = false"
+                                        >
+                                            {{ $t("tournaments.Demacia.self") }}
+                                        </router-link>
+                                        <router-link
+                                            :class="
+                                                $route.path.startsWith(
                                                     '/tournament/CEC'
                                                 )
                                                     ? 'current'

@@ -6,6 +6,26 @@
             <font-awesome-icon icon="fa-solid fa-caret-up" />
             <section>
                 <article>
+                    <header>
+                        2024
+                        <i></i>
+                    </header>
+                    <section>
+                        <div>
+                            <h3>
+                                {{ $t("association.timeline.2024.1.title") }}
+                            </h3>
+                            <p>
+                                {{
+                                    $t(
+                                        "association.timeline.2024.1.description"
+                                    )
+                                }}
+                            </p>
+                        </div>
+                    </section>
+                </article>
+                <article>
                     <header class="big">
                         2023
                         <i></i>

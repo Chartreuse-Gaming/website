@@ -75,6 +75,14 @@ const routes = [
                 /* webpackChunkName: "CGW_2019" */ "../views/tournaments/CGW_2019.vue"
             ),
     },
+    {
+        path: "/tournament/Demacia",
+        name: "Demacia",
+        component: () =>
+            import(
+                /* webpackChunkName: "Demacia" */ "../views/tournaments/Demacia.vue"
+            ),
+    },
 ];
 
 const router = createRouter({

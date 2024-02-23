@@ -1,13 +1,13 @@
 <template>
     <main>
         <Banner
-            :title="$t('tournaments.CEC.6.self')"
+            :title="$t('tournaments.Demacia.self')"
             src="assets/img/carousel/CEC/CEC6.webp"
         />
 
         <article id="presentation" class="content">
             <h2>{{ $t("presentation") }}</h2>
-            <p>{{ $t("tournaments.CEC.6.presentation") }}</p>
+            <p>{{ $t("tournaments.Demacia.presentation") }}</p>
         </article>
 
         <Cashprize :data="cashprize" />
@@ -22,7 +22,7 @@ import lol from "@/assets/json/CEC/CEC5/league_of_legends.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
-    name: "CEC6View",
+    name: "DemaciaView",
     title() {
         return this.$t("tournaments.CEC.6.self");
     },

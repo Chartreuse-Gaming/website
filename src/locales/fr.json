@@ -42,6 +42,10 @@
       "self": "Chartreuse Gaming Winter 2019",
       "date": "26 Janvier 2019",
       "presentation": "Durant un hiver trop long au goût de certains, l’association proposa un tournoi 2vs2 sur Counter Strike : Global Offensive le temps d’une soirée le 26 janvier 2019 avec une dotation finale de 200€."
+    },
+    "Demacia": {
+        "self": "Demacia",
+        "presentation": "Présentation de l'événement"
     }
   },
   "association": {
@@ -72,6 +76,12 @@
       "administrative-manager": "Responsable Administratif"
     },
     "timeline": {
+      "2024": {
+        "1": {
+          "title": "Titre",
+          "description": "Description"
+        }
+      },
       "2023": {
         "1": {
           "title": "Changement de nom",
