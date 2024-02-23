@@ -1,7 +1,7 @@
 <template>
     <main>
         <h1>Alpes Esport</h1>
-        <Carousel />
+        <Banner />
 
         <Tournaments :data="tournaments" />
 
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Carousel from "@/components/home/carousel";
+import Banner from "@/components/home/banner";
 import Tournaments from "@/components/home/tournaments";
 import Association from "@/components/home/association";
 import Contact from "@/components/home/contact";
@@ -39,7 +39,7 @@ export default {
         return this.$t("home");
     },
     components: {
-        Carousel,
+        Banner,
         Tournaments,
         Association,
         Contact,
