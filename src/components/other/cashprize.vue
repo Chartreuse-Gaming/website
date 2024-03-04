@@ -19,10 +19,18 @@
                         loading="lazy"
                     />
                     <h3>{{ game.cash }} €</h3>
-                    <a :href="game.regulation" class="btn">
+                    <a
+                        v-if="game.regulation"
+                        :href="game.regulation"
+                        class="btn"
+                    >
                         {{ $t("regulation") }}
                     </a>
-                    <a :href="game.registration" class="btn">
+                    <a
+                        v-if="game.registration"
+                        :href="game.registration"
+                        class="btn"
+                    >
                         {{ $t("registration") }}
                     </a>
                 </div>
