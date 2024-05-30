@@ -40,7 +40,7 @@ export default {
                 {
                     name: "Rocket League",
                     image: "Rocket_League.webp",
-                    cash: 405,
+                    cash: 200,
                     regulation:
                         "https://docs.google.com/document/d/1T-a3IJQHkku3cZ4GjiQPRTKs7T-52SLw",
                     registration: "https://challonge.com/fr/CEC6_RL",
