@@ -1,19 +1,23 @@
 <template>
     <main>
         <Banner
-            title="Tournoi Rocket League"
-            src="assets/img/carousel/CEC/CEC6.webp"
+            id="rl_banner"
+            title=""
+            src="assets/img/carousel/rl_banner.webp"
         />
 
         <article id="presentation" class="content">
             <h2>{{ $t("presentation") }}</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. No
-                tation justo. Ullamco blandit quod.
+                Plongez au coeur de l'action avec le premier chapitre d'Alpes
+                Esport. Au programme, une atmosphère électrique avec des
+                voitures sur vitaminées. Ne manquez pas notre premier tournoi en
+                ligne sur Rocket League, le samedi 29 juin 2024. Tournoi en
+                format Swiss round, en 3vs3 et un cashprize de 200€ !
             </p>
         </article>
 
-        <Cashprize :data="cashprize" />
+        <Cashprize :data="cashprize" :title="true" />
     </main>
 </template>
 
@@ -51,3 +55,18 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "node_modules/compass-mixins/lib/compass/css3";
+
+#rl_banner {
+    height: 700px;
+
+    &::after {
+        @include box-shadow(
+            inset 0 100px 150px 0 var(--bg-color),
+            inset 0 -100px 50px -30px var(--bg-color)
+        );
+    }
+}
+</style>
