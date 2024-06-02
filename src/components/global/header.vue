@@ -52,6 +52,19 @@
                                         <router-link
                                             :class="
                                                 $route.path.startsWith(
+                                                    '/tournament/rocket-league'
+                                                )
+                                                    ? 'current'
+                                                    : ''
+                                            "
+                                            :to="{ name: 'rocket-league' }"
+                                            @click="nav = false"
+                                        >
+                                            Rocket League
+                                        </router-link>
+                                        <router-link
+                                            :class="
+                                                $route.path.startsWith(
                                                     '/tournament/CEC'
                                                 )
                                                     ? 'current'

@@ -1,32 +1,11 @@
 <template>
-    <div id="banner">
-        <article>
-            <section>
-                <p class="CEC">
-                    Nous<br />
-                    devenons<br />
-                    Alpes Esport
-                </p>
-                <router-link class="btn" to="/#association">
-                    {{ $t("read-more") }}
-                    <font-awesome-icon icon="fa-solid fa-right-long" />
-                </router-link>
-            </section>
-            <section>
-                <video
-                    autoplay
-                    loop
-                    muted
-                    src="@/assets/mp4/changement_nom.mp4"
-                />
-            </section>
-        </article>
+    <router-link to="/tournament/rocket-league" id="banner">
         <img
-            :alt="$t('tournaments.CEC.6.self')"
+            alt="Alpine Rivals #1"
             loading="lazy"
-            src="@/assets/img/carousel/Nouveau_nom.webp"
+            src="@/assets/img/carousel/rl_banner.webp"
         />
-    </div>
+    </router-link>
 </template>
 
 <script>
@@ -49,8 +28,8 @@ export default {
     &::after {
         z-index: -1;
         @include box-shadow(
-            inset 0 175px 180px 0 var(--bg-color),
-            inset 0 -175px 90px -30px var(--bg-color)
+            inset 0 120px 200px 0 var(--bg-color),
+            inset 0 -100px 50px -40px var(--bg-color)
         );
         bottom: 0;
         content: "";

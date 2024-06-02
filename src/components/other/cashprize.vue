@@ -1,6 +1,6 @@
 <template>
     <article class="content">
-        <h2>{{ $t("games") }}</h2>
+        <h2 v-if="!title">{{ $t("games") }}</h2>
         <div>
             <section v-for="game in data" :key="game.name">
                 <header>
@@ -34,7 +34,7 @@
 <script>
 export default {
     name: "cashprizeComponent",
-    props: ["data"],
+    props: ["title", "data"],
 };
 </script>
 
