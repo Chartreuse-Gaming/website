@@ -46,8 +46,9 @@ export default {
                     image: "Rocket_League.webp",
                     cash: 200,
                     regulation:
-                        "https://docs.google.com/document/d/1T-a3IJQHkku3cZ4GjiQPRTKs7T-52SLw",
-                    registration: "https://challonge.com/fr/CEC6_RL",
+                        "https://drive.google.com/file/d/1b3a0mT7SUCxUiFmF0a3hOIGQbq1t5zxm/view",
+                    registration:
+                        "https://play.toornament.com/fr/tournaments/7852588153972383744",
                 },
             ],
             images: [""],
