@@ -46,7 +46,7 @@ export default {
                     image: "Rocket_League.webp",
                     cash: 200,
                     regulation:
-                        "https://drive.google.com/file/d/1b3a0mT7SUCxUiFmF0a3hOIGQbq1t5zxm/view",
+                        "https://drive.google.com/file/d/1Jtf_PDCgH6g9adI4Q-iIH9CZhz5mD3iw/view",
                     registration:
                         "https://play.toornament.com/fr/tournaments/7852588153972383744",
                 },
