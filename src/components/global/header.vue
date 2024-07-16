@@ -60,7 +60,11 @@
                                             :to="{ name: 'Alpine_Rivals_1' }"
                                             @click="nav = false"
                                         >
-                                            {{ $t("tournaments.Alpine_Rivals.1.self") }}
+                                            {{
+                                                $t(
+                                                    "tournaments.Alpine_Rivals.1.self"
+                                                )
+                                            }}
                                         </router-link>
                                         <router-link
                                             :class="
