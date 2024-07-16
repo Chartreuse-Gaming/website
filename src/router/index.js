@@ -12,10 +12,10 @@ const routes = [
         component: Home,
     },
     {
-        path: "/tournament/rocket-league",
-        name: "rocket-league",
+        path: "/tournament/alpine-rivals-1",
+        name: "Alpine_Rivals_1",
         component: () =>
-            import(/* webpackChunkName: "RL" */ "../views/tournaments/RL.vue"),
+            import(/* webpackChunkName: "Alpine_Rivals_1" */ "../views/tournaments/AlpineRivals/AlpineRivals1.vue"),
     },
     {
         path: "/tournament/CEC/6",

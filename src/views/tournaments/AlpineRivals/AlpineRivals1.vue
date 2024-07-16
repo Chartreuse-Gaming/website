@@ -27,9 +27,9 @@ import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
-    name: "CEC6View",
+    name: "AlpineRivals1View",
     title() {
-        return this.$t("tournaments.CEC.6.self");
+        return this.$t("tournaments.Alpine_Rivals.1.self");
     },
     components: {
         Banner,
