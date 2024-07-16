@@ -9,11 +9,7 @@
         <article id="presentation" class="content">
             <h2>{{ $t("presentation") }}</h2>
             <p>
-                Plongez au coeur de l'action avec le premier chapitre d'Alpes
-                Esport. Au programme, une atmosphère électrique avec des
-                voitures sur vitaminées. Ne manquez pas notre premier tournoi en
-                ligne sur Rocket League, le samedi 29 juin 2024. Tournoi en
-                format Swiss round, en 3vs3 et un cashprize de 200€ !
+                {{ $t("tournaments.Alpine_Rivals.presentation") }}
             </p>
         </article>
 
@@ -27,9 +23,9 @@ import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
-    name: "CEC6View",
+    name: "AlpineRivals1View",
     title() {
-        return this.$t("tournaments.CEC.6.self");
+        return this.$t("tournaments.Alpine_Rivals.1.self");
     },
     components: {
         Banner,

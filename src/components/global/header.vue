@@ -52,15 +52,19 @@
                                         <router-link
                                             :class="
                                                 $route.path.startsWith(
-                                                    '/tournament/rocket-league'
+                                                    '/tournament/alpine-rivals-1'
                                                 )
                                                     ? 'current'
                                                     : ''
                                             "
-                                            :to="{ name: 'rocket-league' }"
+                                            :to="{ name: 'Alpine_Rivals_1' }"
                                             @click="nav = false"
                                         >
-                                            Rocket League
+                                            {{
+                                                $t(
+                                                    "tournaments.Alpine_Rivals.1.self"
+                                                )
+                                            }}
                                         </router-link>
                                         <router-link
                                             :class="

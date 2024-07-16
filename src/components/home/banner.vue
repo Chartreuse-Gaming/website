@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/tournament/rocket-league" id="banner">
+    <router-link to="/tournament/alpine-rivals-1" id="banner">
         <img
             alt="Alpine Rivals #1"
             loading="lazy"

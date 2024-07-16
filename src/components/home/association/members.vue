@@ -11,16 +11,8 @@
                 <p>Louis <span>Canard.exe</span> GRILLOT</p>
             </div>
             <div>
-                <p>{{ $t("association.members.treasurer") }}</p>
-                <p>Tom <span>Juan Pipito</span> HUMEAU</p>
-            </div>
-            <div>
                 <p>{{ $t("association.members.secretary") }}</p>
-                <p>Vincent <span>Gozzy</span> TESSIER</p>
-            </div>
-            <div>
-                <p>{{ $t("association.members.administrative-manager") }}</p>
-                <p>Martial <span>Battlesheep</span> BLANCHARD</p>
+                <p>Alexis <span>Myself Real</span> LOCATELLI</p>
             </div>
         </section>
     </article>
