@@ -12,7 +12,7 @@
             </div>
             <div>
                 <p>{{ $t("association.members.secretary") }}</p>
-                <p>Vincent <span>Gozzy</span> TESSIER</p>
+                <p>Alexis <span>Myself Real</span> LOCATELLI</p>
             </div>
         </section>
     </article>
