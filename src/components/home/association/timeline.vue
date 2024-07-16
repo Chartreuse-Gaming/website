@@ -12,11 +12,15 @@
                     </header>
                     <section>
                         <div>
-                            <h3>Tournoi Rocket League</h3>
+                            <h3>
+                                {{ $t("association.timeline.2024.1.title") }}
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. No tation justo. Ullamco
-                                blandit quod.
+                                {{
+                                    $t(
+                                        "association.timeline.2024.1.description"
+                                    )
+                                }}
                             </p>
                         </div>
                     </section>

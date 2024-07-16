@@ -4,6 +4,15 @@
     "self": "Tournois",
     "previous": "Nos précédents tournois",
     "editions": "Les éditions",
+    "Alpine_Rivals": {
+      "self": "Alpine Rivals",
+      "presentation": "",
+      "1": {
+        "self": "Alpine Rivals #1",
+        "date": "29 Juin 2024",
+        "presentation": "Pour son retour sous de nouvelles couleurs, l'association décide de se réinventer en créant un nouveau type de tournoi : l'Alpine Rivals. Cette première édition en ligne porte sur le jeu Rocket League en 3vs3 avec à la clef un cashprize global de 200€."
+      }
+    },
     "CEC": {
       "self": "Chartreuse Esport Contest",
       "presentation": "Avant de fonder Chartreuse Gaming, ses membres fondateurs se réunissaient régulièrement pour des Lan party. Au fil du temps, l’envie de jouer se métamorphosa en l’envie d’organiser pour les autres. Ainsi, le tournoi Chartreuse Esport Contest vit le jour en octobre 2016. Depuis, cette première édition aux ambitions modestes et principalement destinée aux locaux, l’association décida de redoubler d’efforts pour mettre sur la carte de France, l’Isère et son engagement pour l’essor de l’eSport.",
@@ -67,10 +76,15 @@
       "head-office": "Membres du siège",
       "president": "Président",
       "vice-president": "Vice-Président",
-      "treasurer": "Trésorier",
-      "secretary": "Secrétaire",
-      "administrative-manager": "Responsable Administratif"
+      "secretary": "Secrétaire"
     },
+    "timeline": {
+      "2024": {
+        "1": {
+          "title": "Alpine Rivals #1",
+          "description": ""
+        }
+      },
     "timeline": {
       "2023": {
         "1": {

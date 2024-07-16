@@ -4,6 +4,15 @@
     "self": "Tournaments",
     "previous": "Our previous tournaments",
     "editions": "The editions",
+    "Alpine_Rivals": {
+      "self": "Alpine Rivals",
+      "presentation": "",
+      "1": {
+        "self": "Alpine Rivals #1",
+        "date": "29th June 2024 ",
+        "presentation": "For its return under new colors, the association decided to reinvent itself by creating a new type of tournament: the Alpine Rivals. This first online edition focuses on the game Rocket League in 5vs5 with a global cashprize of €200."
+      }
+    },
     "CEC": {
       "self": "Chartreuse Esport Contest",
       "presentation": "Before founding Chartreuse Gaming, its founding members regularly got together for Lan parties. Over time, the desire to play turned into the desire to organize for others. Thus, the Chartreuse Esport Contest tournament was born in October 2016. Since this first edition with modest ambitions and mainly intended for the locals, the association decided to redouble its efforts to put on the map of France, Isère and its commitment to the development of eSport.\n\nTranslated with www.DeepL.com/Translator (free version)",
@@ -67,11 +76,15 @@
       "head-office": "Head office members",
       "president": "President",
       "vice-president": "Vice President",
-      "treasurer": "Treasurer",
-      "secretary": "Secretary",
-      "administrative-manager": "Administrative Manager"
+      "secretary": "Secretary"
     },
     "timeline": {
+      "2024": {
+        "1": {
+          "title": "Alpine Rivals #1",
+          "description": ""
+        }
+      },
       "2023": {
         "1": {
           "title": "Name change",
