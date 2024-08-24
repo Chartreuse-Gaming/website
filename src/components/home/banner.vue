@@ -3,7 +3,7 @@
         <img
             alt="Alpine Rivals #2"
             loading="lazy"
-            src="@/assets/img/carousel/rl_banner.webp"
+            src="@/assets/img/carousel/valo_banner.webp"
         />
     </router-link>
 </template>

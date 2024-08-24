@@ -3,7 +3,7 @@
         <Banner
             id="rl_banner"
             title=""
-            src="assets/img/carousel/rl_banner.webp"
+            src="assets/img/carousel/valo_banner.webp"
         />
 
         <article id="presentation" class="content">
@@ -19,7 +19,6 @@
 
 <script>
 import Banner from "@/components/other/banner";
-import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
@@ -33,9 +32,6 @@ export default {
     },
     data() {
         return {
-            ranking: {
-                rl: rl,
-            },
             cashprize: [
                 {
                     name: "Valorant",
