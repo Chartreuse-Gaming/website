@@ -3,13 +3,13 @@
         <Banner
             id="rl_banner"
             title=""
-            src="assets/img/carousel/rl_banner.webp"
+            src="assets/img/carousel/valo_banner.webp"
         />
 
         <article id="presentation" class="content">
             <h2>{{ $t("presentation") }}</h2>
             <p>
-                {{ $t("tournaments.Alpine_Rivals.1.presentation") }}
+                {{ $t("tournaments.Alpine_Rivals.2.presentation") }}
             </p>
         </article>
 
@@ -19,13 +19,12 @@
 
 <script>
 import Banner from "@/components/other/banner";
-import rl from "@/assets/json/CEC/CEC5/rocket_league.json";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
-    name: "AlpineRivals1View",
+    name: "AlpineRivals2View",
     title() {
-        return this.$t("tournaments.Alpine_Rivals.1.self");
+        return this.$t("tournaments.Alpine_Rivals.2.self");
     },
     components: {
         Banner,
@@ -33,18 +32,15 @@ export default {
     },
     data() {
         return {
-            ranking: {
-                rl: rl,
-            },
             cashprize: [
                 {
-                    name: "Rocket League",
-                    image: "Rocket_League.webp",
-                    cash: 200,
+                    name: "Valorant",
+                    image: "Valorant.webp",
+                    cash: 300,
                     regulation:
-                        "https://drive.google.com/file/d/1Jtf_PDCgH6g9adI4Q-iIH9CZhz5mD3iw/view",
+                        "https://drive.google.com/file/d/1vd_VQM_sb7kJT045OKSZOGI3LNNCppM9/view",
                     registration:
-                        "https://play.toornament.com/fr/tournaments/7852588153972383744",
+                        "https://challonge.com/fr/tournaments/signup/yHD7RjxvwN",
                 },
             ],
             images: [""],

@@ -13,6 +13,18 @@
                     <section>
                         <div>
                             <h3>
+                                {{ $t("association.timeline.2024.2.title") }}
+                            </h3>
+                            <p>
+                                {{
+                                    $t(
+                                        "association.timeline.2024.2.description"
+                                    )
+                                }}
+                            </p>
+                        </div>
+                        <div>
+                            <h3>
                                 {{ $t("association.timeline.2024.1.title") }}
                             </h3>
                             <p>

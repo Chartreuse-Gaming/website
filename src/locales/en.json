@@ -6,11 +6,15 @@
     "editions": "The editions",
     "Alpine_Rivals": {
       "self": "Alpine Rivals",
-      "presentation": "Dive into the heart of the action with the first chapter of Alpes Esport. The program features an electric atmosphere and over-vitaminized cars. Don't miss our first Rocket League online tournament, on Saturday June 29, 2024. Swiss round format, 3vs3 and a €200 cashprize!",
       "1": {
         "self": "Alpine Rivals #1",
         "date": "29th June 2024 ",
-        "presentation": "For its return under new colors, the association decided to reinvent itself by creating a new type of tournament: the Alpine Rivals. This first online edition focuses on the game Rocket League in 5vs5 with a global cashprize of €200."
+        "presentation": "Dive into the heart of the action with the first chapter of Alpes Esport. The program features an electric atmosphere and over-vitaminized cars. Don't miss our first Rocket League online tournament, on Saturday June 29, 2024. Swiss round format, 3vs3 and a €200 cashprize!"
+      },
+      "2": {
+        "self": "Alpine Rivals #2",
+        "date": "21 Septembre 2024",
+        "presentation": "Alpes Esport is back with a second edition of Alpine Rivals, featuring a game never before seen in our tournaments. This time, you'll have to plant the SPIKE! Don't miss our new online competition on Valorant, on Saturday September 21, 2024, with 16 teams of 5 players for a total cashprize of €300!"
       }
     },
     "CEC": {
@@ -82,7 +86,11 @@
       "2024": {
         "1": {
           "title": "Alpine Rivals #1",
-          "description": "June 29, 2024 online on the Discord of the association."
+          "description": "June 29, 2024 online on Rocket League."
+        },
+        "2": {
+          "title": "Alpine Rivals #1",
+          "description": "September 21, 2024 online on Valorant."
         }
       },
       "2023": {
