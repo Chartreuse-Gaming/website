@@ -15,6 +15,11 @@
         "self": "Alpine Rivals #2",
         "date": "21 Septembre 2024",
         "presentation": "Alpes Esport is back with a second edition of Alpine Rivals, featuring a game never before seen in our tournaments. This time, you'll have to plant the SPIKE! Don't miss our new online competition on Valorant, on Saturday September 21, 2024, with 16 teams of 5 players for a total cashprize of €300!"
+      },
+      "3": {
+        "self": "Alpine Rivals #3",
+        "date": "09 - 10 November 2024",
+        "presentation": "Dive into the heart of the action with the third chapter of Alpes Esport. The program features an electric atmosphere in the Summoner's Rift. Don't miss our first League Of Legends online tournament, on Saturday November 9 and Sunday November 10, 2024 (check-in at 12.30 p.m. on Saturday and Sunday. For approximate end time, see the rules). Swiss round format, 5vs5 and a €300 cashprize!"
       }
     },
     "CEC": {
@@ -89,8 +94,12 @@
           "description": "June 29, 2024 online on Rocket League."
         },
         "2": {
-          "title": "Alpine Rivals #1",
+          "title": "Alpine Rivals #2",
           "description": "September 21, 2024 online on Valorant."
+        },
+        "3": {
+          "title": "Alpine Rivals #3",
+          "description": "September 09 - 10, 2024 online on League Of Legends."
         }
       },
       "2023": {

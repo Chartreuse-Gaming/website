@@ -12,6 +12,14 @@ const routes = [
         component: Home,
     },
     {
+        path: "/tournament/alpine-rivals-3",
+        name: "Alpine_Rivals_3",
+        component: () =>
+            import(
+                /* webpackChunkName: "Alpine_Rivals_3" */ "../views/tournaments/AlpineRivals/AlpineRivals3.vue"
+            ),
+    },
+    {
         path: "/tournament/alpine-rivals-2",
         name: "Alpine_Rivals_2",
         component: () =>

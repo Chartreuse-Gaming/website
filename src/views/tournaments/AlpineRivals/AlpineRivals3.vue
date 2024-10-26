@@ -3,13 +3,13 @@
         <Banner
             id="rl_banner"
             title=""
-            src="assets/img/carousel/valo_banner.webp"
+            src="assets/img/carousel/lol_banner.webp"
         />
 
         <article id="presentation" class="content">
             <h2>{{ $t("presentation") }}</h2>
             <p>
-                {{ $t("tournaments.Alpine_Rivals.2.presentation") }}
+                {{ $t("tournaments.Alpine_Rivals.3.presentation") }}
             </p>
         </article>
 
@@ -22,9 +22,9 @@ import Banner from "@/components/other/banner";
 import Cashprize from "@/components/other/cashprize";
 
 export default {
-    name: "AlpineRivals2View",
+    name: "AlpineRivals3View",
     title() {
-        return this.$t("tournaments.Alpine_Rivals.2.self");
+        return this.$t("tournaments.Alpine_Rivals.3.self");
     },
     components: {
         Banner,
@@ -34,11 +34,13 @@ export default {
         return {
             cashprize: [
                 {
-                    name: "Valorant",
-                    image: "Valorant.webp",
+                    name: "League Of Legends",
+                    image: "League_of_Legends.webp",
                     cash: 300,
                     regulation:
-                        "https://drive.google.com/file/d/1vd_VQM_sb7kJT045OKSZOGI3LNNCppM9/view",
+                        "https://drive.google.com/file/d/1-trZDJ5B71FEh20Q0QNnw9dVhbl5VZ38/view",
+                    registration:
+                        "https://play.toornament.com/fr/tournaments/8261200481331421184/",
                 },
             ],
             images: [""],

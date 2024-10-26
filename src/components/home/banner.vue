@@ -1,11 +1,14 @@
 <template>
-    <router-link to="/tournament/alpine-rivals-2" id="banner">
+    <a
+        href="https://play.toornament.com/fr/tournaments/8261200481331421184/"
+        id="banner"
+    >
         <img
-            alt="Alpine Rivals #2"
+            alt="Alpine Rivals #3"
             loading="lazy"
-            src="@/assets/img/carousel/valo_banner.webp"
+            src="@/assets/img/carousel/lol_banner.webp"
         />
-    </router-link>
+    </a>
 </template>
 
 <script>
