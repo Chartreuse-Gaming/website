@@ -14,7 +14,12 @@
       "2": {
         "self": "Alpine Rivals #2",
         "date": "21 Septembre 2024",
-        "presentation": "Alpes Esport revient avec une seconde édition d'Alpine Rivals sur un jeu encore jamais vu dans nos tournois. Cette fois-ci, il faudra planter le SPIKE ! Ne manquez pas notre nouvelle compétition en ligne sur Valorant, le samedi 21 septembre 2024, avec 16 équipes de 5 joueurs pour un cashprize total de 300€ !",
+        "presentation": "Alpes Esport revient avec une seconde édition d'Alpine Rivals sur un jeu encore jamais vu dans nos tournois. Cette fois-ci, il faudra planter le SPIKE ! Ne manquez pas notre nouvelle compétition en ligne sur Valorant, le samedi 21 septembre 2024, avec 16 équipes de 5 joueurs pour un cashprize total de 300€ !"
+      },
+      "3": {
+        "self": "Alpine Rivals #3",
+        "date": "09 - 10 Novembre 2024",
+        "presentation": "Plongez au coeur de l'action avec le troisième chapitre d'Alpes Esport. Au programme, une atmosphère électrique au sein de la faille de l'invocateur. Ne manquez pas notre premier tournoi en ligne sur League Of Legends, le samedi 9 et le dimanche 10 novembre 2024 (check-in à 12 heures 30 le samedi et le dimanche. Pour l'heure de fin approximative, consultez le règlement). Tournoi en format Swiss round, en 5vs5 et un cashprize de 300€ !"
       }
     },
     "CEC": {
@@ -91,6 +96,10 @@
         "2": {
           "title": "Alpine Rivals #2",
           "description": "Le 21 Septembre 2024 en ligne sur Valorant."
+        },
+        "3": {
+          "title": "Alpine Rivals #3",
+          "description": "Le 09 et 10 Novembre 2024 en ligne sur League Of Legends."
         }
       },
       "2023": {

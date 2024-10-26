@@ -52,6 +52,23 @@
                                         <router-link
                                             :class="
                                                 $route.path.startsWith(
+                                                    '/tournament/alpine-rivals-3'
+                                                )
+                                                    ? 'current'
+                                                    : ''
+                                            "
+                                            :to="{ name: 'Alpine_Rivals_3' }"
+                                            @click="nav = false"
+                                        >
+                                            {{
+                                                $t(
+                                                    "tournaments.Alpine_Rivals.3.self"
+                                                )
+                                            }}
+                                        </router-link>
+                                        <router-link
+                                            :class="
+                                                $route.path.startsWith(
                                                     '/tournament/alpine-rivals-2'
                                                 )
                                                     ? 'current'

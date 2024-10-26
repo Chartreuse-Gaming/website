@@ -1,9 +1,9 @@
 <template>
-    <router-link to="/tournament/alpine-rivals-2" id="banner">
+    <router-link to="/tournament/alpine-rivals-3" id="banner">
         <img
-            alt="Alpine Rivals #2"
+            alt="Alpine Rivals #3"
             loading="lazy"
-            src="@/assets/img/carousel/valo_banner.webp"
+            src="@/assets/img/carousel/lol_banner.webp"
         />
     </router-link>
 </template>
