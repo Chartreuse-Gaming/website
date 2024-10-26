@@ -43,8 +43,6 @@ export default {
                     cash: 200,
                     regulation:
                         "https://drive.google.com/file/d/1Jtf_PDCgH6g9adI4Q-iIH9CZhz5mD3iw/view",
-                    registration:
-                        "https://play.toornament.com/fr/tournaments/7852588153972383744",
                 },
             ],
             images: [""],

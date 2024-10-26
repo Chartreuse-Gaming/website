@@ -39,8 +39,6 @@ export default {
                     cash: 300,
                     regulation:
                         "https://drive.google.com/file/d/1vd_VQM_sb7kJT045OKSZOGI3LNNCppM9/view",
-                    registration:
-                        "https://challonge.com/fr/tournaments/signup/yHD7RjxvwN",
                 },
             ],
             images: [""],
